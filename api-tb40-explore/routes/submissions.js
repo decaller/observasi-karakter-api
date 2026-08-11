@@ -1,0 +1,343 @@
+const express = require('express');
+const router = express.Router();
+const rateLimit = require('express-rate-limit');
+const winstonLogger = require('../utils/logger');
+const {
+  createSubmission,
+  getSubmissionById,
+  updateSubmissionProgress,
+  listSubmissionsByEvent
+} = require('../services/pocketbase');
+const { evaluateV3 } = require('../services/calculation_v3');
+
+// Dedicated rate limiter for fast-track anonymous submissions
+const fastTrackLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: process.env.NODE_ENV === 'production' ? 30 : 500, // allow higher limit for testing
+  message: { error: 'Too many anonymous submissions created from this IP. Please try again later.' },
+  handler: (req, res, next, options) => {
+    winstonLogger.warn(`Fast-track rate limit exceeded for IP: ${req.ip}`);
+    res.status(options.statusCode).json(options.message);
+  }
+});
+
+// Middleware for fast-track route check
+function checkFastTrackLimiter(req, res, next) {
+  if (req.body && req.body.is_anonymous) {
+    return fastTrackLimiter(req, res, next);
+  }
+  next();
+}
+
+// Helper function to determine whether to use adult ('tb40') or child ('tb40anak') version
+function determineAssessmentType({ type, birth_date, age, override_type }) {
+  if (override_type && (type === 'tb40' || type === 'tb40anak')) {
+    return { type, determined_by: 'explicit_selection' };
+  }
+
+  let computedAge = age;
+  if (birth_date && (computedAge === undefined || computedAge === null)) {
+    const dob = new Date(birth_date);
+    if (!isNaN(dob.getTime())) {
+      const today = new Date();
+      computedAge = today.getFullYear() - dob.getFullYear();
+      const m = today.getMonth() - dob.getMonth();
+      if (m < 0 || (m === 0 && today.getDate() < dob.getDate())) {
+        computedAge--;
+      }
+    }
+  }
+
+  if (typeof computedAge === 'number' && !isNaN(computedAge)) {
+    const detectedType = computedAge < 15 ? 'tb40anak' : 'tb40';
+    return { type: detectedType, determined_by: 'age_detection', detected_age: computedAge };
+  }
+
+  if (type === 'tb40' || type === 'tb40anak') {
+    return { type, determined_by: 'explicit_selection' };
+  }
+
+  return { type: 'tb40', determined_by: 'default' };
+}
+
+/* POST /api/v0.3/submissions - Initialize new submission */
+router.post('/submissions', checkFastTrackLimiter, async (req, res) => {
+  try {
+    const { type, birth_date, age, is_anonymous, is_observer, subject_name, org_id, event_id, author_id } = req.body;
+    
+    const typeInfo = determineAssessmentType({ type, birth_date, age });
+    
+    const record = await createSubmission({
+      type: typeInfo.type,
+      status: 'incomplete',
+      current_tier: 'tier_1',
+      sequence_number: 1,
+      answers: {},
+      is_anonymous: Boolean(is_anonymous),
+      is_observer: Boolean(is_observer),
+      subject_name,
+      birth_date,
+      age: typeInfo.detected_age !== undefined ? typeInfo.detected_age : age,
+      org_id,
+      event_id,
+      author_id
+    });
+
+    res.status(201).json({
+      id: record.id,
+      type: record.type,
+      determined_by: typeInfo.determined_by,
+      detected_age: typeInfo.detected_age,
+      status: record.status,
+      current_tier: record.current_tier,
+      saved: true,
+      timestamp: record.created || new Date().toISOString()
+    });
+  } catch (err) {
+    res.status(400).json({ error: err.message });
+  }
+});
+
+/* GET /api/v0.3/submissions/:id - Fetch submission progress & halfway report */
+router.get('/submissions/:id', async (req, res) => {
+  try {
+    const record = await getSubmissionById(req.params.id);
+    
+    // Generate evaluation & halfway report from saved answers
+    const evalReq = {
+      params: { version: 'v0.3', type: record.type },
+      body: {
+        answers: record.answers || {},
+        is_anonymous: record.is_anonymous,
+        is_observer: record.is_observer,
+        subject_name: record.subject_name
+      }
+    };
+    const evalResponse = evaluateV3(evalReq);
+
+    res.json({
+      id: record.id,
+      type: record.type,
+      status: record.status,
+      current_tier: record.current_tier,
+      next_tier: evalResponse.next_tier,
+      sequence_number: record.sequence_number || 1,
+      answers: record.answers || {},
+      current_part: evalResponse.current_part,
+      total_parts: evalResponse.total_parts,
+      part_title: evalResponse.part_title,
+      questions: evalResponse.questions,
+      range_labels: evalResponse.range_labels,
+      saved: true,
+      timestamp: record.updated || record.created,
+      halfway_report: evalResponse.halfway_report,
+      result: record.results || evalResponse.result
+    });
+  } catch (err) {
+    res.status(404).json({ error: err.message });
+  }
+});
+
+/* POST /api/v0.3/submissions/:id/evaluate - Debounced interaction step evaluate & save */
+router.post('/submissions/:id/evaluate', async (req, res) => {
+  try {
+    const record = await getSubmissionById(req.params.id);
+    const incomingSeq = req.body.sequence_number || ((record.sequence_number || 0) + 1);
+
+    // Optimistic Concurrency Control Check
+    if (incomingSeq < (record.sequence_number || 0)) {
+      return res.status(409).json({
+        error: 'Out of order interaction update ignored',
+        current_sequence: record.sequence_number
+      });
+    }
+
+    const updatedAnswers = {
+      ...(record.answers || {}),
+      ...(req.body.answers || {})
+    };
+
+    const evalReq = {
+      params: { version: 'v0.3', type: record.type },
+      body: {
+        answers: updatedAnswers,
+        is_anonymous: record.is_anonymous,
+        is_observer: record.is_observer,
+        subject_name: record.subject_name,
+        request_precision: req.body.request_precision
+      }
+    };
+    const evalResponse = evaluateV3(evalReq);
+
+    // Update PocketBase record
+    const updatedRecord = await updateSubmissionProgress(req.params.id, {
+      answers: updatedAnswers,
+      status: evalResponse.status,
+      current_tier: evalResponse.next_tier,
+      sequence_number: incomingSeq,
+      results: evalResponse.result
+    });
+
+    res.json({
+      id: updatedRecord.id,
+      timestamp: updatedRecord.updated || new Date().toISOString(),
+      saved: true,
+      status: evalResponse.status,
+      next_tier: evalResponse.next_tier,
+      sequence_number: incomingSeq,
+      current_part: evalResponse.current_part,
+      total_parts: evalResponse.total_parts,
+      part_title: evalResponse.part_title,
+      completed_subgroups_count: evalResponse.completed_subgroups_count,
+      total_subgroups_count: evalResponse.total_subgroups_count,
+      completed_pillars_count: evalResponse.completed_pillars_count,
+      total_pillars_count: evalResponse.total_pillars_count,
+      questions: evalResponse.questions,
+      range_labels: evalResponse.range_labels,
+      halfway_report: evalResponse.halfway_report,
+      result: evalResponse.result
+    });
+  } catch (err) {
+    res.status(400).json({ error: err.message });
+  }
+});
+
+/* PATCH /api/v0.3/submissions/:id/profile - Update submission profile data (name, age, type, observer mode) */
+router.patch('/submissions/:id/profile', async (req, res) => {
+  try {
+    const record = await getSubmissionById(req.params.id);
+    const { subject_name, birth_date, age, type, is_observer, org_id, event_id } = req.body;
+
+    const typeInfo = determineAssessmentType({
+      type: type,
+      birth_date: birth_date !== undefined ? birth_date : record.birth_date,
+      age: age !== undefined ? age : record.age,
+      override_type: Boolean(type)
+    });
+
+    const updates = {
+      is_anonymous: false, // Completing profile removes anonymous flag
+      type: typeInfo.type,
+      subject_name: subject_name !== undefined ? subject_name : record.subject_name,
+      birth_date: birth_date !== undefined ? birth_date : record.birth_date,
+      age: typeInfo.detected_age !== undefined ? typeInfo.detected_age : (age !== undefined ? age : record.age),
+      is_observer: is_observer !== undefined ? Boolean(is_observer) : record.is_observer,
+      org_id: org_id !== undefined ? org_id : record.org_id,
+      event_id: event_id !== undefined ? event_id : record.event_id
+    };
+
+    // Re-evaluate to update next_tier
+    const evalReq = {
+      params: { version: 'v0.3', type: updates.type },
+      body: {
+        answers: record.answers || {},
+        is_anonymous: false,
+        is_observer: updates.is_observer,
+        subject_name: updates.subject_name
+      }
+    };
+    const evalResponse = evaluateV3(evalReq);
+    updates.current_tier = evalResponse.next_tier;
+
+    const updatedRecord = await updateSubmissionProgress(req.params.id, updates);
+
+    res.json({
+      id: updatedRecord.id,
+      type: updatedRecord.type,
+      determined_by: typeInfo.determined_by,
+      detected_age: typeInfo.detected_age,
+      subject_name: updatedRecord.subject_name,
+      is_observer: updatedRecord.is_observer,
+      status: evalResponse.status,
+      next_tier: evalResponse.next_tier,
+      current_part: evalResponse.current_part,
+      total_parts: evalResponse.total_parts,
+      part_title: evalResponse.part_title,
+      completed_subgroups_count: evalResponse.completed_subgroups_count,
+      total_subgroups_count: evalResponse.total_subgroups_count,
+      questions: evalResponse.questions,
+      range_labels: evalResponse.range_labels,
+      halfway_report: evalResponse.halfway_report,
+      result: evalResponse.result,
+      saved: true,
+      timestamp: updatedRecord.updated || new Date().toISOString()
+    });
+  } catch (err) {
+    res.status(400).json({ error: err.message });
+  }
+});
+
+/* PATCH /api/v0.3/submissions/:id/contact - Post-report contact enrichment */
+router.patch('/submissions/:id/contact', async (req, res) => {
+  try {
+    const { email, phone } = req.body;
+    const updatedRecord = await updateSubmissionProgress(req.params.id, {
+      email,
+      phone
+    });
+
+    res.json({
+      id: updatedRecord.id,
+      timestamp: updatedRecord.updated || new Date().toISOString(),
+      updated: true,
+      contact: {
+        email: updatedRecord.email,
+        phone: updatedRecord.phone
+      }
+    });
+  } catch (err) {
+    res.status(400).json({ error: err.message });
+  }
+});
+
+/* GET /api/v0.3/submissions/:id/share - Public view-only result payload */
+router.get('/submissions/:id/share', async (req, res) => {
+  try {
+    const record = await getSubmissionById(req.params.id);
+
+    // Re-run evaluateV3 for halfway_report on incomplete shares
+    const evalReq = {
+      params: { version: 'v0.3', type: record.type },
+      body: {
+        answers: record.answers || {},
+        is_anonymous: record.is_anonymous,
+        is_observer: record.is_observer,
+        subject_name: record.subject_name
+      }
+    };
+    const evalResponse = evaluateV3(evalReq);
+
+    res.json({
+      id: record.id,
+      type: record.type,
+      status: record.status,
+      current_tier: record.current_tier,
+      next_tier: evalResponse.next_tier,
+      is_anonymous: record.is_anonymous,
+      is_observer: record.is_observer,
+      subject_name: record.is_observer ? record.subject_name : undefined,
+      result: record.results || evalResponse.result,
+      results: record.results || evalResponse.result,
+      halfway_report: evalResponse.halfway_report,
+      created: record.created
+    });
+  } catch (err) {
+    res.status(404).json({ error: err.message });
+  }
+});
+
+/* GET /api/v0.3/events/:eventId/submissions - Event admin batch export */
+router.get('/events/:eventId/submissions', async (req, res) => {
+  try {
+    const records = await listSubmissionsByEvent(req.params.eventId);
+    res.json({
+      event_id: req.params.eventId,
+      total_submissions: records.length,
+      submissions: records
+    });
+  } catch (err) {
+    res.status(400).json({ error: err.message });
+  }
+});
+
+module.exports = router;

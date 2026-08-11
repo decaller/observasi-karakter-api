@@ -1,0 +1,57 @@
+version: '3.8'
+
+services:
+  pocketbase:
+    image: ghcr.io/muchll/pocketbase:latest
+    container_name: pocketbase-tb40
+    restart: always
+    command: serve --http=0.0.0.0:8090
+    ports:
+      - "8090:8090"
+    volumes:
+      - pb_data:/pb_data
+      - ./pocketbase:/pb_migrations
+    networks:
+      - tb40-network
+
+  api:
+    build: .
+    container_name: api-tb40
+    restart: always
+    environment:
+      - NODE_ENV=production
+      - PORT=4040
+      - POCKETBASE_URL=http://pocketbase:8090
+    ports:
+      - "4040:4040"
+    volumes:
+      - ./logs:/usr/src/app/logs
+    depends_on:
+      - pocketbase
+    networks:
+      - tb40-network
+
+  caddy:
+    image: caddy:2-alpine
+    container_name: caddy-proxy
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      - api
+    networks:
+      - tb40-network
+
+networks:
+  tb40-network:
+    driver: bridge
+
+volumes:
+  pb_data:
+  caddy_data:
+  caddy_config:

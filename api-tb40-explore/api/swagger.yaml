@@ -1,0 +1,199 @@
+openapi: 3.0.0
+info:
+  title: API TB40
+  description: RESTful API for Tafsir Bakat 40 personality assessment with adaptive tiering, state persistence, and continuous scoring.
+  version: 0.3.0
+servers:
+  - url: http://localhost:4040
+    description: Local development server
+paths:
+  /health:
+    get:
+      summary: Health check
+      responses:
+        '200':
+          description: OK
+  /api/v0.3/submissions:
+    post:
+      summary: Initialize a new submission (v0.3)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                type:
+                  type: string
+                  enum: [tb40, tb40anak]
+                is_anonymous:
+                  type: boolean
+                is_observer:
+                  type: boolean
+                subject_name:
+                  type: string
+                org_id:
+                  type: string
+                event_id:
+                  type: string
+                author_id:
+                  type: string
+      responses:
+        '201':
+          description: Submission created with unique ID and server timestamp
+  /api/v0.3/submissions/{id}:
+    get:
+      summary: Fetch submission state and halfway report (v0.3)
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Submission state with halfway report
+  /api/v0.3/submissions/{id}/evaluate:
+    post:
+      summary: Debounced interaction evaluate & state save (v0.3)
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                sequence_number:
+                  type: integer
+                answers:
+                  type: object
+                request_precision:
+                  type: boolean
+      responses:
+        '200':
+          description: State saved with evaluation status and halfway report
+  /api/v0.3/submissions/{id}/profile:
+    patch:
+      summary: Update profile data and unlock Tier 3 (v0.3)
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                subject_name:
+                  type: string
+                birth_date:
+                  type: string
+                age:
+                  type: integer
+                is_observer:
+                  type: boolean
+      responses:
+        '200':
+          description: Profile updated and next tier unlocked
+  /api/v0.3/submissions/{id}/contact:
+    patch:
+      summary: Post-report user contact enrichment (v0.3)
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                phone:
+                  type: string
+      responses:
+        '200':
+          description: Contact information updated
+  /api/v0.3/submissions/{id}/share:
+    get:
+      summary: Public view-only result payload (v0.3)
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Public report results
+  /api/v0.3/events/{eventId}/submissions:
+    get:
+      summary: Event admin batch export (v0.3)
+      parameters:
+        - name: eventId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Array of all event submissions
+  /api/v0.2/{type}/schema:
+    get:
+      summary: Get tiered assessment schema (v0.2)
+      parameters:
+        - name: type
+          in: path
+          required: true
+          schema:
+            type: string
+            enum: [tb40, tb40anak]
+      responses:
+        '200':
+          description: Tiered questions and dimensions
+  /api/v0.2/{type}/evaluate:
+    post:
+      summary: Evaluate assessment progress and get next steps (v0.2)
+      parameters:
+        - name: type
+          in: path
+          required: true
+          schema:
+            type: string
+            enum: [tb40, tb40anak]
+      responses:
+        '200':
+          description: Current evaluation status and next required tier
+  /api/{version}/{type}/calculation:
+    post:
+      summary: Calculate TB40 results (v0.1, v0.2, v0.3)
+      parameters:
+        - name: version
+          in: path
+          required: true
+          schema:
+            type: string
+            enum: [v0.1, v0.2, v0.3]
+        - name: type
+          in: path
+          required: true
+          schema:
+            type: string
+            enum: [tb40, tb40anak, raporkarakter]
+      responses:
+        '200':
+          description: Calculation successful

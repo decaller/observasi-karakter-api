@@ -1,0 +1,22 @@
+{
+  "session_id": "sess_abc123",
+  "final_talents": [
+    {
+      "name": "Strategis",
+      "score": 92,
+      "category": "Analitis"
+    },
+    {
+      "name": "Pembelajar",
+      "score": 88,
+      "category": "Teknis"
+    },
+    {
+      "name": "Itsaar",
+      "score": 85,
+      "category": "Melayani"
+    }
+  ],
+  "present_result_prompt": "Sampaikan apresiasi. Tampilkan 'final_talents' menggunakan struktur visual terbaik Anda (Tabel kaya warna, Kartu UI, atau Diagram) untuk menonjolkan profil definitif mereka secara elegan.",
+  "next_prompt_hint": "Tolong panggil /api/v1/flow/step4 untuk mengambil konteks pengetahuan mendalam yang diperlukan untuk menulis Laporan Lengkap."
+}

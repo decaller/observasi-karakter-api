@@ -1,0 +1,18 @@
+{
+  "session_id": "sess_abc123",
+  "next_action": {
+    "type": "rank_category_loop",
+    "loop_progress": "2/6",
+    "loop_progress_ui": "Pekerja Keras > **Cerdas** > Berperasaan > Tegas > Gaul > Lembut",
+    "category_id": "cd",
+    "current_category_to_rank": "Cerdas",
+    "traits_to_rank": [
+      "💡 Berpikir kreatif dan imajinatif", 
+      "✨ Berpikir positif dan melihat peluang", 
+      "🧠 Menganalisis data dan berpikir logis"
+    ]
+  },
+  "present_result_prompt": "Berikan apresiasi singkat bahwa ranking sebelumnya telah disimpan.",
+  "next_prompt_hint": "Lanjutkan loop wawancara. Lihat field 'next_action'. Tampilkan 'loop_progress_ui' sebagai navigasi visual. Minta pengguna untuk memilih dan mengurutkan 3 sifat teratas mereka KHUSUS untuk kategori 'Cerdas'. Anda bebas memperluas deskripsi atau memberi contoh pada sifat tersebut jika diperlukan. Setelah mereka menjawab, panggil `GET /api/v1/flow/rank_category?s={session_id}&c=cd&r={urutan_sifat}`.",
+  "next_prompt_end_loop_hint": "Catatan untuk AI: Jika field 'current_category_to_rank' adalah kategori yang ke-6 (terakhir), setelah pengguna menjawab, panggil endpoint yang sama dan bersiaplah menerima struktur Bagan Pohon (default_talents)."
+}

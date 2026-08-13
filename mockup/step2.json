@@ -1,0 +1,21 @@
+{
+  "session_id": "sess_abc123",
+  "default_talents": {
+    "Strategis": 85,
+    "Pembelajar": 82,
+    "Itsaar": 75,
+    "Ideasi": 70,
+    "Analitis": 65
+  },
+  "verification_statements": [
+    "1. Berambisi dan bertekad kuat", "2. Tegas dan berwibawa", "3. Giat bekerja keras hingga tuntas",
+    "4. Berpikir kreatif dan imajinatif", "5. Berpikir positif dan melihat peluang", "6. Menganalisis data dan berpikir logis",
+    "7. Tampil sederhana dan apa adanya", "8. Tenang dan suka merenung", "9. Rendah hati dan tidak menonjolkan diri",
+    "10. Mengambil kendali dan memimpin", "11. Bicara di depan umum dan memotivasi", "12. Mengarahkan dan mengendalikan kegiatan",
+    "13. Memanfaatkan hubungan relasi", "14. Membuat pertemanan baru", "15. Merawat dan mengeratkan keakraban",
+    "16. Memberi dorongan dan bantuan nyata", "17. Menjaga amanah dan rasa aman", "18. Mengalah demi menjaga keharmonisan"
+  ],
+  "preview_message": "Bagan Pohon siap untuk dirender teks oleh AI.",
+  "present_result_prompt": "Tampilkan 'default_talents' SEBAGAI VISUAL. Jika platform Anda mendukung Mermaid.js, buat diagram Bagan Pohon. Jika mendukung Artifacts/Canvas/Code Blocks, render visual yang kaya. Jika tidak, gunakan tabel Markdown yang indah. Jelaskan ini adalah estimasi awal.",
+  "next_prompt_hint": "Setelah menampilkan bakat, beritahu pengguna bahwa untuk mematangkan hasil ini, kita perlu memverifikasi 18 sifat tersebut. Minta mereka memberikan skor (1=Sangat Tidak Setuju, 4=Sangat Setuju) untuk ke-18 pernyataan di 'verification_statements'. Setelah mereka menjawab, panggil `GET /api/v1/flow/step3?s={session_id}&v={18_skor_dipisah_koma}`."
+}

@@ -1,6 +1,11 @@
 from fastapi import FastAPI, HTTPException, status
 from fastapi.middleware.cors import CORSMiddleware
 from typing import Dict
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+APP_DOMAIN = os.getenv("APP_DOMAIN", "http://127.0.0.1:8000")
 
 from schemas import AssessmentSubmission
 from responses import AssessmentResultPayload
@@ -43,7 +48,7 @@ async def submit_assessment(payload: AssessmentSubmission):
     result = process_assessment_flow(payload)
     DB_STORE[result.assessment_id] = result
 
-    result_url = f"https://your-domain.com/api/v1/results/{result.assessment_id}"
+    result_url = f"{APP_DOMAIN}/api/v1/results/{result.assessment_id}"
     
     return {
         "assessment_id": result.assessment_id,

@@ -1,0 +1,108 @@
+{
+  "ego_mapping": {
+    "Tinggi": {
+      "gaya_belajar": "Kinestetik & Eksperimen Langsung (Praktik)",
+      "gaya_belajar_arab": "Al Fuad (الفُؤَاد) - Kinestetik",
+      "gaya_belajar_tempat": "Tempat belajar yang nyaman: di alam terbuka, lapangan, bengkel, atau lokasi yang memungkinkan banyak gerakan.",
+      "bahasa_hati": "Pertolongan Nyata & Aksi Nyata (Acts of Service)"
+    },
+    "Sedang": {
+      "gaya_belajar": "Visual & Analitis (Membaca & Meneliti)",
+      "gaya_belajar_arab": "Al Bashar (الْبَصَرَ) - Visual",
+      "gaya_belajar_tempat": "Ruangan yang tenang, perpustakaan, atau tempat dengan banyak bahan bacaan visual.",
+      "bahasa_hati": "Penghargaan atas Gagasan & Ide Kreatif"
+    },
+    "Rendah": {
+      "gaya_belajar": "Auditori & Emosional (Bercerita & Diskusi)",
+      "gaya_belajar_arab": "As Sama' (السَّمْعَ) - Auditori",
+      "gaya_belajar_tempat": "Lingkungan yang mendukung diskusi terbuka, FGD, atau mendengarkan ceramah inspiratif.",
+      "bahasa_hati": "Sentuhan Perhatian & Kata Penguatan"
+    }
+  },
+  "intro_ekstro_mapping": {
+    "introvert": {
+      "istilah": "Al-Sirr (rahasia/individual) atau Al-Muntowi (tertutup/menyendiri)",
+      "karakteristik": "Orang dengan tipe introvert memiliki kecenderungan individual. Mereka tidak terlalu senang atau kurang nyaman jika harus bertemu banyak orang secara intens, lebih suka menyendiri, dan merasa lebih lega serta produktif ketika bekerja sendirian.",
+      "potensi_peran": "Sangat nyaman dan cocok dengan pekerjaan yang tidak menuntut banyak interaksi sosial langsung, melainkan bekerja di balik layar, seperti ilmuwan, IT programmer, desainer, akuntan, ahli teknik, atau penulis."
+    },
+    "extrovert": {
+      "istilah": "Al-'Alaniyah (terang-terangan/sosial) atau Al-Maftuh (terbuka)",
+      "karakteristik": "Orang dengan tipe extrovert memiliki kecenderungan sosial. Mereka sangat senang bertemu dengan orang banyak, bergaul, mudah akrab, dan cenderung lebih bersemangat saat bekerja bersama kelompok.",
+      "potensi_peran": "Sangat menikmati peran-peran kemasyarakatan atau pelayanan publik yang menuntut muamalah luas, seperti menjadi pendidik, marketer/sales, humas, mediator, konselor, pemimpin, hingga relawan sosial."
+    }
+  },
+  "categories": [
+    {
+      "id": "pekerja_keras",
+      "name": "Pekerja Keras",
+      "istilah_arab": "Al-Hamasah",
+      "kelompok": "Introvert (Individual)",
+      "ego_korelasi": "Tinggi",
+      "traits_to_rank": [
+        "🎯 Berambisi dan bertekad kuat", 
+        "⚖️ Tegas dan berwibawa", 
+        "🔥 Giat bekerja keras hingga tuntas"
+      ]
+    },
+    {
+      "id": "cerdas",
+      "name": "Cerdas",
+      "istilah_arab": "At-Tafkiir / Az-Zaka",
+      "kelompok": "Introvert (Individual)",
+      "ego_korelasi": "Sedang",
+      "traits_to_rank": [
+        "💡 Berpikir kreatif dan imajinatif", 
+        "✨ Berpikir positif dan melihat peluang", 
+        "🧠 Menganalisis data dan berpikir logis"
+      ]
+    },
+    {
+      "id": "berperasaan",
+      "name": "Berperasaan",
+      "istilah_arab": "Asy-Syu'ur / Assuur",
+      "kelompok": "Introvert (Individual)",
+      "ego_korelasi": "Rendah",
+      "traits_to_rank": [
+        "🌱 Tampil sederhana dan apa adanya", 
+        "🌊 Tenang dan suka merenung", 
+        "🕊️ Rendah hati dan tidak menonjolkan diri"
+      ]
+    },
+    {
+      "id": "tegas",
+      "name": "Tegas",
+      "istilah_arab": "At-Taksir",
+      "kelompok": "Extrovert (Sosial)",
+      "ego_korelasi": "Tinggi",
+      "traits_to_rank": [
+        "👑 Mengambil kendali dan memimpin", 
+        "🎤 Bicara di depan umum dan memotivasi", 
+        "🧭 Mengarahkan dan mengendalikan kegiatan"
+      ]
+    },
+    {
+      "id": "gaul",
+      "name": "Gaul",
+      "istilah_arab": "At-Ta'amul",
+      "kelompok": "Extrovert (Sosial)",
+      "ego_korelasi": "Sedang",
+      "traits_to_rank": [
+        "🤝 Memanfaatkan hubungan relasi", 
+        "🤗 Membuat pertemanan baru", 
+        "💞 Merawat dan mengeratkan keakraban"
+      ]
+    },
+    {
+      "id": "lembut",
+      "name": "Lembut",
+      "istilah_arab": "Al-Khidmah",
+      "kelompok": "Extrovert (Sosial)",
+      "ego_korelasi": "Rendah",
+      "traits_to_rank": [
+        "🤲 Memberi dorongan dan bantuan nyata", 
+        "🛡️ Menjaga amanah dan rasa aman", 
+        "🌸 Mengalah demi menjaga keharmonisan"
+      ]
+    }
+  ]
+}

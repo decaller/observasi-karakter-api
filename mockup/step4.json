@@ -1,0 +1,34 @@
+{
+  "session_id": "sess_abc123",
+  "top_talents_insights": [
+    {
+      "name": "Itsaar",
+      "score": 85,
+      "category": "Melayani",
+      "definisi": "Memiliki kecenderungan untuk lebih mendahulukan orang lain...",
+      "kelemahan_lalai": {
+        "sifat": "Bakhil",
+        "definisi": "Menahan kepemilikan yang seharusnya...",
+        "solusi_perbaiki": "Kuatkan bakat juud, nushrah, dan nashiihah."
+      },
+      "kelemahan_berlebih": {
+        "sifat": "Dzull (Lemah)",
+        "definisi": "Kelemahan jiwa dikarenakan ketidakmampuan...",
+        "solusi_perbaiki": "Kuatkan bakat syajaa'ah, munaafasah, dan ghairah."
+      },
+      "rekomendasi": {
+        "profesi": [
+          "Da'i/da'iyah",
+          "Pekerja Sosial",
+          "Relawan"
+        ],
+        "jurusan": [
+          "Keperawatan",
+          "Kesehatan Masyarakat"
+        ]
+      }
+    }
+  ],
+  "present_result_prompt": "Gunakan data ini untuk menulis 'Laporan Lengkap'. MAKSIMALKAN kemampuan format Anda: Buat struktur artikel layaknya publikasi majalah dengan hierarki Markdown, tabel, diagram, atau dokumen khusus (Artifact/Canvas/Pages). Buatlah narasi yang berempati dan memotivasi.",
+  "next_prompt_hint": "Setelah menyajikan Laporan Lengkap, berikan rekomendasi profesi dan minta pengguna untuk memilih salah satu untuk memulai 'Laporan Kurikulum Personalisasi'."
+}

@@ -257,9 +257,27 @@
     ]
   },
   "svg_url": "https://api.observasikarakter.com/v1/render/final-tb40/sess_abc123.svg",
-  "present_result_prompt": "Berikan ucapan selamat karena proses observasi telah selesai! Tampilkan 'final_result' menggunakan struktur visual terbaik Anda (Tabel kaya warna, Kartu UI, atau Diagram Markdown) untuk menonjolkan profil definitif mereka secara elegan. Jangan lupa tampilkan `svg_url`.",
+  "chart_url": "https://api.observasikarakter.com/v1/render/chart/sess_abc123_step3_40pillars.png",
+  "present_result_prompt": "Berikan ucapan selamat karena proses observasi telah selesai! Tampilkan 'final_result' menggunakan struktur visual terbaik Anda (Tabel kaya warna, Kartu UI, atau Diagram Markdown) untuk menonjolkan profil definitif mereka secara elegan. Jangan lupa tampilkan `![Visualisasi Utama](svg_url)` dan grafik lengkap: `![Grafik 40 Pilar](chart_url)`.",
   "next_action": {
-    "type": "offer_curriculum"
+    "type": "offer_curriculum",
+    "profesi_list": [
+      "Pemborong Proyek",
+      "Teknisi Proyek",
+      "Pekerja Lapangan",
+      "Relawan",
+      "Petugas SAR",
+      "Peneliti",
+      "Analis Data",
+      "Perencana Strategis",
+      "Konsultan",
+      "Programmer",
+      "Konselor Keluarga",
+      "Psikolog",
+      "Pendidik",
+      "Pekerja Sosial",
+      "Penulis"
+    ]
   },
-  "next_prompt_hint": "Tanyakan kepada pengguna apakah mereka ingin Anda (AI) membuatkan 'Laporan Lengkap & Kurikulum Pembelajaran' (Langkah 4) berdasarkan hasil final ini. Jika iya, panggil `/api/v1/flow/step4`."
+  "next_prompt_hint": "Sampaikan bahwa kita bisa menyusun 'Laporan Lengkap & Kurikulum Personal' khusus untuk mereka. Dari daftar 'recommended_profesi', minta pengguna untuk memilih beberapa profesi yang paling menarik minat mereka. Setelah mereka memilih, panggil `/api/v1/flow/step4?s={session_id}&profesi={pilihan_mereka_dipisah_koma}`."
 }

@@ -81,7 +81,19 @@ FastAPI inspects the incoming `Accept` HTTP header:
 | **`<head>` Autodiscovery Tags** | Web Crawlers & Scrapers | Points `GPTBot` or `ClaudeBot` directly to `/openapi.json`. |
 | **Content Negotiation** | Programmatic AI Agents | Dynamically returns raw Markdown to text agents and HTML to human browsers on `GET /`. |
 
-## 3. REST API Endpoint Design
+## 3. Database Architecture
+The backend relies on two primary knowledge bases (represented as JSON mockups in this repository) to supply the LLM with deep psychological context.
+
+### 1. `data3.json` (The Core 40 Pillars)
+Berisi definisi mendalam untuk ke-40 pilar, termasuk skor prediksi, saran perbaikan untuk sifat 'lalai' dan 'lebih'. File ini telah direfaktor agar saran perbaikan saling tertaut secara relasional menggunakan ID:
+- `lalai_perbaiki_ids`: Array berisi ID pilar yang direkomendasikan untuk diperbaiki jika pilar saat ini lemah.
+- `lebih_perbaiki_ids`: Array berisi ID pilar yang direkomendasikan jika pilar saat ini over-dominan (berlebihan).
+
+### 2. `data_profesi.json` (Profession & Curriculum Mapping)
+Berisi pemetaan antara Profesi, Jurusan, dan Pilar yang dibutuhkan. Dipisahkan dari `data3.json` agar sangat mudah (*scalable*) untuk menambahkan profesi baru di masa depan tanpa mengubah definisi inti pilar.
+- **Struktur**: Setiap profesi (contoh: "Programmer") memiliki array `related_pillars` (berisi ID pilar yang krusial untuk profesi tersebut) dan `related_jurusans` (rekomendasi pendidikan tinggi).
+
+## API Endpoints Overview
 
 Because we are strictly supporting multiple AI web interfaces (which prefer `GET`), we eliminate POST mutations. Furthermore, based on the **Workflow Diagram**, the API must support interleaved interactions so the AI can fetch intermediate math processing (P1-P4) during the interview.
 
@@ -198,8 +210,9 @@ API akan mengembalikan hasil analisis awal beserta field `next_prompt_hint` di d
         "🔥 Giat bekerja keras hingga tuntas"
       ]
     },
-    "present_result_prompt": "Sajikan hasil 'insights' dan 'rank_by_categories' dengan gaya bahasa yang suportif. MAKSIMALKAN fitur antarmuka platform Anda: Gunakan tabel multi-kolom, Markdown terstruktur, atau widget UI khusus untuk menampilkan kategori secara visual. Tekankan kekuatan unik mereka.",
-    "next_prompt_hint": "Setelah menyajikan hasil awal di atas, mulai loop wawancara bagian pertama. Lihat field 'next_action'. Tampilkan 'loop_progress_ui' sebagai navigasi visual. Minta pengguna untuk memilih dan mengurutkan 3 sifat teratas mereka KHUSUS untuk kategori 'Pekerja Keras'. Anda bebas memperluas deskripsi atau memberi contoh pada sifat tersebut jika diperlukan. Setelah mereka menjawab, panggil `GET /api/v1/flow/rank_category?s={session_id}&c=pk&r={urutan_sifat}`."
+    "present_result_prompt": "Sajikan hasil 'insights' dan 'rank_by_categories' dengan gaya bahasa yang suportif. Tampilkan grafik perbandingan menggunakan Markdown image link: `![Grafik 6 Kategori](chart_url)`. MAKSIMALKAN fitur antarmuka platform Anda: Gunakan tabel multi-kolom atau Markdown terstruktur untuk menampilkan detail kategori secara visual. Tekankan kekuatan unik mereka.",
+    "next_prompt_hint": "Setelah menyajikan hasil awal di atas, mulai loop wawancara bagian pertama. Lihat field 'next_action'. Tampilkan 'loop_progress_ui' sebagai navigasi visual. Minta pengguna untuk memilih dan mengurutkan 3 sifat teratas mereka KHUSUS untuk kategori 'Pekerja Keras'. Anda bebas memperluas deskripsi atau memberi contoh pada sifat tersebut jika diperlukan. Setelah mereka menjawab, panggil `GET /api/v1/flow/rank_category?s={session_id}&c=pk&r={urutan_sifat}`.",
+    "chart_url": "https://api.observasikarakter.com/v1/render/chart/sess_abc123_step1_6cat.png"
   }
   ```
 
@@ -277,7 +290,8 @@ API akan mengembalikan hasil analisis awal beserta field `next_prompt_hint` di d
     ],
     "preview_message": "Bagan Pohon siap untuk dirender teks oleh AI.",
     "svg_url": "https://api.observasikarakter.com/v1/render/preview-tb40/sess_abc123.svg",
-    "present_result_prompt": "Tampilkan gambar prediksi bakat menggunakan Markdown: `![Prediksi Bakat](svg_url)`. Jelaskan kepada pengguna bahwa kotak-kotak pada visual ini masih berupa garis putus-putus (blueprint/dashed) karena ini baru prediksi awal berdasarkan peringkat sifat mereka. Berikan ulasan memukau mengenai kekuatan ('predicted_top_traits'), kelemahan ('predicted_weak_traits'), serta sampaikan 'predicted_insights' seperti julukan, energi sosial, bahasa hati, dan gaya belajar mereka. Jika platform Anda mendukung tabel Markdown, Anda juga dapat menampilkan 'default_talents' secara terstruktur.",
+    "chart_url": "https://api.observasikarakter.com/v1/render/chart/sess_abc123_step2_18traits.png",
+    "present_result_prompt": "Tampilkan gambar prediksi bakat menggunakan Markdown: `![Prediksi Bakat](svg_url)`. Tampilkan juga grafik batang 18 sifat menggunakan Markdown: `![Grafik 18 Sifat](chart_url)`. Jelaskan kepada pengguna bahwa kotak-kotak pada visual SVG masih berupa garis putus-putus (blueprint/dashed) karena ini baru prediksi awal berdasarkan peringkat sifat mereka. Berikan ulasan memukau mengenai kekuatan ('predicted_top_traits'), kelemahan ('predicted_weak_traits'), serta sampaikan 'predicted_insights' seperti julukan, energi sosial, bahasa hati, dan gaya belajar mereka. Jika platform Anda mendukung tabel Markdown, Anda juga dapat menampilkan 'default_talents' secara terstruktur.",
     "next_action": {
       "type": "choose_verification_depth",
       "options": [
@@ -359,45 +373,63 @@ API akan mengembalikan hasil analisis awal beserta field `next_prompt_hint` di d
       "hierarchy": [...]
     },
     "svg_url": "https://api.observasikarakter.com/v1/render/final-tb40/sess_abc123.svg",
-    "present_result_prompt": "Berikan ucapan selamat karena proses observasi telah selesai! Tampilkan 'final_result' menggunakan struktur visual terbaik Anda (Tabel kaya warna, Kartu UI, atau Diagram Markdown) untuk menonjolkan profil definitif mereka secara elegan. Jangan lupa tampilkan `svg_url`.",
-    "next_action": { "type": "offer_curriculum" },
-    "next_prompt_hint": "Tanyakan kepada pengguna apakah mereka ingin Anda (AI) membuatkan 'Laporan Lengkap & Kurikulum Pembelajaran' (Langkah 4) berdasarkan hasil final ini. Jika iya, panggil `/api/v1/flow/step4`."
+    "chart_url": "https://api.observasikarakter.com/v1/render/chart/sess_abc123_step3_40pillars.png",
+    "present_result_prompt": "Berikan ucapan selamat karena proses observasi telah selesai! Tampilkan 'final_result' menggunakan struktur visual terbaik Anda (Tabel kaya warna, Kartu UI, atau Diagram Markdown) untuk menonjolkan profil definitif mereka secara elegan. Jangan lupa tampilkan `![Visualisasi Utama](svg_url)` dan grafik lengkap: `![Grafik 40 Pilar](chart_url)`.",
+    "next_action": {
+      "type": "offer_curriculum",
+      "profesi_list": [
+        "Pemborong Proyek",
+        "Teknisi Proyek",
+        "Pekerja Lapangan",
+        "Relawan",
+        "Petugas SAR",
+        "Peneliti",
+        "Analis Data",
+        "Perencana Strategis",
+        "Konsultan",
+        "Programmer",
+        "Konselor Keluarga",
+        "Psikolog",
+        "Pendidik",
+        "Pekerja Sosial",
+        "Penulis"
+      ]
+    },
+    "next_prompt_hint": "Sampaikan bahwa kita bisa menyusun 'Laporan Lengkap & Kurikulum Personal' khusus untuk mereka. Dari daftar 'recommended_profesi', minta pengguna untuk memilih beberapa profesi yang paling menarik minat mereka. Setelah mereka memilih, panggil `/api/v1/flow/step4?s={session_id}&profesi={pilihan_mereka_dipisah_koma}`."
   }
   ```
 
 ### Endpoint 6: Step 4 (Coaching & Curriculum Context)
 **`GET /api/v1/flow/step4`**
-- **Purpose**: Fetches the deep knowledge graph for the user's top talents. The Web AI uses this endpoint after Step 3 to gather the necessary context (`kelemahan`, `solusi_perbaiki`, `profesi`, `jurusan`) to autonomously write the "Laporan Lengkap" and "Laporan Kurikulum Personalisasi".
+- **Purpose**: Fetches the deep knowledge graph for the user's top talents, specifically tailored to their chosen professions. The Web AI uses this endpoint after Step 3 to gather the necessary context (`kelemahan`, `solusi_perbaiki`, dll.) to autonomously map activities and write the curriculum.
 - **Query Parameters**:
   - `session_id`: Returned from Step 1.
+  - `profesi`: Comma-separated list of chosen professions (e.g., `Programmer,Penulis`).
 - **Response**:
   ```json
   {
     "session_id": "sess_abc123",
-    "top_talents_insights": [
+    "chosen_professions": [
       {
-        "name": "Itsaar",
-        "score": 92,
-        "category": "Melayani",
-        "definisi": "Memiliki kecenderungan untuk lebih mendahulukan orang lain...",
-        "kelemahan_lalai": {
-          "sifat": "Bakhil",
-          "definisi": "Menahan kepemilikan yang seharusnya...",
-          "solusi_perbaiki": "Kuatkan bakat juud, nushrah, dan nashiihah."
-        },
-        "kelemahan_berlebih": {
-          "sifat": "Dzull (Lemah)",
-          "definisi": "Kelemahan jiwa dikarenakan ketidakmampuan...",
-          "solusi_perbaiki": "Kuatkan bakat syajaa'ah, munaafasah, dan ghairah."
-        },
-        "rekomendasi": {
-          "profesi": ["Da'i/da'iyah", "Pekerja Sosial", "Relawan"],
-          "jurusan": ["Keperawatan", "Kesehatan Masyarakat"]
-        }
+        "name": "Programmer",
+        "related_pillars": [
+          {
+            "id": "10",
+            "name": "Dzakaa' (Kecerdasan Logis)",
+            "score": 85,
+            "lalai_definisi": "...",
+            "lalai_perbaiki": "...",
+            "lebih_definisi": "...",
+            "lebih_perbaiki": "..."
+          }
+        ]
       }
     ],
-    "present_result_prompt": "Gunakan data ini untuk menulis 'Laporan Lengkap'. MAKSIMALKAN kemampuan format Anda: Buat struktur artikel layaknya publikasi majalah dengan hierarki Markdown, tabel, diagram, atau dokumen khusus (Artifact/Canvas/Pages). Buatlah narasi yang berempati dan memotivasi.",
-    "next_prompt_hint": "Setelah menyajikan Laporan Lengkap, berikan rekomendasi profesi dan minta pengguna untuk memilih salah satu untuk memulai 'Laporan Kurikulum Personalisasi'."
+    "present_result_prompt": "Anda adalah konsultan karir. Berikut adalah data pilar yang berkaitan dengan profesi pilihan pengguna beserta skor mereka saat ini. 1. Buat breakdown aktivitas yang harus dikuasai untuk masing-masing profesi. 2. Hubungkan aktivitas tersebut dengan pilar yang ada di data. 3. Tampilkan skor saat ini untuk menunjukkan apakah pengguna kemungkinan bisa menguasai aktivitas tersebut dengan mudah atau butuh usaha lebih. 4. Urutkan profesi dari yang paling mungkin dikuasai hingga yang paling sulit. Untuk setiap profesi, tunjukkan pilar apa yang masih kurang (skor < 70) dan berikan saran bagaimana cara memperkuatnya menggunakan data 'lalai_perbaiki' atau 'lebih_perbaiki' yang tersedia. MAKSIMALKAN format Markdown Anda (Gunakan tabel, blok kutipan, dan warna/emoji) agar presentasi ini terlihat sangat elegan dan profesional.",
+    "next_action": {
+      "type": "choose_mvp_profession"
+    },
+    "next_prompt_hint": "Dari profesi yang sudah dianalisis di atas, tanyakan kepada pengguna mana SATU profesi yang ingin mereka buatkan Kurikulum MVP (Minimum Viable Product) secara detail. Setelah mereka menjawab, buatkan 1. Tingkatan level proyek MVP dari beginner hingga advanced untuk profesi tersebut. 2. Soroti pendidikan tinggi atau jurusan yang relevan untuk mendukung proyek MVP tersebut. Anda tidak perlu memanggil API lagi untuk melakukan ini, cukup gunakan pengetahuan Anda sendiri yang dihubungkan dengan pilar yang sudah kita temukan."
   }
   ```
 

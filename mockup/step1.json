@@ -57,6 +57,7 @@
       "🔥 Giat bekerja keras hingga tuntas"
     ]
   },
-  "present_result_prompt": "Sajikan hasil 'insights' dan 'rank_by_categories' dengan gaya bahasa yang suportif. MAKSIMALKAN fitur antarmuka platform Anda: Gunakan tabel multi-kolom, Markdown terstruktur, atau widget UI khusus untuk menampilkan kategori secara visual. Tekankan kekuatan unik mereka.",
-  "next_prompt_hint": "Setelah menyajikan hasil awal di atas, mulai loop wawancara bagian pertama. Lihat field 'next_action'. Tampilkan 'loop_progress_ui' sebagai navigasi visual. Minta pengguna untuk memilih dan mengurutkan 3 sifat teratas mereka KHUSUS untuk kategori 'Pekerja Keras'. Anda bebas memperluas deskripsi atau memberi contoh pada sifat tersebut jika diperlukan. Setelah mereka menjawab, panggil `GET /api/v1/flow/rank_category?s={session_id}&c=pk&r={urutan_sifat}`."
+  "present_result_prompt": "Sajikan hasil 'insights' dan 'rank_by_categories' dengan gaya bahasa yang suportif. Tampilkan grafik perbandingan menggunakan Markdown image link: `![Grafik 6 Kategori](chart_url)`. MAKSIMALKAN fitur antarmuka platform Anda: Gunakan tabel multi-kolom atau Markdown terstruktur untuk menampilkan detail kategori secara visual. Tekankan kekuatan unik mereka.",
+  "next_prompt_hint": "Setelah menyajikan hasil awal di atas, mulai loop wawancara bagian pertama. Lihat field 'next_action'. Tampilkan 'loop_progress_ui' sebagai navigasi visual. Minta pengguna untuk memilih dan mengurutkan 3 sifat teratas mereka KHUSUS untuk kategori 'Pekerja Keras'. Anda bebas memperluas deskripsi atau memberi contoh pada sifat tersebut jika diperlukan. Setelah mereka menjawab, panggil `GET /api/v1/flow/rank_category?s={session_id}&c=pk&r={urutan_sifat}`.",
+  "chart_url": "https://api.observasikarakter.com/v1/render/chart/sess_abc123_step1_6cat.png"
 }

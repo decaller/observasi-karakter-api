@@ -11,7 +11,17 @@
     "lebih_definisi": "persepsi tentang tingginya derajat pribadinya, yang sebenarnya tidak layak dinisbatkan kepadanya",
     "lebih_perbaiki": "sifat tercela ujb (\u0627\u0644\u0639\u064f\u062c\u0652\u0628) (bangga diri) yang ditimbulkan akibat berlebihan dalam bakat waqaar, dapat diperbaiki dengan menguatkan bakat tawaadhu\u2019 dan qanaa\u2019ah.",
     "profesi": "Trainer, Pendamping pelatihan, Peningkatan SDM, Konsultan, Team penanganan masalah lembaga/perusahaan",
-    "jurusan": "Teknik Sipil, Teknik Listrik, Teknik Mesin, Manajemen"
+    "jurusan": "Teknik Sipil, Teknik Listrik, Teknik Mesin, Manajemen",
+    "lalai_perbaiki_ids": [
+      "4",
+      "17",
+      "5"
+    ],
+    "lebih_perbaiki_ids": [
+      "4",
+      "24",
+      "20"
+    ]
   },
   "25": {
     "pilar40": "6",
@@ -25,7 +35,18 @@
     "lebih_definisi": "keinginan kuat untuk mendapatkan sesuatu yang sebenarnya tidak dibutuhkannya",
     "lebih_perbaiki": "sifat tercela thama\u2019 (\u0627\u0644\u0637\u0651\u064e\u0645\u064e\u0639) (serakah) yang ditimbulkan akibat berlebihan dalam bakat nasyaath, dapat diperbaiki dengan menguatkan bakat qanaa\u2019ah dan tawaadhu\u2019.",
     "profesi": "Penyelenggara Lembaga pendidikan, Pemborong Proyek, Tenaga Penjual/Sales, Teknisi Proyek, Teknisi Lapangan, Pekerja Lapangan, Relawan, Petugas SAR, Pemadam Kebakaran",
-    "jurusan": "Teknik Sipil, Teknik Permesinan, Teknik Instalasi dan Tenaga Listrik, Teknik perkayuan, Teknik Otomotif, Keperawatan, Kebidanan, Marketing, dan jurusan lain yang banyak menumbuhkan sifat kerja keras"
+    "jurusan": "Teknik Sipil, Teknik Permesinan, Teknik Instalasi dan Tenaga Listrik, Teknik perkayuan, Teknik Otomotif, Keperawatan, Kebidanan, Marketing, dan jurusan lain yang banyak menumbuhkan sifat kerja keras",
+    "lalai_perbaiki_ids": [
+      "1",
+      "2",
+      "6",
+      "5"
+    ],
+    "lebih_perbaiki_ids": [
+      "24",
+      "6",
+      "20"
+    ]
   },
   "15": {
     "pilar40": "13",
@@ -39,7 +60,21 @@
     "lebih_definisi": "ketundukan jiwa dikarenakan ketidakmampuan untuk mempertahankan sesuatu, sehingga merendahkan diri sendiri",
     "lebih_perbaiki": "sifat tercela dzull (\u0627\u0644\u0630\u0651\u064f\u0644\u0651) (lemah) yang ditimbulkan akibat berlebihan dalam bakat \u2018iffah, dapat diperbaiki dengan menguatkan bakat  himmah, aziimah, \u2018izzah, dan waqaar.",
     "profesi": "Pengelola Keuangan Umat, Bendahara, Team Sarana Prasarana, Team Belanja, Pemimpin, Akuntan",
-    "jurusan": "Syariah, Hukum Islam, Manajemen Keuangan, Akuntansi, Administrasi"
+    "jurusan": "Syariah, Hukum Islam, Manajemen Keuangan, Akuntansi, Administrasi",
+    "lalai_perbaiki_ids": [
+      "13",
+      "12",
+      "15",
+      "24",
+      "20"
+    ],
+    "lebih_perbaiki_ids": [
+      "5",
+      "13",
+      "1",
+      "17",
+      "4"
+    ]
   },
   "10": {
     "pilar40": "15",
@@ -53,7 +88,21 @@
     "lebih_definisi": "tekanan jiwa yang muncul karena adanya konflik dalam diri antara keinginan untuk menjadi unggul dan rasa takut karena merasa dirinya tidak memiliki kemampuan. Dengan kata lain dirinya merasa lebih rendah dari orang lain tetapi takut dianggap rendah",
     "lebih_perbaiki": "sifat tercela duuniyyah/\u0627\u0644\u062f\u064f\u0648\u0652\u0646\u0650\u064a\u0651\u064e\u0629 (rendah diri) atau minder yang ditimbulkan akibat berlebihan dalam bakat hayaa\u2019, dapat diperbaiki dengan menguatkan bakat himmah, aziimah, nasyaath, ihsaan, izzah, dan waqaar.",
     "profesi": "Ahli Hikmah, Sastrawan, Penulis, Designer Fashion, Designer Interior, Arsitek, Kaligrafer, dsb.",
-    "jurusan": "Ilmu Jiwa, Sastra, Arsitektur, Tata Busana, Seni, Desain Komunikasi Visual, Animasi, Fotografi, dsb."
+    "jurusan": "Ilmu Jiwa, Sastra, Arsitektur, Tata Busana, Seni, Desain Komunikasi Visual, Animasi, Fotografi, dsb.",
+    "lalai_perbaiki_ids": [
+      "15",
+      "12",
+      "13"
+    ],
+    "lebih_perbaiki_ids": [
+      "6",
+      "1",
+      "5",
+      "15",
+      "17",
+      "4",
+      "2"
+    ]
   },
   "35": {
     "pilar40": "18",
@@ -67,7 +116,21 @@
     "lebih_definisi": "bertindak tanpa dipikirkan dan dinalar terlebih dahulu, dan tidak peduli dengan apa yang akan terjadi",
     "lebih_perbaiki": "sifat tercela tahawwur (\u0627\u0644\u062a\u0651\u064e\u0647\u064e\u0648\u0651\u064f\u0631) (ceroboh) yang ditimbulkan akibat berlebihan dalam bakat syajaa\u2019ah, dapat diperbaiki dengan menguatkan bakat shabr, hilm dan anaah.",
     "profesi": "Tentara, TNI, Komandan, Pengusaha, Petugas Keamanan, Sales, Negosiator, Wartawan, Pengacara, HRD, Pembelian",
-    "jurusan": "Ilmu Hukum Islam, Syariah, Akademi Militer, Akademi Kepolisian, Manajemen, Manajemen Bisnis"
+    "jurusan": "Ilmu Hukum Islam, Syariah, Akademi Militer, Akademi Kepolisian, Manajemen, Manajemen Bisnis",
+    "lalai_perbaiki_ids": [
+      "5",
+      "18",
+      "1",
+      "19",
+      "2",
+      "20"
+    ],
+    "lebih_perbaiki_ids": [
+      "39",
+      "40",
+      "38",
+      "18"
+    ]
   },
   "5": {
     "pilar40": "30",
@@ -81,7 +144,19 @@
     "lebih_definisi": "kelemahan untuk mempertahankan sesuatu sehingga cenderung untuk direndahkan orang lain karena kurangnya ketegasan dalam bersikap",
     "lebih_perbaiki": "sifat tercela dzull (\u0627\u0644\u0630\u0651\u064f\u0644\u0651)(Lemah) yang ditimbulkan akibat berlebihan dalam bakat basyaasyah, dapat diperbaiki dengan menguatkan bakat syajaa\u2019ah, munaafasah, dan ghairah.",
     "profesi": "Guru, Konselor, Presenter, Trainer, Motivator, Pemandu Kegiatan Anak, Pelayan Publik, Tour Leader (Pemandu Wisata)",
-    "jurusan": "Ilmu Keguruan, Ilmu Komunikasi, PGTK (Pendidikan Guru TK), Keperawatan, Psikologi, Kepariwisataan, Pelayanan Publik"
+    "jurusan": "Ilmu Keguruan, Ilmu Komunikasi, PGTK (Pendidikan Guru TK), Keperawatan, Psikologi, Kepariwisataan, Pelayanan Publik",
+    "lalai_perbaiki_ids": [
+      "29",
+      "30",
+      "26",
+      "31"
+    ],
+    "lebih_perbaiki_ids": [
+      "19",
+      "30",
+      "20",
+      "18"
+    ]
   },
   "30": {
     "pilar40": "31",
@@ -95,7 +170,18 @@
     "lebih_definisi": "kelemahan jiwa sehingga tidak mampu memperbaiki suatu kesalahan atau pelanggaran yang dilakukan oleh seseorang",
     "lebih_perbaiki": "sifat tercela dzull (\u0627\u0644\u0630\u0651\u064f\u0644\u0651) (lemah) yang ditimbulkan akibat berlebihan dalam bakat rifq, dapat diperbaiki dengan menguatkan bakat syajaa\u2019ah, ghairah, dan munaafasah.",
     "profesi": "Guru, Pendidik, Penasehat, Konsultan, Manajer, Supervisor, Pengawas, Marketing, Customer Service, Leader",
-    "jurusan": "Syari\u2019ah, Keguruan, Psikologi Islam, Manajemen, Manajemen Bisnis"
+    "jurusan": "Syari\u2019ah, Keguruan, Psikologi Islam, Manajemen, Manajemen Bisnis",
+    "lalai_perbaiki_ids": [
+      "32",
+      "30",
+      "31"
+    ],
+    "lebih_perbaiki_ids": [
+      "19",
+      "20",
+      "18",
+      "31"
+    ]
   },
   "20": {
     "pilar40": "35",
@@ -109,7 +195,19 @@
     "lebih_definisi": "menahan sesuatu yang seharusnya tidak ditahan untuk dikabarkan",
     "lebih_perbaiki": "sifat tercela bukhl (\u0627\u0644\u0628\u064f\u062e\u0652\u0644) (bakhil) yang ditimbulkan akibat berlebihan dalam bakat kitmaanus sirr, dapat diperbaiki dengan menguatkan bakat juud, nushrah, nashiihah dan fashaahah.",
     "profesi": "Hakim, Pengacara, Konselor, Intelijen, Administrator, Pengelola Dokumen Negara, Psikolog, Kepolisian, Militer, Keuangan Negara",
-    "jurusan": "Hukum Islam, Syariah, Sekolah Tinggi Pertahanan Nasional, Politeknik Keuangan Negara, Akademi Kepolisian, Akademi Militer, Administrasi, Akuntansi"
+    "jurusan": "Hukum Islam, Syariah, Sekolah Tinggi Pertahanan Nasional, Politeknik Keuangan Negara, Akademi Kepolisian, Akademi Militer, Administrasi, Akuntansi",
+    "lalai_perbaiki_ids": [
+      "37",
+      "35",
+      "36"
+    ],
+    "lebih_perbaiki_ids": [
+      "21",
+      "23",
+      "26",
+      "24",
+      "35"
+    ]
   },
   "4": {
     "pilar40": "5",
@@ -123,7 +221,18 @@
     "lebih_definisi": "keinginan kuat terhadap sesuatu yang sebenarnya tidak dibutuhkannya",
     "lebih_perbaiki": "sifat tercela thama\u2019 (\u0627\u0644\u0637\u0651\u064e\u0645\u064e\u0639) (Serakah) yang ditimbulkan akibat berlebihan dalam bakat \u2018aziimah, dapat diperbaiki dengan menguatkan bakat qanaa\u2019ah, tawaadhu\u2019, dan hayaa\u2019.",
     "profesi": "Perintis atau pelopor, Team penggerak, Entrepreneur, Sales, Pengelola usaha-usaha baru,  atau usaha yang memerlukan perubahan besar",
-    "jurusan": "Manajemen dan Bisnis, Teknologi Terapan, Marketing, Kewirausahaan, Pekerjaan Umum"
+    "jurusan": "Manajemen dan Bisnis, Teknologi Terapan, Marketing, Kewirausahaan, Pekerjaan Umum",
+    "lalai_perbaiki_ids": [
+      "1",
+      "6",
+      "5"
+    ],
+    "lebih_perbaiki_ids": [
+      "5",
+      "24",
+      "20",
+      "15"
+    ]
   },
   "14": {
     "pilar40": "9",
@@ -137,7 +246,19 @@
     "lebih_definisi": "mengikuti dan mempercayai perkataan dan perbuatan orang lain tanpa mempedulikan kebenarannya",
     "lebih_perbaiki": "sifat tercela taqliid (\u0627\u0644\u062a\u0651\u064e\u0642\u0652\u0644\u0650\u064a\u0652\u062f) (fanatik buta) yang ditimbulkan akibat berlebihan dalam bakat husnuzhan, dapat diperbaiki dengan menguatkan bakat  himmah, aziimah, \u2018izzah, dan waqaar.",
     "profesi": "Hakim, Pendidik, Guru, Pengajar, Juru Damai, Mediator, Relator, Pelayanan Publik",
-    "jurusan": "Hukum Islam, Keguruan, Manajemen, Ilmu Komunikasi, Manajemen Bisnis"
+    "jurusan": "Hukum Islam, Keguruan, Manajemen, Ilmu Komunikasi, Manajemen Bisnis",
+    "lalai_perbaiki_ids": [
+      "7",
+      "9",
+      "11"
+    ],
+    "lebih_perbaiki_ids": [
+      "1",
+      "5",
+      "9",
+      "17",
+      "4"
+    ]
   },
   "34": {
     "pilar40": "12",
@@ -151,7 +272,18 @@
     "lebih_definisi": "membocorkan rahasia orang yang memberikan kepercayaan kepadanya",
     "lebih_perbaiki": "sifat tercela ifsyaa\u2019us sirr (\u0625\u0650\u0641\u0652\u0634\u064e\u0627\u0621\u064f \u0627\u0644\u0633\u0651\u0650\u0631\u0651) (membocorkan rahasia) yang ditimbulkan akibat berlebihan dalam bakat shidq, dapat diperbaiki dengan menguatkan bakat \u2018izzah, waqaar dan syajaa\u2019ah.",
     "profesi": "Pengelola Dana Umat (Donasi), Kurir/Duta, Bidang Keuangan, Pengelola Baitul Mal, Team Belanja (Pengadaan Sarana Prasarana), Hakim, Jaksa",
-    "jurusan": "Administrasi Keuangan, Hukum Islam, Ilmu Hukum, Manajemen"
+    "jurusan": "Administrasi Keuangan, Hukum Islam, Ilmu Hukum, Manajemen",
+    "lalai_perbaiki_ids": [
+      "12",
+      "14",
+      "13"
+    ],
+    "lebih_perbaiki_ids": [
+      "12",
+      "4",
+      "17",
+      "18"
+    ]
   },
   "9": {
     "pilar40": "19",
@@ -165,7 +297,18 @@
     "lebih_definisi": "mengharap hilangnya nikmat pada orang yang diiri dan berpindah kepada orang yang iri",
     "lebih_perbaiki": "sifat tercela hasad (\u0627\u0644\u062d\u064e\u0633\u064e\u062f) (iri hati) yang ditimbulkan akibat berlebihan dalam bakat ghairah, dapat diperbaiki dengan menguatkan bakat tawaadhu\u2019, qanaa\u2019ah, dan hayaa\u2019.",
     "profesi": "Penegak Peraturan, Penegak Disiplin, Pengawas, Mandor, Evaluator, Auditor, Supervisor, Manajer.",
-    "jurusan": "Administrasi, manajemen, manajemen bisnis, Sekolah Tinggi Pemerintahan Dalam Negeri, Akademi Militer, Akademi Kepolisian"
+    "jurusan": "Administrasi, manajemen, manajemen bisnis, Sekolah Tinggi Pemerintahan Dalam Negeri, Akademi Militer, Akademi Kepolisian",
+    "lalai_perbaiki_ids": [
+      "19",
+      "20",
+      "18"
+    ],
+    "lebih_perbaiki_ids": [
+      "19",
+      "24",
+      "20",
+      "15"
+    ]
   },
   "24": {
     "pilar40": "21",
@@ -179,7 +322,18 @@
     "lebih_definisi": "menakut-nakuti orang lain sehingga menjadi bosan, lari atau enggan terhadap sesuatu yang dinasehatkan",
     "lebih_perbaiki": "sifat tercela tanfiir (\u0627\u0644\u062a\u0651\u064e\u0646\u0652\u0641\u0650\u064a\u0631) (menakut-nakuti) yang ditimbulkan akibat berlebihan dalam bakat nashiihah, dapat diperbaiki dengan menguatkan bakat rifq, mahabbah, rahmah, dan itsaar.",
     "profesi": "Penasehat, Da\u2019i, Da\u2019iyah, Guru, Konselor, Konsultan, Pemimpin, Manajer, Leader, Supervisor, Evaluator, Pengawas, Pelatih, Pelayanan Pelanggan (Customer Service)",
-    "jurusan": "Ilmu Agama, Ilmu Komunikasi, Ilmu Manajemen, Ilmu Hukum, Psikologi, Bimbingan Konseling"
+    "jurusan": "Ilmu Agama, Ilmu Komunikasi, Ilmu Manajemen, Ilmu Hukum, Psikologi, Bimbingan Konseling",
+    "lalai_perbaiki_ids": [
+      "23",
+      "24",
+      "21"
+    ],
+    "lebih_perbaiki_ids": [
+      "32",
+      "21",
+      "33",
+      "31"
+    ]
   },
   "19": {
     "pilar40": "24",
@@ -193,7 +347,17 @@
     "lebih_definisi": "mengeluarkan sesuatu pada hal-hal yang seharusnya tidak terlalu perlu dan berlebihan dalam membelanjakan sesuatu",
     "lebih_perbaiki": "sifat tercela tabdzir (\u0627\u0644\u062a\u064e\u0651\u0628\u0652\u0630\u0650\u064a\u0652\u0631) (boros) yang ditimbulkan akibat berlebihan dalam bakat juud, dapat diperbaiki dengan menguatkan bakat   tawaadhu\u2019, qanaa\u2019ah, dan hayaa\u2019.",
     "profesi": "Relawan, Petugas Sosial, Konselor, Perawat, Pengelola LAZIZ, Pengelola Baitul Maal, Panitia Bulan Amal, Entrepreneur, Leader, manajer",
-    "jurusan": "Pendidikan Agama Islam, Ilmu Fiqih, Manajemen, Keperawatan, Sosiologi, Bimbingan Konseling, Manajemen Bisnis"
+    "jurusan": "Pendidikan Agama Islam, Ilmu Fiqih, Manajemen, Keperawatan, Sosiologi, Bimbingan Konseling, Manajemen Bisnis",
+    "lalai_perbaiki_ids": [
+      "23",
+      "24",
+      "21"
+    ],
+    "lebih_perbaiki_ids": [
+      "24",
+      "20",
+      "15"
+    ]
   },
   "39": {
     "pilar40": "28",
@@ -207,7 +371,18 @@
     "lebih_definisi": "mengikuti, mempercayai, dan menyepakati perjanjian dengan pihak lain tanpa mempedulikan kerugian dan kebenarannya",
     "lebih_perbaiki": "sifat tercela taqliid (\u0627\u0644\u062a\u0651\u064e\u0642\u0652\u0644\u0650\u064a\u0652\u062f) (fanatik buta) yang ditimbulkan akibat berlebihan dalam bakat wafaa\u2019, dapat diperbaiki dengan menguatkan bakat \u2018izzah dan waqaar.",
     "profesi": "Pengajar Aqidah, Pelayanan Masyarakat, Pelayanan Pelanggan, Birokrat, Relator, Account Sales, Manajer, Keuangan, Quality Control, Keamanan",
-    "jurusan": "Ilmu Aqidah, Akuntansi, Administrasi, Manajemen, Sosiologi, Ilmu Hukum"
+    "jurusan": "Ilmu Aqidah, Akuntansi, Administrasi, Manajemen, Sosiologi, Ilmu Hukum",
+    "lalai_perbaiki_ids": [
+      "15",
+      "28",
+      "12",
+      "13"
+    ],
+    "lebih_perbaiki_ids": [
+      "4",
+      "17",
+      "28"
+    ]
   },
   "29": {
     "pilar40": "33",
@@ -221,7 +396,16 @@
     "lebih_definisi": "mengikuti dan menuruti perkataan dan perbuatan orang lain tanpa mempedulikan kebenarannya",
     "lebih_perbaiki": "sifat tercela taqliid (\u0627\u0644\u062a\u0651\u064e\u0642\u0652\u0644\u0650\u064a\u0652\u062f) (fanatik buta) yang ditimbulkan akibat berlebihan dalam bakat rahmah, dapat diperbaiki dengan menguatkan bakat \u2018izzah dan waqaar.",
     "profesi": "Konselor, Pembinaan Keluarga Sejahtera, Guru PAUD-TK, Psikolog, Sales, HRD, Perawat, Operator Telepon, Psikiater, Dispatcher, Layanan Pelanggan",
-    "jurusan": "PAI, Keguruan, Tarbiyah, Ilmu Sosial, Manajemen, Manajemen Bisnis, Psikologi, atau jurusan lain yang terkait dengan penguatan empati atau perasaan"
+    "jurusan": "PAI, Keguruan, Tarbiyah, Ilmu Sosial, Manajemen, Manajemen Bisnis, Psikologi, atau jurusan lain yang terkait dengan penguatan empati atau perasaan",
+    "lalai_perbaiki_ids": [
+      "39",
+      "33"
+    ],
+    "lebih_perbaiki_ids": [
+      "4",
+      "33",
+      "17"
+    ]
   },
   "13": {
     "pilar40": "1",
@@ -235,7 +419,18 @@
     "lebih_definisi": "keinginan kuat terhadap sesuatu yang kemungkinan kecil untuk dapat diraih",
     "lebih_perbaiki": "sifat tercela thuulul amal (\u0637\u064f\u0648\u0652\u0644\u064f \u0627\u0644\u0623\u064e\u0645\u064e\u0644\u0650) (panjang angan-angan) yang ditimbulkan akibat berlebihan dalam bakat himmah, dapat diperbaiki dengan menguatkan bakat  qanaa\u2019ah, tawaadhu\u2019, dan hayaa\u2019.",
     "profesi": "Team Perumus Visi Misi, Team Litbang Pendidikan atau lembaga lainnya, Pemimpin, Entrepreneur, Perencana Jangka Panjang, Visioner, Pengembang produk baru, Pengembang Perusahaan",
-    "jurusan": "Ekonomi Syariah, Manajemen, Marketing, Manajemen Lingkungan"
+    "jurusan": "Ekonomi Syariah, Manajemen, Marketing, Manajemen Lingkungan",
+    "lalai_perbaiki_ids": [
+      "1",
+      "6",
+      "5"
+    ],
+    "lebih_perbaiki_ids": [
+      "1",
+      "24",
+      "20",
+      "15"
+    ]
   },
   "18": {
     "pilar40": "3",
@@ -249,7 +444,21 @@
     "lebih_definisi": "karena gengsi dan egonya, sehingga menolak kebenaran dan merendahkan orang lain",
     "lebih_perbaiki": "sifat tercela kibr (\u0627\u0644\u0643\u0650\u0628\u0652\u0631) (sombong) yang ditimbulkan akibat berlebihan dalam bakat \u2018izzah, dapat diperbaiki dengan menguatkan bakat   tawaadhu\u2019, qanaa\u2019ah, dan hayaa\u2019.",
     "profesi": "Utusan, Duta Besar, Da\u2019i, Da\u2019iyah, Guru, Pengajar, Pembawa Misi, Leader",
-    "jurusan": "Ilmu Aqidah, Syariah, Fiqih, Tadriibud Du\u2019aat, Keguruan, Hubungan Internasional, Manajemen"
+    "jurusan": "Ilmu Aqidah, Syariah, Fiqih, Tadriibud Du\u2019aat, Keguruan, Hubungan Internasional, Manajemen",
+    "lalai_perbaiki_ids": [
+      "6",
+      "5",
+      "1",
+      "17",
+      "4",
+      "2"
+    ],
+    "lebih_perbaiki_ids": [
+      "17",
+      "24",
+      "20",
+      "15"
+    ]
   },
   "8": {
     "pilar40": "7",
@@ -263,7 +472,17 @@
     "lebih_definisi": "mengabarkan sesuatu tidak sesuai dengan yang sebenarnya, baik sengaja atau tidak, baik masa lalu atau masa mendatang",
     "lebih_perbaiki": "sifat tercela kadzib (\u0627\u0644\u0643\u064e\u0630\u0650\u0628) (dusta) yang ditimbulkan akibat berlebihan dalam bakat firaasah, dapat diperbaiki dengan menguatkan bakat shidq, shamt, dan iffah.",
     "profesi": "Penasehat, Konsultan, Perumus Visi Misi, Entrepreneur, Event Organizer (EO), Tour Leader, Manajer",
-    "jurusan": "Ilmu Aqidah, Ilmu Ushuluddin, Ilmu Jiwa, Manajemen"
+    "jurusan": "Ilmu Aqidah, Ilmu Ushuluddin, Ilmu Jiwa, Manajemen",
+    "lalai_perbaiki_ids": [
+      "7",
+      "10",
+      "11"
+    ],
+    "lebih_perbaiki_ids": [
+      "12",
+      "14",
+      "7"
+    ]
   },
   "33": {
     "pilar40": "14",
@@ -277,7 +496,19 @@
     "lebih_definisi": "takut untuk berbicara yang seharusnya tidak perlu ditakuti",
     "lebih_perbaiki": "sifat tercela jubn (\u0627\u0644\u062c\u064f\u0628\u0652\u0646) (penakut) yang ditimbulkan akibat berlebihan dalam bakat shamt, dapat diperbaiki dengan menguatkan bakat syajaa\u2019ah, ghairah, dan munaafasah.",
     "profesi": "Pelayan Umat, Ajudan, Pelaksana Lapangan, Penulis, Peneliti, Analis",
-    "jurusan": "Teknik Kimia, Teknik Informatika (IT), Administrasi Perkantoran"
+    "jurusan": "Teknik Kimia, Teknik Informatika (IT), Administrasi Perkantoran",
+    "lalai_perbaiki_ids": [
+      "15",
+      "14",
+      "12",
+      "13"
+    ],
+    "lebih_perbaiki_ids": [
+      "19",
+      "14",
+      "20",
+      "18"
+    ]
   },
   "28": {
     "pilar40": "16",
@@ -291,7 +522,20 @@
     "lebih_definisi": "ketidakmampuan untuk menuntut haknya, sehingga meyusahkan dirinya sendiri",
     "lebih_perbaiki": "sifat tercela dzull (\u0627\u0644\u0630\u0651\u064f\u0644\u0651) (lemah) yang ditimbulkan akibat berlebihan dalam bakat qanaa\u2019ah, dapat diperbaiki dengan menguatkan bakat himmah, ihsaan, aziimah, nasyaath, \u2018izzah, dan waqaar.",
     "profesi": "Team Perencana Anggaran Belanja Lembaga, Team Penghemat Anggaran Perusahaan, Petugas Lapangan, Explorer, Relawan",
-    "jurusan": "Ilmu Ekonomi, Manajemen Bisnis, Ilmu Sosial, Ilmu Manajemen Sumber Daya Alam, Akuntansi, atau jurusan lain yang terkait dengan perhitungan nilai ekonomis"
+    "jurusan": "Ilmu Ekonomi, Manajemen Bisnis, Ilmu Sosial, Ilmu Manajemen Sumber Daya Alam, Akuntansi, atau jurusan lain yang terkait dengan perhitungan nilai ekonomis",
+    "lalai_perbaiki_ids": [
+      "24",
+      "20"
+    ],
+    "lebih_perbaiki_ids": [
+      "6",
+      "1",
+      "5",
+      "17",
+      "4",
+      "2",
+      "20"
+    ]
   },
   "38": {
     "pilar40": "26",
@@ -305,7 +549,17 @@
     "lebih_definisi": "mengikuti dan mempercayai perkataan dan perbuatan kebanyakan orang di kelompoknya tanpa mempedulikan kebenarannya",
     "lebih_perbaiki": "sifat tercela taqliid (\u0627\u0644\u062a\u0651\u064e\u0642\u0652\u0644\u0650\u064a\u0652\u062f) (fanatik buta) yang ditimbulkan akibat berlebihan dalam bakat ulfah, dapat diperbaiki dengan menguatkan bakat \u2018izzah dan waqaar.",
     "profesi": "Da\u2019i, Marketing, Pengelola lembaga sosial, Motivator kelompok, Wakil suara minoritas, Pemimpin kelompok dengan latar budaya beragam, Mentor bagi mereka yang baru bergabung di dalam organisasi",
-    "jurusan": "Dakwah, Manajemen Pendidikan, Manajemen Bisnis, Sosiologi"
+    "jurusan": "Dakwah, Manajemen Pendidikan, Manajemen Bisnis, Sosiologi",
+    "lalai_perbaiki_ids": [
+      "27",
+      "26",
+      "25"
+    ],
+    "lebih_perbaiki_ids": [
+      "4",
+      "26",
+      "17"
+    ]
   },
   "23": {
     "pilar40": "29",
@@ -319,7 +573,19 @@
     "lebih_definisi": "berkata dan berbuat untuk tujuan bermain-main, bukan untuk keseriusan, dengan mengejek sifat dan perilaku orang yang diejek",
     "lebih_perbaiki": "sifat tercela istihzaa\u2019 (\u0627\u0644\u0627\u0650\u0633\u0652\u062a\u0650\u0647\u0652\u0632\u064e\u0627\u0621) (mengejek) yang ditimbulkan akibat berlebihan dalam bakat muzaah, dapat diperbaiki dengan menguatkan bakat shamt, \u2018iffah, dan shidq.",
     "profesi": "MC, Pranata cara (Jawa), Penerima Tamu, Motivator, Comentator",
-    "jurusan": "Ilmu Komunikasi, Marketing, Keguruan"
+    "jurusan": "Ilmu Komunikasi, Marketing, Keguruan",
+    "lalai_perbaiki_ids": [
+      "32",
+      "29",
+      "30",
+      "31"
+    ],
+    "lebih_perbaiki_ids": [
+      "12",
+      "14",
+      "13",
+      "29"
+    ]
   },
   "3": {
     "pilar40": "38",
@@ -333,7 +599,16 @@
     "lebih_definisi": "salah satu senjata iblis yang disematkan di hati hamba Allah untuk menimbulkan keraguan, baik dalam beribadah, muamalah, maupun lainnya",
     "lebih_perbaiki": "sifat tercela was-was (\u0648\u064e\u0633\u0652\u0648\u064e\u0627\u0633)(ragu-ragu) yang ditimbulkan akibat berlebihan dalam bakat anaah, dapat diperbaiki dengan menguatkan bakat husnuzhan  dan firaasah.",
     "profesi": "Mufti, Penasehat, Konsultan, Perumus peraturan, Perancang Sistem Keamanan, Pengawas, Pilot, Urusan Legal, Membuat Kontrak Bisnis yang baik atau memastikan kesesuaian dengan peraturan atau standar atau kode atau juga peran yang terkait dengan masalah keuangan dan atau keamanan",
-    "jurusan": "Teknik Penerbangan, Teknik Mesin, Teknik Konstruksi Bangunan, Keselamatan Lalu Lintas, Teknik Listrik, Akuntansi, Manajemen Keuangan, dan jurusan lain yang terkait dengan kehati-hatian, keamanan, dan ketelitian"
+    "jurusan": "Teknik Penerbangan, Teknik Mesin, Teknik Konstruksi Bangunan, Keselamatan Lalu Lintas, Teknik Listrik, Akuntansi, Manajemen Keuangan, dan jurusan lain yang terkait dengan kehati-hatian, keamanan, dan ketelitian",
+    "lalai_perbaiki_ids": [
+      "39",
+      "38"
+    ],
+    "lebih_perbaiki_ids": [
+      "7",
+      "38",
+      "9"
+    ]
   },
   "37": {
     "pilar40": "17",
@@ -347,7 +622,18 @@
     "lebih_definisi": "ketidakmampuan untuk mempertahankan dan menuntut sesuatu yang menjadi haknya, sehingga menjadi dihinakan",
     "lebih_perbaiki": "sifat tercela dzull (\u0627\u0644\u0630\u0651\u064f\u0644\u0651) (lemah) yang ditimbulkan akibat berlebihan dalam bakat tawaadhu\u2019, dapat diperbaiki dengan menguatkan bakat syajaa\u2019ah, ghairah dan munaafasah.",
     "profesi": "Guru TK, Konselor, Pemimpin, Relawan, Pengasuh Panti Asuhan, Penasehat, public serving",
-    "jurusan": "Dakwah, Psikologi, Sastra, Sosiologi, Ilmu Komunikasi, Keguruan, Ilmu Kejiwaan"
+    "jurusan": "Dakwah, Psikologi, Sastra, Sosiologi, Ilmu Komunikasi, Keguruan, Ilmu Kejiwaan",
+    "lalai_perbaiki_ids": [
+      "24",
+      "20",
+      "15"
+    ],
+    "lebih_perbaiki_ids": [
+      "19",
+      "24",
+      "20",
+      "18"
+    ]
   },
   "22": {
     "pilar40": "20",
@@ -361,7 +647,21 @@
     "lebih_definisi": "berbuat aniaya dan curang kepada orang atau pihak lain hanya karena ingin unggul dari yang lain",
     "lebih_perbaiki": "sifat tercela zhulm (\u0627\u0644\u0638\u0651\u064f\u0644\u0652\u0645)(zhalim) yang ditimbulkan akibat berlebihan dalam bakat munaafasah, dapat diperbaiki dengan menguatkan bakat \u2018adaalah, itsaar, rahmah, qanaa\u2019ah, dan tawaadhu\u2019.",
     "profesi": "Bidang Periklanan, Motivator, Competition Organizer, Team Litbang Perusahaan, Konsultan atau pengelola perusahaan dalam menghadapi persaingan, Sales, Pelatih Olahraga",
-    "jurusan": "Manajemen, Manajemen Bisnis, Olahraga dan Kesehatan, Sekolah Pelatih"
+    "jurusan": "Manajemen, Manajemen Bisnis, Olahraga dan Kesehatan, Sekolah Pelatih",
+    "lalai_perbaiki_ids": [
+      "6",
+      "1",
+      "18",
+      "19",
+      "2",
+      "20"
+    ],
+    "lebih_perbaiki_ids": [
+      "24",
+      "27",
+      "33",
+      "20"
+    ]
   },
   "7": {
     "pilar40": "22",
@@ -375,7 +675,17 @@
     "lebih_definisi": "berbantah-bantahan untuk saling menjatuhkan satu dengan lainnya dengan menyalahgunakan kefasihan berbahasa yang dimiliki",
     "lebih_perbaiki": "sifat tercela jidaal (\u0627\u0644\u062c\u0650\u062f\u064e\u0627\u0644) (berdebat) yang ditimbulkan akibat berlebihan dalam bakat fashaahah, dapat diperbaiki dengan menguatkan bakat itsaar, hilm, rahmah, dan shabr.",
     "profesi": "Guru Tajwid Qira\u2019ah, Qari\u2019, Da\u2019i, Guru (pengajar), Dosen, Motivator, Penyuluh Masyarakat, Public Relation, Duta, Sales, Marketing, Humas, Juru Bicara, Presenter, MC, Pengacara, Layanan Pelanggan, Penulis",
-    "jurusan": "Pendidikan Agama, Konseling Keluarga, Keguruan, Ilmu Komunikasi, Hubungan Internasional, Marketing, Manajemen, Manajemen Bisnis"
+    "jurusan": "Pendidikan Agama, Konseling Keluarga, Keguruan, Ilmu Komunikasi, Hubungan Internasional, Marketing, Manajemen, Manajemen Bisnis",
+    "lalai_perbaiki_ids": [
+      "26",
+      "18"
+    ],
+    "lebih_perbaiki_ids": [
+      "39",
+      "40",
+      "33",
+      "26"
+    ]
   },
   "27": {
     "pilar40": "23",
@@ -389,7 +699,19 @@
     "lebih_definisi": "meletakkan sesuatu bukan pada tempatnya",
     "lebih_perbaiki": "sifat tercela zhulm (\u0627\u0644\u0638\u0651\u064f\u0644\u0652\u0645) (zhalim) yang ditimbulkan akibat berlebihan dalam bakat nushrah, dapat diperbaiki dengan menguatkan bakat \u2018adaalah, itsaar, rahmah, qanaa\u2019ah, dan tawaadhu\u2019.",
     "profesi": "Polisi, Penegak Hukum, Relawan, Pengacara, Lembaga Bantuan Hukum (LBH), Hakim, atau profesi lain yang terkait dengan bantuan terhadap orang yang terzhalimi",
-    "jurusan": "PAI, Syari\u2019ah, Ilmu Hukum, Ilmu Sosial, Akademi Kepolisian, Akademi Militer"
+    "jurusan": "PAI, Syari\u2019ah, Ilmu Hukum, Ilmu Sosial, Akademi Kepolisian, Akademi Militer",
+    "lalai_perbaiki_ids": [
+      "23",
+      "24",
+      "21"
+    ],
+    "lebih_perbaiki_ids": [
+      "23",
+      "27",
+      "24",
+      "33",
+      "20"
+    ]
   },
   "17": {
     "pilar40": "34",
@@ -403,7 +725,17 @@
     "lebih_definisi": "kelemahan jiwa dikarenakan ketidakmampuan untuk mempertahankan hak pribadinya",
     "lebih_perbaiki": "sifat tercela dzull (\u0627\u0644\u0630\u0651\u064f\u0644\u0651) (lemah) yang ditimbulkan akibat berlebihan dalam bakat itsaar, dapat diperbaiki dengan menguatkan bakat syajaa\u2019ah, munaafasah, dan ghairah.",
     "profesi": "Da\u2019i/da\u2019iyah, Pengelola lembaga sosial seperti panti asuhan, Laziz, Baitul Maal; Konselor, Pelayanan Pelanggan, Maintenance, Perawat, Pekerja Sosial, Relawan, Team Palang Merah",
-    "jurusan": "Tadriibud Du\u2019aat, Tarbiyah, Penyuluh Masyarakat, Kesehatan Masyarakat, Keperawatan, Kebidanan, Kedokteran, Kepalangmerahan"
+    "jurusan": "Tadriibud Du\u2019aat, Tarbiyah, Penyuluh Masyarakat, Kesehatan Masyarakat, Keperawatan, Kebidanan, Kedokteran, Kepalangmerahan",
+    "lalai_perbaiki_ids": [
+      "23",
+      "24",
+      "21"
+    ],
+    "lebih_perbaiki_ids": [
+      "19",
+      "20",
+      "18"
+    ]
   },
   "2": {
     "pilar40": "37",
@@ -417,7 +749,16 @@
     "lebih_definisi": "menerima tugas dan menuruti perkataan dan perbuatan orang lain tanpa mempedulikan kebenarannya",
     "lebih_perbaiki": "sifat tercela taqliid (\u0627\u0644\u062a\u0651\u064e\u0642\u0652\u0644\u0650\u064a\u0652\u062f) (fanatik buta) yang ditimbulkan akibat berlebihan dalam bakat amaanah, dapat diperbaiki dengan menguatkan bakat izzah dan waqaar.",
     "profesi": "Pengelola Lembaga Pendidikan, Pengelola Baitul Maal, Pengasuh Anak Yatim, Pedagang, Pengelola Dana Umat, Bendahara, Account Sales, Manajer Umum, Manajer Keuangan, Quality Controller, Keamanan, dan peran lainnya  yang terkait dengan sifat amanah atau tanggung jawab",
-    "jurusan": "Keguruan/tarbiyah, akuntansi, bisnis dan manajemen, administrasi"
+    "jurusan": "Keguruan/tarbiyah, akuntansi, bisnis dan manajemen, administrasi",
+    "lalai_perbaiki_ids": [
+      "12",
+      "37"
+    ],
+    "lebih_perbaiki_ids": [
+      "37",
+      "4",
+      "17"
+    ]
   },
   "12": {
     "pilar40": "39",
@@ -431,7 +772,18 @@
     "lebih_definisi": "kelemahan untuk mempertahankan sesuatu yang seharusnya dipertahankan",
     "lebih_perbaiki": "sifat tercela dzull (\u0627\u0644\u0630\u0651\u064f\u0644\u0651) (lemah) yang ditimbulkan akibat berlebihan dalam bakat hilm, dapat diperbaiki dengan menguatkan bakat syajaa\u2019ah, munaafasah, dan ghairah.",
     "profesi": "Pelayanan Masyarakat Umum, Rahabilitasi Kenakalan Remaja, Perawat Rumah Sakit, Guru (pengajar), Pelayanan Pelanggan (Customer Service), Sales, Manajer, Supervisor",
-    "jurusan": "Keperawatan, Ilmu Komunikasi, Keguruan, Kepariwisataan, Marketing, Manajemen"
+    "jurusan": "Keperawatan, Ilmu Komunikasi, Keguruan, Kepariwisataan, Marketing, Manajemen",
+    "lalai_perbaiki_ids": [
+      "39",
+      "40",
+      "38"
+    ],
+    "lebih_perbaiki_ids": [
+      "19",
+      "20",
+      "18",
+      "39"
+    ]
   },
   "32": {
     "pilar40": "40",
@@ -445,7 +797,18 @@
     "lebih_definisi": "kelemahan untuk mempertahankan dan mendapatkan hak yang seharusnya diambilnya",
     "lebih_perbaiki": "sifat tercela dzull (\u0627\u0644\u0630\u0651\u064f\u0644\u0651) (lemah) yang ditimbulkan akibat berlebihan dalam bakat shabr, dapat diperbaiki dengan menguatkan bakat syajaa\u2019ah, ghairah, dan munaafasah.",
     "profesi": "Da\u2019i, Khadimul Ummah, Public Serving, Pengemban Misi, Pelayanan Pelanggan, Maintenance, Perawat, Pekerja Sosial, Relawan",
-    "jurusan": "Syari\u2019ah, Keperawatan, Kebidanan, Ilmu Sosial, Kepariwisataan, Manajemen"
+    "jurusan": "Syari\u2019ah, Keperawatan, Kebidanan, Ilmu Sosial, Kepariwisataan, Manajemen",
+    "lalai_perbaiki_ids": [
+      "39",
+      "40",
+      "38"
+    ],
+    "lebih_perbaiki_ids": [
+      "19",
+      "40",
+      "20",
+      "18"
+    ]
   },
   "16": {
     "pilar40": "2",
@@ -459,7 +822,20 @@
     "lebih_definisi": "membelanjakan atau melakukan sesuatu pada hal yang seharusnya tidak diperlukan, berlebihan dalam membelanjakan atau berperilaku",
     "lebih_perbaiki": "sifat tercela tabdziir (\u0627\u0644\u062a\u064e\u0651\u0628\u0652\u0630\u0650\u064a\u0652\u0631) (boros, berlebihan) yang ditimbulkan akibat berlebihan dalam bakat ihsaan, dapat diperbaiki dengan menguatkan bakat  qanaa\u2019ah dan tawaadhu\u2019.",
     "profesi": "Team Penjamin Mutu Pendidikan, Quality Controller (QC), Peran untuk membantu orang hebat menjadi sukses seperti Pelatih, Manajer, Mentor, Guru, Transformational leader",
-    "jurusan": "Tadriibud Du\u2019aat, Hadits, Fiqih, Syariah, Manajemen, Manajemen Bisnis, Ilmu Sains dan Teknologi"
+    "jurusan": "Tadriibud Du\u2019aat, Hadits, Fiqih, Syariah, Manajemen, Manajemen Bisnis, Ilmu Sains dan Teknologi",
+    "lalai_perbaiki_ids": [
+      "6",
+      "5",
+      "1",
+      "17",
+      "4",
+      "2"
+    ],
+    "lebih_perbaiki_ids": [
+      "24",
+      "2",
+      "20"
+    ]
   },
   "26": {
     "pilar40": "8",
@@ -473,7 +849,19 @@
     "lebih_definisi": "menipu orang lain dengan kemampuannya bersiasat yang tidak diketahui oleh orang lain",
     "lebih_perbaiki": "sifat tercela Ghisy (\u0627\u0644\u063a\u0650\u0634\u0651\u0650)(licik) yang ditimbulkan akibat berlebihan dalam bakat nubl, dapat diperbaiki dengan menguatkan bakat shidq, shamt, \u2018iffah, dan hayaa\u2019.",
     "profesi": "Konsultan, Konselor, Team Penanganan Masalah, Perencana Strategi, Manajer, Leader, Team Pencari Solusi Bagi Perusahaan/Lembaga Yang Bermasalah",
-    "jurusan": "Ilmu Fiqih, Ekonomi Syariah, Manajemen, Sosiologi, Hubungan Internasional, atau jurusan lain yang banyak menumbuhkan kemampuan untuk menemukan solusi"
+    "jurusan": "Ilmu Fiqih, Ekonomi Syariah, Manajemen, Sosiologi, Hubungan Internasional, atau jurusan lain yang banyak menumbuhkan kemampuan untuk menemukan solusi",
+    "lalai_perbaiki_ids": [
+      "7",
+      "9",
+      "8"
+    ],
+    "lebih_perbaiki_ids": [
+      "13",
+      "12",
+      "14",
+      "15",
+      "8"
+    ]
   },
   "6": {
     "pilar40": "10",
@@ -487,7 +875,17 @@
     "lebih_definisi": "mendewakan logika dan akal dalam menghukumi sesuatu sehingga tidak menerima kebenaran yang tidak dapat dilogika",
     "lebih_perbaiki": "sifat tercela ahlur ra\u2019yi (\u0627\u064e\u0647\u0652\u0644\u064f \u0627\u0644\u0631\u0651\u064e\u0623\u0652\u064a) (pemuja akal) yang ditimbulkan akibat berlebihan dalam bakat dzakaa\u2019, dapat diperbaiki dengan menguatkan bakat tawaadhu\u2019, qanaa\u2019ah, dan hayaa\u2019.",
     "profesi": "Ahli ilmu (Agama atau umum: Fisika, kimia, dll), Analis, Periset (teknologi, pemasaran, keuangan, atau kesehatan), Manajemen Database, Editor, Manajemen Risiko, Accounting, Programmer",
-    "jurusan": "Jurusan Ilmu Hadits, Ilmu Al Qur\u2019an, Fiqih, atau ilmu Agama lainnya, Teknik kimia, Fisika, Matematika, Teknik Komputer,  IT Programmer, Akuntansi"
+    "jurusan": "Jurusan Ilmu Hadits, Ilmu Al Qur\u2019an, Fiqih, atau ilmu Agama lainnya, Teknik kimia, Fisika, Matematika, Teknik Komputer,  IT Programmer, Akuntansi",
+    "lalai_perbaiki_ids": [
+      "10",
+      "11"
+    ],
+    "lebih_perbaiki_ids": [
+      "24",
+      "10",
+      "20",
+      "15"
+    ]
   },
   "11": {
     "pilar40": "11",
@@ -501,7 +899,19 @@
     "lebih_definisi": "mengabarkan tentang sesuatu peristiwa yang tidak sesuai dengan keadaan sebenarnya, hanya didasari prasangka saja",
     "lebih_perbaiki": "sifat tercela kadzib (\u0627\u0644\u0643\u064e\u0630\u0650\u0628) (dusta) yang ditimbulkan akibat berlebihan dalam bakat hikmah, dapat diperbaiki dengan menguatkan bakat shidq dan \u2018iffah.",
     "profesi": "Kosultan, Konselor, Mufti, Da\u2019i/yah, Psikolog, Petugas Pembinaan Keluarga, Leader dalam membangun team yang berbeda kelompok, atau membantu orang agar merasa berguna",
-    "jurusan": "Ilmu Aqidah, Ilmu Jiwa, Ilmu Adab, Sastra, Syariah, Psikologi, Manajemen"
+    "jurusan": "Ilmu Aqidah, Ilmu Jiwa, Ilmu Adab, Sastra, Syariah, Psikologi, Manajemen",
+    "lalai_perbaiki_ids": [
+      "11",
+      "7",
+      "9",
+      "8",
+      "10"
+    ],
+    "lebih_perbaiki_ids": [
+      "12",
+      "11",
+      "13"
+    ]
   },
   "36": {
     "pilar40": "25",
@@ -515,7 +925,18 @@
     "lebih_definisi": "ketundukan jiwa dikarenakan ketidakmampuan untuk mempertahankan sesuatu, sehingga menjadi tidak mandiri dan tergantung pada orang lain",
     "lebih_perbaiki": "sifat tercela dzull (\u0627\u0644\u0630\u0651\u064f\u0644\u0651) (lemah) yang ditimbulkan akibat berlebihan dalam bakat ta\u2019aawun, dapat diperbaiki dengan menguatkan bakat syajaa\u2019ah, ghairah dan munaafasah.",
     "profesi": "Penggerak dakwah, Guru, Pembangun jaringan antara orang-orang dengan cara pandang yang berbeda, Juru Damai, Penasehat, Wirausahawan, Manajer",
-    "jurusan": "Dakwah, Manajemen, Ilmu Komunikasi, Ilmu Ekonomi, Keguruan"
+    "jurusan": "Dakwah, Manajemen, Ilmu Komunikasi, Ilmu Ekonomi, Keguruan",
+    "lalai_perbaiki_ids": [
+      "27",
+      "26",
+      "25"
+    ],
+    "lebih_perbaiki_ids": [
+      "19",
+      "25",
+      "20",
+      "18"
+    ]
   },
   "1": {
     "pilar40": "27",
@@ -529,7 +950,21 @@
     "lebih_definisi": "ketiadaan pengetahuan sehingga menganggap yang dilakukan adalah adil, tetapi sebenarnya yang dilakukannya bukanlah keadilan",
     "lebih_perbaiki": "sifat tercela jahl (\u0627\u0644\u062c\u064e\u0647\u0652\u0644) (kebodohan) yang ditimbulkan akibat berlebihan dalam bakat \u2018adaalah, dapat diperbaiki dengan menguatkan bakat syajaa\u2019ah, munaafasah, dan ghairah.",
     "profesi": "Hakim, Petugas pembinaan keluarga, Konselor masalah keluarga, Mediator, Petugas kontrol terhadap kesesuaian atas standar seperti kepatuhan kepada aturan, Quantity Surveyor, Petugas Commisioning atau peran yang bisa memiliki kekuatan untuk menyamakan aturan main dan peran lainnya  yang terkait dengan sifat adil",
-    "jurusan": "Hukum Islam, Syariah, Konseling keluarga, Hukum Publik, Hukum Perdata, Hukum Internasioanal, Ilmu Hukum, Hukum Pidana, atau jurusan lainnya yang terkait dengan keadilan"
+    "jurusan": "Hukum Islam, Syariah, Konseling keluarga, Hukum Publik, Hukum Perdata, Hukum Internasioanal, Ilmu Hukum, Hukum Pidana, atau jurusan lainnya yang terkait dengan keadilan",
+    "lalai_perbaiki_ids": [
+      "39",
+      "27",
+      "37",
+      "40",
+      "33",
+      "38"
+    ],
+    "lebih_perbaiki_ids": [
+      "19",
+      "27",
+      "20",
+      "18"
+    ]
   },
   "21": {
     "pilar40": "32",
@@ -543,7 +978,18 @@
     "lebih_definisi": "mencintai, mengikuti dan mempercayai orang lain atau sesuatu tanpa mempedulikan kebenaran dan manfaatnya",
     "lebih_perbaiki": "sifat tercela taqliid (\u0627\u0644\u062a\u0651\u064e\u0642\u0652\u0644\u0650\u064a\u0652\u062f) (fanatik buta) yang ditimbulkan akibat berlebihan dalam bakat mahabbah, dapat diperbaiki dengan menguatkan bakat izzah dan waqaar.",
     "profesi": "Guru Privat, Terapist, Konselor, Psikolog, Guru PAUD, Peternak Hewan Rumahan, Perawat",
-    "jurusan": "Tarbiyah, Pendidikan Guru TK (PGTK), Keguruan, Pendidikan Terapist, Keperawatan, Peternakan"
+    "jurusan": "Tarbiyah, Pendidikan Guru TK (PGTK), Keguruan, Pendidikan Terapist, Keperawatan, Peternakan",
+    "lalai_perbaiki_ids": [
+      "32",
+      "30",
+      "26",
+      "25"
+    ],
+    "lebih_perbaiki_ids": [
+      "4",
+      "32",
+      "17"
+    ]
   },
   "31": {
     "pilar40": "36",
@@ -557,6 +1003,17 @@
     "lebih_definisi": "kelemahan untuk mengatakan sesuatu yang seharusnya dikatakan, sehingga menyembunyikan ilmu yang seharusnya disampaikan",
     "lebih_perbaiki": "sifat tercela dzull (\u0627\u0644\u0630\u0651\u064f\u0644\u0651) (lemah) yang ditimbulkan akibat berlebihan dalam bakat satr, dapat diperbaiki dengan menguatkan bakat fashaahah dan nashiihah.",
     "profesi": "Ajudan, Asisten Pribadi, Sekretaris, Agen Rahasia, Notaris",
-    "jurusan": "Akademi Kepolisian, Akademi Militer, Ilmu Kenotariatan, Administrasi"
+    "jurusan": "Akademi Kepolisian, Akademi Militer, Ilmu Kenotariatan, Administrasi",
+    "lalai_perbaiki_ids": [
+      "37",
+      "40",
+      "35",
+      "36"
+    ],
+    "lebih_perbaiki_ids": [
+      "21",
+      "26",
+      "36"
+    ]
   }
 }

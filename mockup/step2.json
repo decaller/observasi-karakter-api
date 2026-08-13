@@ -7,6 +7,26 @@
     "Ideasi": 70,
     "Analitis": 65
   },
+  "predicted_top_traits": [
+    "Berambisi dan bertekad kuat (Pekerja Keras)",
+    "Tegas dan berwibawa (Pekerja Keras)",
+    "Giat bekerja keras hingga tuntas (Pekerja Keras)",
+    "Berpikir kreatif dan imajinatif (Cerdas)",
+    "Berpikir positif dan melihat peluang (Cerdas)"
+  ],
+  "predicted_weak_traits": [
+    "Membuat pertemanan baru (Gaul)",
+    "Merawat dan mengeratkan keakraban (Gaul)",
+    "Memberi dorongan dan bantuan nyata (Lembut)",
+    "Menjaga amanah dan rasa aman (Lembut)",
+    "Mengalah demi menjaga keharmonisan (Lembut)"
+  ],
+  "predicted_insights": {
+    "julukan": "Pekerja Keras yang Cerdas",
+    "energi_sosial": "Introvert (70%)",
+    "bahasa_hati": "Pertolongan Nyata & Aksi Nyata (Acts of Service)",
+    "gaya_belajar": "Kinestetik & Eksperimen Langsung (Praktik)"
+  },
   "verification_statements": [
     "1. Berambisi dan bertekad kuat", "2. Tegas dan berwibawa", "3. Giat bekerja keras hingga tuntas",
     "4. Berpikir kreatif dan imajinatif", "5. Berpikir positif dan melihat peluang", "6. Menganalisis data dan berpikir logis",
@@ -16,6 +36,7 @@
     "16. Memberi dorongan dan bantuan nyata", "17. Menjaga amanah dan rasa aman", "18. Mengalah demi menjaga keharmonisan"
   ],
   "preview_message": "Bagan Pohon siap untuk dirender teks oleh AI.",
-  "present_result_prompt": "Tampilkan 'default_talents' SEBAGAI VISUAL. Jika platform Anda mendukung Mermaid.js, buat diagram Bagan Pohon. Jika mendukung Artifacts/Canvas/Code Blocks, render visual yang kaya. Jika tidak, gunakan tabel Markdown yang indah. Jelaskan ini adalah estimasi awal.",
-  "next_prompt_hint": "Setelah menampilkan bakat, beritahu pengguna bahwa untuk mematangkan hasil ini, kita perlu memverifikasi 18 sifat tersebut. Minta mereka memberikan skor (1=Sangat Tidak Setuju, 4=Sangat Setuju) untuk ke-18 pernyataan di 'verification_statements'. Setelah mereka menjawab, panggil `GET /api/v1/flow/step3?s={session_id}&v={18_skor_dipisah_koma}`."
+  "svg_url": "https://api.observasikarakter.com/v1/render/preview-tb40/sess_abc123.svg",
+  "present_result_prompt": "Tampilkan gambar prediksi bakat menggunakan Markdown: `![Prediksi Bakat](svg_url)`. Jelaskan kepada pengguna bahwa kotak-kotak pada visual ini masih berupa garis putus-putus (blueprint/dashed) karena ini baru prediksi awal berdasarkan peringkat sifat mereka. Berikan ulasan memukau mengenai kekuatan ('predicted_top_traits'), kelemahan ('predicted_weak_traits'), serta sampaikan 'predicted_insights' seperti julukan, energi sosial, bahasa hati, dan gaya belajar mereka. Jika platform Anda mendukung tabel Markdown, Anda juga dapat menampilkan 'default_talents' secara terstruktur.",
+  "next_prompt_hint": "Setelah menampilkan visual prediksi bakat dan ulasan mendalam di atas, beritahu pengguna bahwa untuk mematangkan hasil dan menjadikan garis putus-putus tersebut menjadi warna solid yang utuh, kita perlu memverifikasi 18 sifat tersebut. Minta mereka memberikan skor (1=Sangat Tidak Setuju, 4=Sangat Setuju) untuk ke-18 pernyataan di 'verification_statements'. Setelah mereka menjawab, panggil `GET /api/v1/flow/step3?s={session_id}&v={18_skor_dipisah_koma}`."
 }

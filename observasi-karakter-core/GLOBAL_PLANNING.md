@@ -12,6 +12,8 @@ Silakan merujuk pada file-file berikut di dalam folder `implementation_plans/`:
    - Spesifikasi wawancara 15 sub-kategori, skoring, analisis kesiapan baligh, dan transisi antar produk.
 4. [04. Prompting Strategy & Fallback Handling](file:///home/abuhafi/Project/observasi-karakter-api/observasi-karakter-core/implementation_plans/04_Prompting_Strategy.md)
    - Penjelasan teknis tentang penginjeksian variabel global (`llms.txt`), pentingnya penggunaan *emoji*, serta teknik *self-correction* AI menggunakan validasi ketat Pydantic dari FastAPI.
+5. [05. Testing Strategy (Pytest & API Tests)](file:///home/abuhafi/Project/observasi-karakter-api/observasi-karakter-core/implementation_plans/05_Testing_Strategy.md)
+   - Kerangka pengujian (unit & integrasi) menggunakan Pytest dan FastAPI TestClient, termasuk strategi *mocking* untuk mensimulasikan perilaku LLM dan memvalidasi pencegahan halusinasi.
 
 ---
 *Catatan: Segala pembaruan strategi arsitektur di masa mendatang hendaknya dicatat pada dokumen yang sesuai di atas.*

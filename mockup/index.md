@@ -1,30 +1,22 @@
-# API Mockup Flow
+# Observasi Karakter & Bakat API Mockups
 
-This folder contains the mock JSON responses for each step of the API flow. This allows us to simulate the API before writing the actual Python/FastAPI code.
+Repositori ini memuat struktur JSON dan panduan API untuk menggerakkan AI dalam melakukan penilaian psikologis dan karakter.
 
-## Flow Sequence
+Struktur telah dipisah menjadi dua *domain* utama:
 
-0. **Step 0 (AI Discovery)**:
-   - **Endpoint**: `GET /llms.txt`
-   - **Mock Data**: [llms.txt](llms.txt)
-   - **Action**: The AI reads this file first. It contains the exact prompt script the AI must follow to act as a Talent Analytics Specialist and guides it on which endpoints to call.
+## 1. `obsbakat/` (Observasi Bakat - 40 Pilar)
+Jalur ini memetakan sifat bawaan pengguna menggunakan pendekatan 40 Pilar Karakter.
+- **`step1.json`**: Menilai orientasi energi sosial dan dorongan ego dasar.
+- **`step2.json` / `step2_loop_x.json`**: Memverifikasi sifat-sifat melalui kuesioner interaktif dengan kedalaman yang bisa dipilih (6, 18, atau 40 langkah).
+- **`step3.json`**: Menyajikan hasil akhir dan rekomendasi karir utama.
+- **`step4.json`**: Kurikulum MVP dan korelasi antara pilihan profesi dengan pilar-pilar yang masih perlu diperkuat.
+- **`data3.json`**: Single Source of Truth untuk data 40 pilar psikologi.
+- **`data_profesi.json`**: Database pemetaan Profesi ke Jurusan dan Pilar yang terkait.
 
-1. **Step 1 (Baseline)**: 
-   - **Endpoint**: `GET /api/v1/flow/step1?p=20&ego=t,s,r`
-   - **Mock Data**: [step1.json](step1.json)
-   - **Action**: The AI reads this, shows the insights to the user, and asks them to rank the top 3 traits specifically for the FIRST category.
+## 2. `obskarakter/` (Observasi Pertumbuhan Karakter)
+Jalur baru (berdasarkan LEMBAR OBSERVASI 1) untuk menilai adab, iman, ibadah, kemandirian, belajar, dan bakat secara kasual melalui pendekatan wawancara cerita.
+- **`data_karakter.json`**: Dataset berisi 45 indikator observasi karakter.
+- **`step1_wawancara.json`**: Prompt instruksi API untuk memulai wawancara naratif.
 
-2. **Step 1 Loop (Trait Ranking)**:
-   - **Endpoint**: `GET /api/v1/flow/rank_category?s=sess_abc123&c=pk&r=1,2,3`
-   - **Mock Data**: [step1_loop.json](step1_loop.json)
-   - **Action**: The AI submits the first category ranking and gets the prompt to ask the user to rank the second category. This repeats 6 times. On the 6th completion, it returns the `step2.json` payload.
-
-3. **Step 2 (Verification)**:
-   - **Endpoint**: `GET /api/v1/flow/step3?session_id=sess_abc123&v=1,0,1,1...`
-   - **Mock Data**: [step3.json](step3.json)
-   - **Action**: The AI receives the final, precise scores for all 40 talents.
-
-4. **Step 4 (Coaching Context)**:
-   - **Endpoint**: `GET /api/v1/flow/step4?session_id=sess_abc123`
-   - **Mock Data**: [step4.json](step4.json)
-   - **Action**: The AI fetches the deep psychological context (weaknesses, solutions) and career recommendations to autonomously write the "Laporan Lengkap" and "Laporan Kurikulum Personalisasi".
+## Konfigurasi Global
+Lihat `llms.txt` di root direktori ini untuk melihat instruksi sistem (System Prompt) yang mendasari AI dalam mengelola konteks wawancara untuk kedua *domain* di atas.

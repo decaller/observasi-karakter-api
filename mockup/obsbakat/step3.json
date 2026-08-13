@@ -258,7 +258,7 @@
   },
   "svg_url": "https://api.observasikarakter.com/v1/render/final-tb40/sess_abc123.svg",
   "chart_url": "https://api.observasikarakter.com/v1/render/chart/sess_abc123_step3_40pillars.png",
-  "present_result_prompt": "Berikan ucapan selamat karena proses observasi telah selesai! Tampilkan 'final_result' menggunakan struktur visual terbaik Anda (Tabel kaya warna, Kartu UI, atau Diagram Markdown) untuk menonjolkan profil definitif mereka secara elegan. Jangan lupa tampilkan `![Visualisasi Utama](svg_url)` dan grafik lengkap: `![Grafik 40 Pilar](chart_url)`.",
+  "present_result_prompt": "📊 Keren! Anda kini memiliki data awal dan data pribadi pengguna.",
   "next_action": {
     "type": "offer_curriculum",
     "profesi_list": [
@@ -279,5 +279,5 @@
       "Penulis"
     ]
   },
-  "next_prompt_hint": "Sampaikan bahwa kita bisa menyusun 'Laporan Lengkap & Kurikulum Personal' khusus untuk mereka. Dari daftar 'recommended_profesi', minta pengguna untuk memilih beberapa profesi yang paling menarik minat mereka. Setelah mereka memilih, panggil `/api/v1/flow/step4?s={session_id}&profesi={pilihan_mereka_dipisah_koma}`."
+  "next_prompt_hint": "Gali lebih dalam! 🕵️‍♂️ Ajukan pertanyaan lanjutan yang lebih tajam berdasarkan jawaban mereka sebelumnya untuk membedakan antara sekadar hobi atau potensi sejati. Gunakan teknik *funneling* (mengerucut) 🎯."
 }

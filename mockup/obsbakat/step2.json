@@ -1,0 +1,72 @@
+{
+  "session_id": "sess_abc123",
+  "default_talents": {
+    "Strategis": 85,
+    "Pembelajar": 82,
+    "Itsaar": 75,
+    "Ideasi": 70,
+    "Analitis": 65
+  },
+  "predicted_top_traits": [
+    "Berambisi dan bertekad kuat (Pekerja Keras)",
+    "Tegas dan berwibawa (Pekerja Keras)",
+    "Giat bekerja keras hingga tuntas (Pekerja Keras)",
+    "Berpikir kreatif dan imajinatif (Cerdas)",
+    "Berpikir positif dan melihat peluang (Cerdas)"
+  ],
+  "predicted_weak_traits": [
+    "Membuat pertemanan baru (Gaul)",
+    "Merawat dan mengeratkan keakraban (Gaul)",
+    "Memberi dorongan dan bantuan nyata (Lembut)",
+    "Menjaga amanah dan rasa aman (Lembut)",
+    "Mengalah demi menjaga keharmonisan (Lembut)"
+  ],
+  "predicted_insights": {
+    "julukan": "Pekerja Keras yang Cerdas",
+    "energi_sosial": "Introvert (70%)",
+    "bahasa_hati": "Pertolongan Nyata & Aksi Nyata (Acts of Service)",
+    "gaya_belajar": "Kinestetik & Eksperimen Langsung (Praktik)"
+  },
+  "verification_statements": [
+    "1. Berambisi dan bertekad kuat",
+    "2. Tegas dan berwibawa",
+    "3. Giat bekerja keras hingga tuntas",
+    "4. Berpikir kreatif dan imajinatif",
+    "5. Berpikir positif dan melihat peluang",
+    "6. Menganalisis data dan berpikir logis",
+    "7. Tampil sederhana dan apa adanya",
+    "8. Tenang dan suka merenung",
+    "9. Rendah hati dan tidak menonjolkan diri",
+    "10. Mengambil kendali dan memimpin",
+    "11. Bicara di depan umum dan memotivasi",
+    "12. Mengarahkan dan mengendalikan kegiatan",
+    "13. Memanfaatkan hubungan relasi",
+    "14. Membuat pertemanan baru",
+    "15. Merawat dan mengeratkan keakraban",
+    "16. Memberi dorongan dan bantuan nyata",
+    "17. Menjaga amanah dan rasa aman",
+    "18. Mengalah demi menjaga keharmonisan"
+  ],
+  "preview_message": "Bagan Pohon siap untuk dirender teks oleh AI.",
+  "svg_url": "https://api.observasikarakter.com/v1/render/preview-tb40/sess_abc123.svg",
+  "chart_url": "https://api.observasikarakter.com/v1/render/chart/sess_abc123_step2_18traits.png",
+  "present_result_prompt": "🎉 Hebat! Anda telah memicu rasa ingin tahu pengguna.",
+  "next_action": {
+    "type": "choose_verification_depth",
+    "options": [
+      {
+        "depth": 6,
+        "description": "Verifikasi cepat berdasarkan 6 Kategori Besar"
+      },
+      {
+        "depth": 18,
+        "description": "Verifikasi mendalam berdasarkan 18 Sifat"
+      },
+      {
+        "depth": 40,
+        "description": "Verifikasi menyeluruh berdasarkan 40 Pilar Karakter"
+      }
+    ]
+  },
+  "next_prompt_hint": "Berikan apresiasi singkat (misalnya 'Wah, menarik sekali! 🤩'). Sebelum kita masuk ke analisis mendalam, tanyakan kelengkapan data pribadi pengguna (Nama Lengkap, Usia, dan Organisasi/Event jika ada) secara ramah 📋. JANGAN berikan kesimpulan akhir atau memanggil API sebelum data ini terkumpul."
+}

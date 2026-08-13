@@ -1,0 +1,135 @@
+{
+  "session_id": "sess_abc123",
+  "chosen_professions": [
+    {
+      "name": "Programmer",
+      "related_pillars": [
+        {
+          "id": "10",
+          "name": "Dzakaa’ / الذَّكَاء (cerdas)",
+          "score": 88,
+          "lalai_definisi": "meyakini sesuatu yang bertentangan dengan hakikat yang sebenarnya",
+          "lalai_perbaiki": "Sifat tercela jahl (الجَهْل) (bodoh) yang ditimbulkan akibat meremehkan bakat dzakaa’, dapat diperbaiki dengan menguatkan bakat itu sendiri dan bakat lainnya, yaitu antara lain bakat hikmah,",
+          "lalai_perbaiki_ids": [
+            "10",
+            "11"
+          ],
+          "lebih_definisi": "mendewakan logika dan akal dalam menghukumi sesuatu sehingga tidak menerima kebenaran yang tidak dapat dilogika",
+          "lebih_perbaiki": "sifat tercela ahlur ra’yi (اَهْلُ الرَّأْي) (pemuja akal) yang ditimbulkan akibat berlebihan dalam bakat dzakaa’, dapat diperbaiki dengan menguatkan bakat tawaadhu’, qanaa’ah, dan hayaa’.",
+          "lebih_perbaiki_ids": [
+            "24",
+            "10",
+            "20",
+            "15"
+          ]
+        }
+      ],
+      "related_jurusans": [
+        "Jurusan Ilmu Hadits",
+        "Ilmu Al Qur’an",
+        "Fiqih",
+        "atau ilmu Agama lainnya",
+        "Teknik kimia",
+        "Fisika",
+        "Matematika",
+        "Teknik Komputer",
+        "IT Programmer",
+        "Akuntansi"
+      ]
+    },
+    {
+      "name": "Penulis",
+      "related_pillars": [
+        {
+          "id": "15",
+          "name": "Hayaa’ / الحَيَاء (malu)",
+          "score": 80,
+          "lalai_definisi": "kadang disebut juga ber “muka tebal”, yaitu tidak malu ketika melanggar syariat Allah",
+          "lalai_perbaiki": "Sifat tercela waqaahah/الوَقَاحَة (tidak tahu malu) yang ditimbulkan akibat meremehkan bakat hayaa’, dapat diperbaiki dengan menguatkan bakat hayaa’ itu sendiri dan bakat lainnya, yaitu antara lain bakat ‘iffah dan shidq.",
+          "lalai_perbaiki_ids": [
+            "15",
+            "12",
+            "13"
+          ],
+          "lebih_definisi": "tekanan jiwa yang muncul karena adanya konflik dalam diri antara keinginan untuk menjadi unggul dan rasa takut karena merasa dirinya tidak memiliki kemampuan. Dengan kata lain dirinya merasa lebih rendah dari orang lain tetapi takut dianggap rendah",
+          "lebih_perbaiki": "sifat tercela duuniyyah/الدُوْنِيَّة (rendah diri) atau minder yang ditimbulkan akibat berlebihan dalam bakat hayaa’, dapat diperbaiki dengan menguatkan bakat himmah, aziimah, nasyaath, ihsaan, izzah, dan waqaar.",
+          "lebih_perbaiki_ids": [
+            "6",
+            "1",
+            "5",
+            "15",
+            "17",
+            "4",
+            "2"
+          ]
+        },
+        {
+          "id": "14",
+          "name": "Shamt / الصَّمْت (diam)",
+          "score": 80,
+          "lalai_definisi": "membicarakan suatu hal pada diri seseorang, baik dengan perkataan, isyarat, atau menirukan, yang apabila dia mengetahuinya, maka dia tidak menyukainya",
+          "lalai_perbaiki": "Sifat tercela ghiibah (الغِيْبَة) (menggunjing) yang ditimbulkan akibat meremehkan bakat shamt, dapat diperbaiki dengan menguatkan bakat shamt itu sendiri dan bakat lainnya, yaitu antara lain bakat shidq, ‘iffah  dan hayaa’.",
+          "lalai_perbaiki_ids": [
+            "15",
+            "14",
+            "12",
+            "13"
+          ],
+          "lebih_definisi": "takut untuk berbicara yang seharusnya tidak perlu ditakuti",
+          "lebih_perbaiki": "sifat tercela jubn (الجُبْن) (penakut) yang ditimbulkan akibat berlebihan dalam bakat shamt, dapat diperbaiki dengan menguatkan bakat syajaa’ah, ghairah, dan munaafasah.",
+          "lebih_perbaiki_ids": [
+            "19",
+            "14",
+            "20",
+            "18"
+          ]
+        },
+        {
+          "id": "22",
+          "name": "Fashaahah / الفَصَاحَة (fasih bicara)",
+          "score": 80,
+          "lalai_definisi": "kesalahan berbicara yang berupa pengulangan bunyi, suku kata, atau kata-kata, sehingga menjadikan tidak fasih berbicara",
+          "lalai_perbaiki": "Sifat tercela ‘ujmah (العُجْمَة) (gagap) yang ditimbulkan akibat meremehkan bakat fashaahah, dapat diperbaiki dengan menguatkan bakat fashaahah itu sendiri dan bakat lainnya, yaitu antara lain bakat syajaa’ah.",
+          "lalai_perbaiki_ids": [
+            "26",
+            "18"
+          ],
+          "lebih_definisi": "berbantah-bantahan untuk saling menjatuhkan satu dengan lainnya dengan menyalahgunakan kefasihan berbahasa yang dimiliki",
+          "lebih_perbaiki": "sifat tercela jidaal (الجِدَال) (berdebat) yang ditimbulkan akibat berlebihan dalam bakat fashaahah, dapat diperbaiki dengan menguatkan bakat itsaar, hilm, rahmah, dan shabr.",
+          "lebih_perbaiki_ids": [
+            "39",
+            "40",
+            "33",
+            "26"
+          ]
+        }
+      ],
+      "related_jurusans": [
+        "Ilmu Jiwa",
+        "Sastra",
+        "Arsitektur",
+        "Tata Busana",
+        "Seni",
+        "Desain Komunikasi Visual",
+        "Animasi",
+        "Fotografi",
+        "Teknik Kimia",
+        "Teknik Informatika (IT)",
+        "Administrasi Perkantoran",
+        "Pendidikan Agama",
+        "Konseling Keluarga",
+        "Keguruan",
+        "Ilmu Komunikasi",
+        "Hubungan Internasional",
+        "Marketing",
+        "Manajemen",
+        "Manajemen Bisnis"
+      ]
+    }
+  ],
+  "present_result_prompt": "🎓 Luar biasa! Ini adalah tahap puncak dari Observasi Bakat.",
+  "next_action": {
+    "type": "choose_mvp_profession"
+  },
+  "next_prompt_hint": "Sajikan laporan hasil dengan gaya yang memotivasi dan inspiratif 🚀! Jelaskan kekuatan pilar utama mereka, profesi yang cocok, dan tawarkan MVP (Minimum Viable Product) atau proyek kecil 🛠️ untuk mulai mengasah bakat mereka. Pastikan mereka merasa didukung penuh 💪!"
+}

@@ -1,0 +1,162 @@
+{
+  "name": "Kamus Tafsir 18 Sifat (TB-40)",
+  "version": "1.0",
+  "categories": {
+    "pk": {
+      "name": "Pekerja Keras (Al-Hamasah)",
+      "ego": "Tinggi",
+      "social_energy": "Introvert / Individual (Al-Sirr)",
+      "description": "Anak dengan tipe ini memiliki dorongan fisik yang kuat (Nafsul Ammarah), bertekad baja, dan sangat fokus pada penuntasan tugas secara mandiri.",
+      "traits": [
+        {
+          "id": "sub_1",
+          "name": "Berambisi dan bertekad kuat",
+          "pilar_karakter": "Himmah (cita-cita tinggi) & Aziimah (tekad kuat)",
+          "detail": "Memiliki gairah yang sangat tinggi untuk meraih mimpi/target terbaik, menganggap kecil rintangan biasa, serta memiliki dorongan kuat untuk segera mengeksekusi suatu pekerjaan tanpa menunda-nunda."
+        },
+        {
+          "id": "sub_2",
+          "name": "Tegas dan berwibawa",
+          "pilar_karakter": "Izzah (harga diri) & Waqaar (wibawa)",
+          "detail": "Tenang namun tampak tangguh dan kokoh dalam mempertahankan prinsip serta kemuliaan dirinya. Tipe ini tidak mudah diintimidasi, berpendirian kuat, dan dihormati oleh lingkungannya."
+        },
+        {
+          "id": "sub_3",
+          "name": "Giat bekerja keras hingga tuntas",
+          "pilar_karakter": "Nasyaath (semangat)",
+          "detail": "Memiliki daya tahan fisik (grit) yang luar biasa untuk menyelesaikan amalan atau pekerjaan berat dengan dedikasi tinggi. Mereka tidak nyaman jika meninggalkan pekerjaan dalam kondisi setengah matang (perfeksionis)."
+        }
+      ]
+    },
+    "cd": {
+      "name": "Cerdas (At-Tafkiir / Az-Zaka)",
+      "ego": "Sedang",
+      "social_energy": "Introvert / Individual (Al-Sirr)",
+      "description": "Anak tipe ini didominasi oleh kekuatan logika, analisis mendalam, dan pemikiran konseptual (Nafsul Lawwamah).",
+      "traits": [
+        {
+          "id": "sub_4",
+          "name": "Berpikir kreatif dan imajinatif",
+          "gaya_belajar": "Generating Idea / Otak Kanan Atas",
+          "detail": "Senang berimajinasi tentang masa depan, kaya akan ide-ide baru yang out-of-the-box, dan menyukai aktivitas konseptual seperti merancang desain atau merumuskan strategi jangka panjang."
+        },
+        {
+          "id": "sub_5",
+          "name": "Berpikir positif dan melihat peluang",
+          "pilar_karakter": "Husnuzhan (prasangka baik) & Nubl (cerdik/panjang akal)",
+          "detail": "Cepat mengerti situasi yang rumit dan mampu menemukan jalan keluar/peluang di balik setiap kesulitan. Mereka selalu memandang kejadian dari sudut pandang yang baik."
+        },
+        {
+          "id": "sub_6",
+          "name": "Menganalisis data dan berpikir logis",
+          "pilar_karakter": "Dzakaa' (cerdas) & Hikmah (bijak)",
+          "detail": "Memiliki ketajaman berpikir dalam menghitung, menganalisis hubungan sebab-akibat, menguraikan masalah rumit menjadi bagian-bagian kecil, dan mencari kebenaran ilmiah berbasis fakta."
+        }
+      ]
+    },
+    "bp": {
+      "name": "Berperasaan (Asy-Syu'ur / Assuur)",
+      "ego": "Rendah",
+      "social_energy": "Introvert / Individual (Al-Sirr)",
+      "description": "Didominasi oleh kelembutan hati, empati tinggi, serta sensitivitas rasa yang mendalam (Nafsul Muthmainnah).",
+      "traits": [
+        {
+          "id": "sub_7",
+          "name": "Tampil sederhana dan apa adanya",
+          "pilar_karakter": "Qanaa'ah (merasa cukup)",
+          "detail": "Karakter yang qanaah, merasa cukup dengan apa yang dimiliki, bersahaja, tidak materialistis, dan rela menerima apa pun kondisi yang dihadapinya."
+        },
+        {
+          "id": "sub_8",
+          "name": "Tenang dan suka merenung",
+          "pilar_karakter": "Shamt (diam) & Shabr (sabar)",
+          "detail": "Cenderung pendiam, berbicara hanya ketika diperlukan atau setelah kebenaran jelas. Mereka sangat sabar dalam menahan diri menghadapi tekanan, kesulitan, atau gangguan eksternal."
+        },
+        {
+          "id": "sub_9",
+          "name": "Rendah hati dan tidak menonjolkan diri",
+          "pilar_karakter": "Tawaadhu' (rendah hati)",
+          "detail": "Tidak suka memamerkan kehebatan atau kemampuannya meskipun sebenarnya sangat berbakat. Mereka tidak gila hormat dan sangat menghargai keberadaan orang lain."
+        }
+      ]
+    },
+    "tg": {
+      "name": "Tegas / Mempengaruhi (At-Taksir)",
+      "ego": "Tinggi",
+      "social_energy": "Extrovert / Sosial (Al-'Alaniyah)",
+      "description": "Tipe pemimpin alami yang memiliki dorongan kuat untuk mengarahkan, menguasai, dan mempengaruhi orang lain.",
+      "traits": [
+        {
+          "id": "sub_10",
+          "name": "Mengambil kendali dan memimpin",
+          "pilar_karakter": "Syajaa'ah (berani) & peran Commander/Leader",
+          "detail": "Berani menghadapi orang secara langsung (four eyes), tegas dalam mengambil tanggung jawab, serta tidak ragu untuk memimpin barisan saat situasi mengalami ketidakpastian."
+        },
+        {
+          "id": "sub_11",
+          "name": "Bicara di depan umum dan memotivasi",
+          "pilar_karakter": "Fashaahah (komunikatif) & peran Motivator",
+          "detail": "Memiliki kemampuan linguistik yang memukau untuk menyederhanakan hal-hal rumit sehingga mudah dipahami orang banyak, serta pandai membakar semangat kelompok."
+        },
+        {
+          "id": "sub_12",
+          "name": "Mengarahkan dan mengendalikan kegiatan",
+          "peran_profesi": "Supervisor / Manager / Koordinator",
+          "detail": "Sangat menikmati aktivitas mengontrol jalannya suatu program, mendelegasikan tugas secara taktis, dan memastikan semua anggota bergerak sesuai target koridor organisasi."
+        }
+      ]
+    },
+    "gl": {
+      "name": "Gaul / Kerjasama (At-Ta'amul)",
+      "ego": "Sedang",
+      "social_energy": "Extrovert / Sosial (Al-'Alaniyah)",
+      "description": "Anak dengan kecerdasan interpersonal tinggi, pandai membangun harmoni, dan menjaga keutuhan relasi kelompok.",
+      "traits": [
+        {
+          "id": "sub_13",
+          "name": "Memanfaatkan hubungan relasi",
+          "pilar_karakter": "Ta'aawun (kerjasama) & peran Arranger",
+          "detail": "Cerdas dalam menempatkan orang pada posisi yang tepat, pandai mengkoordinasikan potensi kelompok, dan suka berkolaborasi demi meraih tujuan bersama secara efektif."
+        },
+        {
+          "id": "sub_14",
+          "name": "Membuat pertemanan baru",
+          "pilar_karakter": "Ulfah (persatuan) & peran Ambassador",
+          "detail": "Sangat mudah akrab dengan orang baru, supel, memiliki jejaring sosial yang luas, dan merasa tidak betah jika ditinggal sendirian tanpa kawan."
+        },
+        {
+          "id": "sub_15",
+          "name": "Merawat dan mengeratkan keakraban",
+          "pilar_karakter": "Basyaasyah (berseri-seri) & Muzaah (humor/bercanda)",
+          "detail": "Wajahnya selalu ramah dan murah senyum. Senang bercanda sehat untuk mencairkan ketegangan tanpa menyinggung perasaan orang lain guna menjaga kerukunan."
+        }
+      ]
+    },
+    "lb": {
+      "name": "Lembut / Melayani (Al-Khidmah)",
+      "ego": "Rendah",
+      "social_energy": "Extrovert / Sosial (Al-'Alaniyah)",
+      "description": "Karakter pelayan masyarakat (altruis) yang tulus mendahulukan kenyamanan orang lain di atas kepentingannya sendiri.",
+      "traits": [
+        {
+          "id": "sub_16",
+          "name": "Memberi dorongan dan bantuan nyata",
+          "pilar_karakter": "Itsaar (melayani) & Nushrah (menolong)",
+          "detail": "Senang berkorban demi kebahagiaan sesama, cepat kasihan saat melihat kesusahan, serta tanggap memberikan bantuan riil agar orang lain terbebas dari kesulitan."
+        },
+        {
+          "id": "sub_17",
+          "name": "Menjaga amanah dan rasa aman",
+          "pilar_karakter": "Amaanah (tanggung jawab) & Kitmaanus Sirr (penjaga rahasia)",
+          "detail": "Sangat dapat dipercaya, loyal, pandai menyembunyikan aib atau rahasia orang lain, serta selalu menepati komitmen/akad yang telah disepakati."
+        },
+        {
+          "id": "sub_18",
+          "name": "Mengalah demi menjaga keharmonisan",
+          "pilar_karakter": "Rifq (lemah lembut) & Hilm (santun)",
+          "detail": "Memiliki pembawaan yang sangat lembut, toleran, pandai menahan amarah, dan bersedia mengalah dari egonya sendiri demi mencegah terjadinya konflik sosial."
+        }
+      ]
+    }
+  }
+}

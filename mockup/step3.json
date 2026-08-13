@@ -1,22 +1,265 @@
 {
   "session_id": "sess_abc123",
-  "final_talents": [
-    {
-      "name": "Strategis",
-      "score": 92,
-      "category": "Analitis"
+  "final_result": {
+    "step1_insights": {
+      "rank_by_ego": [
+        {
+          "ego": "Tinggi",
+          "score": 95,
+          "gaya_belajar": "Kinestetik & Eksperimen Langsung (Praktik)",
+          "gaya_belajar_arab": "Al Fuad (الفُؤَاد) - Kinestetik",
+          "gaya_belajar_tempat": "Tempat belajar yang nyaman: di alam terbuka, lapangan, bengkel, atau lokasi yang memungkinkan banyak gerakan.",
+          "bahasa_hati": "Pertolongan Nyata & Aksi Nyata (Acts of Service)"
+        },
+        {
+          "ego": "Sedang",
+          "score": 67,
+          "gaya_belajar": "Visual & Analitis (Membaca & Meneliti)",
+          "gaya_belajar_arab": "Al Bashar (الْبَصَرَ) - Visual",
+          "gaya_belajar_tempat": "Ruangan yang tenang, perpustakaan, atau tempat dengan banyak bahan bacaan visual.",
+          "bahasa_hati": "Penghargaan atas Gagasan & Ide Kreatif"
+        },
+        {
+          "ego": "Rendah",
+          "score": 39,
+          "gaya_belajar": "Auditori & Emosional (Bercerita & Diskusi)",
+          "gaya_belajar_arab": "As Sama' (السَّمْعَ) - Auditori",
+          "gaya_belajar_tempat": "Lingkungan yang mendukung diskusi terbuka, FGD, atau mendengarkan ceramah inspiratif.",
+          "bahasa_hati": "Sentuhan Perhatian & Kata Penguatan"
+        }
+      ],
+      "rank_by_intro_ekstro": {
+        "type": "Introvert",
+        "percentage": 80,
+        "description": "Individu yang lebih banyak memproses informasi secara internal dan mengisi energi dari kesendirian atau kelompok kecil yang akrab."
+      },
+      "rank_by_categories": [
+        {
+          "name": "Pekerja Keras",
+          "score": 95,
+          "kekuatan": "Sangat Kuat"
+        },
+        {
+          "name": "Cerdas",
+          "score": 67,
+          "kekuatan": "Kuat"
+        },
+        {
+          "name": "Berperasaan",
+          "score": 39,
+          "kekuatan": "Lemah"
+        },
+        {
+          "name": "Tegas",
+          "score": 39,
+          "kekuatan": "Lemah"
+        },
+        {
+          "name": "Gaul",
+          "score": 27,
+          "kekuatan": "Lemah"
+        },
+        {
+          "name": "Lembut",
+          "score": 15,
+          "kekuatan": "Sangat Lemah"
+        }
+      ]
     },
-    {
-      "name": "Pembelajar",
-      "score": 88,
-      "category": "Teknis"
+    "step2_insights": {
+      "default_talents": {
+        "Strategis": 85,
+        "Pembelajar": 82,
+        "Itsaar": 75,
+        "Ideasi": 70,
+        "Analitis": 65
+      },
+      "predicted_top_traits": [
+        "Berambisi dan bertekad kuat (Pekerja Keras)",
+        "Tegas dan berwibawa (Pekerja Keras)",
+        "Giat bekerja keras hingga tuntas (Pekerja Keras)",
+        "Berpikir kreatif dan imajinatif (Cerdas)",
+        "Berpikir positif dan melihat peluang (Cerdas)"
+      ]
     },
-    {
-      "name": "Itsaar",
-      "score": 85,
-      "category": "Melayani"
-    }
-  ],
-  "present_result_prompt": "Sampaikan apresiasi. Tampilkan 'final_talents' menggunakan struktur visual terbaik Anda (Tabel kaya warna, Kartu UI, atau Diagram) untuk menonjolkan profil definitif mereka secara elegan.",
-  "next_prompt_hint": "Tolong panggil /api/v1/flow/step4 untuk mengambil konteks pengetahuan mendalam yang diperlukan untuk menulis Laporan Lengkap."
+    "julukan": "'Pekerja Keras yang Cerdas'",
+    "panggilan": "'Pekerja Keras yang Cerdas'",
+    "ringkasan_kepribadian": "Memiliki kecenderungan energi sosial Introvert (70%). Bakat dominan paling menonjol pada bidang Pekerja Keras dan Cerdas, dengan sub-kelompok bakat terkuat pada \"Giat bekerja\". Berpotensi tampil optimal dengan julukan 'Pekerja Keras yang Cerdas'.",
+    "highest_bahasa_hati": "Pertolongan Nyata & Aksi Nyata (Acts of Service)",
+    "highest_gaya_belajar": "Kinestetik & Eksperimen Langsung (Praktik)",
+    "bakat_kekuatan": [
+      {
+        "no": "3",
+        "id": "sub_3",
+        "name": "Giat bekerja",
+        "group_id": "bekerja_keras",
+        "group_name": "Pekerja Keras",
+        "score": 88,
+        "kekuatan": "Sangat Kuat",
+        "color": "rgb(255, 100, 100)"
+      },
+      {
+        "no": "2",
+        "id": "sub_2",
+        "name": "Berwibawa",
+        "group_id": "bekerja_keras",
+        "group_name": "Pekerja Keras",
+        "score": 84,
+        "kekuatan": "Sangat Kuat",
+        "color": "rgb(255, 100, 100)"
+      },
+      {
+        "no": "4",
+        "id": "sub_4",
+        "name": "Suka berpikir imajinatif",
+        "group_id": "berpikir",
+        "group_name": "Cerdas",
+        "score": 82,
+        "kekuatan": "Sangat Kuat",
+        "color": "rgb(255, 100, 100)"
+      },
+      {
+        "no": "1",
+        "id": "sub_1",
+        "name": "Berambisi",
+        "group_id": "bekerja_keras",
+        "group_name": "Pekerja Keras",
+        "score": 79,
+        "kekuatan": "Kuat",
+        "color": "rgb(255, 225, 98)"
+      },
+      {
+        "no": "9",
+        "id": "sub_9",
+        "name": "Suka merendah",
+        "group_id": "berperasaan",
+        "group_name": "Berperasaan",
+        "score": 72,
+        "kekuatan": "Kuat",
+        "color": "rgb(255, 225, 98)"
+      }
+    ],
+    "bakat_kelemahan": [
+      {
+        "no": "11",
+        "id": "sub_11",
+        "name": "Suka memotivasi",
+        "group_id": "mempengaruhi",
+        "group_name": "Tegas",
+        "score": 55,
+        "kekuatan": "Sedang",
+        "color": "rgb(145, 196, 131)"
+      },
+      {
+        "no": "17",
+        "id": "sub_17",
+        "name": "Suka melayani dengan cara menjaga",
+        "group_id": "melayani",
+        "group_name": "Lembut",
+        "score": 52,
+        "kekuatan": "Sedang",
+        "color": "rgb(145, 196, 131)"
+      },
+      {
+        "no": "10",
+        "id": "sub_10",
+        "name": "Suka menguasai",
+        "group_id": "mempengaruhi",
+        "group_name": "Tegas",
+        "score": 50,
+        "kekuatan": "Sedang",
+        "color": "rgb(145, 196, 131)"
+      },
+      {
+        "no": "15",
+        "id": "sub_15",
+        "name": "Suka mengeratkan hubungan yang sudah ada",
+        "group_id": "bekerjasama",
+        "group_name": "Gaul",
+        "score": 47,
+        "kekuatan": "Sedang",
+        "color": "rgb(145, 196, 131)"
+      },
+      {
+        "no": "16",
+        "id": "sub_16",
+        "name": "Suka melayani dengan cara memberi",
+        "group_id": "melayani",
+        "group_name": "Lembut",
+        "score": 47,
+        "kekuatan": "Sedang",
+        "color": "rgb(145, 196, 131)"
+      }
+    ],
+    "recommended_profesi": [
+      "Pemborong Proyek",
+      "Teknisi Proyek",
+      "Pekerja Lapangan",
+      "Relawan",
+      "Petugas SAR",
+      "Peneliti",
+      "Analis Data",
+      "Perencana Strategis",
+      "Konsultan",
+      "Programmer",
+      "Konselor Keluarga",
+      "Psikolog",
+      "Pendidik",
+      "Pekerja Sosial",
+      "Penulis"
+    ],
+    "recommended_jurusan": [
+      "Teknik Sipil",
+      "Teknik Permesinan",
+      "Keperawatan",
+      "Marketing",
+      "Ilmu Komputer",
+      "Sains Data",
+      "Matematika",
+      "Fisika",
+      "Filsafat",
+      "Psikologi",
+      "Bimbingan Konseling",
+      "Sastra",
+      "Sosiologi"
+    ],
+    "hierarchy": [
+      {
+        "name": "Berperasaan",
+        "pillar": {
+          "no": "3",
+          "group": "6"
+        },
+        "parents": [
+          {
+            "no": "3",
+            "group": "3"
+          },
+          {
+            "no": "1",
+            "group": "2"
+          }
+        ],
+        "data": {
+          "arab": "الشُعُوْر",
+          "arti": "berperasaan",
+          "nama_lengkap": "as syu'uur (الشُعُوْر)",
+          "uraian": "suka diam merenung sendiri, mudah tersentuh perasaannya, pemalu, jika memikirkan sesuatu sampai mendalam sekali, dan suka apa adanya",
+          "lebih": "minder dalam menghadapi sesuatu",
+          "label": "Berperasaan",
+          "julukan": "Berperasaan"
+        },
+        "score": "87.78",
+        "color": "#405fa0",
+        "rank": 1,
+        "rankColor": "#4040bf"
+      }
+    ]
+  },
+  "svg_url": "https://api.observasikarakter.com/v1/render/final-tb40/sess_abc123.svg",
+  "present_result_prompt": "Berikan ucapan selamat karena proses observasi telah selesai! Tampilkan 'final_result' menggunakan struktur visual terbaik Anda (Tabel kaya warna, Kartu UI, atau Diagram Markdown) untuk menonjolkan profil definitif mereka secara elegan. Jangan lupa tampilkan `svg_url`.",
+  "next_action": {
+    "type": "offer_curriculum"
+  },
+  "next_prompt_hint": "Tanyakan kepada pengguna apakah mereka ingin Anda (AI) membuatkan 'Laporan Lengkap & Kurikulum Pembelajaran' (Langkah 4) berdasarkan hasil final ini. Jika iya, panggil `/api/v1/flow/step4`."
 }

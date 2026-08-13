@@ -278,25 +278,90 @@ API akan mengembalikan hasil analisis awal beserta field `next_prompt_hint` di d
     "preview_message": "Bagan Pohon siap untuk dirender teks oleh AI.",
     "svg_url": "https://api.observasikarakter.com/v1/render/preview-tb40/sess_abc123.svg",
     "present_result_prompt": "Tampilkan gambar prediksi bakat menggunakan Markdown: `![Prediksi Bakat](svg_url)`. Jelaskan kepada pengguna bahwa kotak-kotak pada visual ini masih berupa garis putus-putus (blueprint/dashed) karena ini baru prediksi awal berdasarkan peringkat sifat mereka. Berikan ulasan memukau mengenai kekuatan ('predicted_top_traits'), kelemahan ('predicted_weak_traits'), serta sampaikan 'predicted_insights' seperti julukan, energi sosial, bahasa hati, dan gaya belajar mereka. Jika platform Anda mendukung tabel Markdown, Anda juga dapat menampilkan 'default_talents' secara terstruktur.",
-    "next_prompt_hint": "Setelah menampilkan visual prediksi bakat dan ulasan mendalam di atas, beritahu pengguna bahwa untuk mematangkan hasil dan menjadikan garis putus-putus tersebut menjadi warna solid yang utuh, kita perlu memverifikasi 18 sifat tersebut. Minta mereka memberikan skor (1=Sangat Tidak Setuju, 4=Sangat Setuju) untuk ke-18 pernyataan di 'verification_statements'. Setelah mereka menjawab, panggil `GET /api/v1/flow/step3?s={session_id}&v={18_skor_dipisah_koma}`."
+    "next_action": {
+      "type": "choose_verification_depth",
+      "options": [
+        {"depth": 6, "description": "Verifikasi cepat berdasarkan 6 Kategori Besar"},
+        {"depth": 18, "description": "Verifikasi mendalam berdasarkan 18 Sifat"},
+        {"depth": 40, "description": "Verifikasi menyeluruh berdasarkan 40 Pilar Karakter"}
+      ]
+    },
+    "next_prompt_hint": "Setelah menampilkan visual prediksi bakat dan ulasan mendalam di atas, beritahu pengguna bahwa untuk mematangkan hasil, kita perlu memverifikasi sifat tersebut. Tanyakan kepada pengguna apakah mereka ingin melakukan verifikasi secara cepat (6 langkah), mendalam (18 langkah), atau menyeluruh (40 langkah). Setelah mereka memilih, panggil `GET /api/v1/flow/verify_loop?s={session_id}&depth={pilihan_depth}`."
   }
   ```
 
+### Endpoint 4.5: `GET /api/v1/flow/verify_loop` (Multi-Depth Verification Loop)
+- **Purpose**: A stateful loop endpoint that prompts the user to verify traits based on their chosen depth (6, 18, or 40). Saves partial results in the session and provides default scores to anchor the AI's predictions.
+- **Query Parameters**:
+  - `session_id`: The ID of the session.
+  - `depth`: `6`, `18`, or `40`.
+  - `v`: The verification scores (omitted on the very first call to start the loop).
+- **Response**:
+  - If there are remaining items to verify, returns a JSON prompting the NEXT step:
+  ```json
+  {
+    "session_id": "sess_abc123",
+    "next_action": {
+      "type": "verify_loop_active",
+      "depth": 6,
+      "loop_progress": "1/6",
+      "loop_progress_ui": "**Pekerja Keras** > Cerdas > Berperasaan > Tegas > Gaul > Lembut",
+      "current_item": "Pekerja Keras",
+      "default_scores": {
+        "Berambisi": 3.5,
+        "Berwibawa": 3.0,
+        "Giat bekerja": 3.8
+      },
+      "pillars_to_verify": [
+        {"id": 13, "name": "Himmah (Cita-cita tinggi)"},
+        {"id": 16, "name": "Aziimah (Tekad kuat)"},
+        {"id": 40, "name": "Waqaar (Wibawa)"},
+        {"id": 18, "name": "Izzah (Harga diri)"},
+        {"id": 25, "name": "Nasyaath (Semangat)"}
+      ]
+    },
+    "present_result_prompt": "Berikan apresiasi singkat bahwa preferensi telah dicatat.",
+    "next_prompt_hint": "Lanjutkan loop verifikasi. Tampilkan 'loop_progress_ui' sebagai navigasi visual. Karena ini loop 6 (kategori), sebutkan nama-nama pilar dalam 'pillars_to_verify' dan tanyakan kepada pengguna pilar mana saja yang paling beresonansi/cocok dengan mereka. Setelah menerima jawaban, Anda (AI) harus MENGKALKULASI PREDIKSI SKOR (1-4) untuk masing-masing pilar tersebut. Jangan terlalu menyimpang dari 'default_scores' kecuali pengguna sangat menekankannya. Panggil `GET /api/v1/flow/verify_loop?s={session_id}&depth=6&v={skor_dipisah_koma}`.",
+    "next_prompt_end_loop_hint": "Catatan untuk AI: Jika field 'current_item' atau 'loop_progress' menunjukkan iterasi terakhir, setelah pengguna menjawab, panggil endpoint `GET /api/v1/flow/verify_loop` dengan parameter yang sama. Endpoint tersebut secara otomatis akan memproses semua verifikasi dan mengembalikan hasil akhir (Langkah 3)."
+  }
+  ```
+  *(Note: The `next_prompt_hint` changes dramatically depending on whether `depth` is 6, 18, or 40).*
+  - If all loops have been completed, it automatically triggers the logic of Step 3 and returns the Final Talents structure.
+
 ### Endpoint 5: Step 3 (Final Verification & Report)
 **`GET /api/v1/flow/step3`**
-- **Purpose**: Loads session from DB. Processes Q4. Finalizes 40 talent scores and saves complete assessment.
+- **Purpose**: Loads session from DB. Finalizes 40 talent scores and generates the comprehensive final report, combining initial step1 insights, step2 predictions, and the massive v0.3 aggregate data.
 - **Query Parameters**:
-  - `session_id`: Returned from Step 1.
-  - `v`: Bitmask or list of verified statements (e.g., `1,0,1,1...`)
+  - `session_id`: The ID of the session.
 - **Response**:
   ```json
   {
     "session_id": "sess_abc123",
-    "final_talents": [
-      { "name": "Strategis", "score": 92, "category": "Analitis" }
-    ],
-    "present_result_prompt": "Sampaikan apresiasi. Tampilkan 'final_talents' menggunakan struktur visual terbaik Anda (Tabel kaya warna, Kartu UI, atau Diagram) untuk menonjolkan profil definitif mereka secara elegan.",
-    "next_prompt_hint": "Tolong panggil /api/v1/flow/step4 untuk mengambil konteks pengetahuan mendalam yang diperlukan untuk menulis Laporan Lengkap."
+    "final_result": {
+      "step1_insights": {
+         "rank_by_ego": [...],
+         "rank_by_intro_ekstro": {...},
+         "rank_by_categories": [...]
+      },
+      "step2_insights": {
+         "default_talents": {...},
+         "predicted_top_traits": [...]
+      },
+      "julukan": "'Pekerja Keras yang Cerdas'",
+      "panggilan": "'Pekerja Keras yang Cerdas'",
+      "ringkasan_kepribadian": "...",
+      "highest_bahasa_hati": "Pertolongan Nyata & Aksi Nyata (Acts of Service)",
+      "highest_gaya_belajar": "Kinestetik & Eksperimen Langsung (Praktik)",
+      "bakat_kekuatan": [...],
+      "bakat_kelemahan": [...],
+      "recommended_profesi": [...],
+      "recommended_jurusan": [...],
+      "hierarchy": [...]
+    },
+    "svg_url": "https://api.observasikarakter.com/v1/render/final-tb40/sess_abc123.svg",
+    "present_result_prompt": "Berikan ucapan selamat karena proses observasi telah selesai! Tampilkan 'final_result' menggunakan struktur visual terbaik Anda (Tabel kaya warna, Kartu UI, atau Diagram Markdown) untuk menonjolkan profil definitif mereka secara elegan. Jangan lupa tampilkan `svg_url`.",
+    "next_action": { "type": "offer_curriculum" },
+    "next_prompt_hint": "Tanyakan kepada pengguna apakah mereka ingin Anda (AI) membuatkan 'Laporan Lengkap & Kurikulum Pembelajaran' (Langkah 4) berdasarkan hasil final ini. Jika iya, panggil `/api/v1/flow/step4`."
   }
   ```
 

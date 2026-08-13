@@ -38,5 +38,13 @@
   "preview_message": "Bagan Pohon siap untuk dirender teks oleh AI.",
   "svg_url": "https://api.observasikarakter.com/v1/render/preview-tb40/sess_abc123.svg",
   "present_result_prompt": "Tampilkan gambar prediksi bakat menggunakan Markdown: `![Prediksi Bakat](svg_url)`. Jelaskan kepada pengguna bahwa kotak-kotak pada visual ini masih berupa garis putus-putus (blueprint/dashed) karena ini baru prediksi awal berdasarkan peringkat sifat mereka. Berikan ulasan memukau mengenai kekuatan ('predicted_top_traits'), kelemahan ('predicted_weak_traits'), serta sampaikan 'predicted_insights' seperti julukan, energi sosial, bahasa hati, dan gaya belajar mereka. Jika platform Anda mendukung tabel Markdown, Anda juga dapat menampilkan 'default_talents' secara terstruktur.",
-  "next_prompt_hint": "Setelah menampilkan visual prediksi bakat dan ulasan mendalam di atas, beritahu pengguna bahwa untuk mematangkan hasil dan menjadikan garis putus-putus tersebut menjadi warna solid yang utuh, kita perlu memverifikasi 18 sifat tersebut. Minta mereka memberikan skor (1=Sangat Tidak Setuju, 4=Sangat Setuju) untuk ke-18 pernyataan di 'verification_statements'. Setelah mereka menjawab, panggil `GET /api/v1/flow/step3?s={session_id}&v={18_skor_dipisah_koma}`."
+  "next_action": {
+    "type": "choose_verification_depth",
+    "options": [
+      {"depth": 6, "description": "Verifikasi cepat berdasarkan 6 Kategori Besar"},
+      {"depth": 18, "description": "Verifikasi mendalam berdasarkan 18 Sifat"},
+      {"depth": 40, "description": "Verifikasi menyeluruh berdasarkan 40 Pilar Karakter"}
+    ]
+  },
+  "next_prompt_hint": "Setelah menampilkan visual prediksi bakat dan ulasan mendalam di atas, beritahu pengguna bahwa untuk mematangkan hasil, kita perlu memverifikasi sifat tersebut. Tanyakan kepada pengguna apakah mereka ingin melakukan verifikasi secara cepat (6 langkah), mendalam (18 langkah), atau menyeluruh (40 langkah). Setelah mereka memilih, panggil `GET /api/v1/flow/verify_loop?session_id={session_id}&depth={pilihan_depth}`."
 }

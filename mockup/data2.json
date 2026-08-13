@@ -12,19 +12,49 @@
           "id": "sub_1",
           "name": "Berambisi dan bertekad kuat",
           "pilar_karakter": "Himmah (cita-cita tinggi) & Aziimah (tekad kuat)",
-          "detail": "Memiliki gairah yang sangat tinggi untuk meraih mimpi/target terbaik, menganggap kecil rintangan biasa, serta memiliki dorongan kuat untuk segera mengeksekusi suatu pekerjaan tanpa menunda-nunda."
+          "detail": "Memiliki gairah yang sangat tinggi untuk meraih mimpi/target terbaik, menganggap kecil rintangan biasa, serta memiliki dorongan kuat untuk segera mengeksekusi suatu pekerjaan tanpa menunda-nunda.",
+          "pillars": [
+            {
+              "pilar40": "1",
+              "questionIndex": "13"
+            },
+            {
+              "pilar40": "2",
+              "questionIndex": "16"
+            }
+          ]
         },
         {
           "id": "sub_2",
           "name": "Tegas dan berwibawa",
           "pilar_karakter": "Izzah (harga diri) & Waqaar (wibawa)",
-          "detail": "Tenang namun tampak tangguh dan kokoh dalam mempertahankan prinsip serta kemuliaan dirinya. Tipe ini tidak mudah diintimidasi, berpendirian kuat, dan dihormati oleh lingkungannya."
+          "detail": "Tenang namun tampak tangguh dan kokoh dalam mempertahankan prinsip serta kemuliaan dirinya. Tipe ini tidak mudah diintimidasi, berpendirian kuat, dan dihormati oleh lingkungannya.",
+          "pillars": [
+            {
+              "pilar40": "4",
+              "questionIndex": "40"
+            },
+            {
+              "pilar40": "3",
+              "questionIndex": "18"
+            }
+          ]
         },
         {
           "id": "sub_3",
           "name": "Giat bekerja keras hingga tuntas",
           "pilar_karakter": "Nasyaath (semangat)",
-          "detail": "Memiliki daya tahan fisik (grit) yang luar biasa untuk menyelesaikan amalan atau pekerjaan berat dengan dedikasi tinggi. Mereka tidak nyaman jika meninggalkan pekerjaan dalam kondisi setengah matang (perfeksionis)."
+          "detail": "Memiliki daya tahan fisik (grit) yang luar biasa untuk menyelesaikan amalan atau pekerjaan berat dengan dedikasi tinggi. Mereka tidak nyaman jika meninggalkan pekerjaan dalam kondisi setengah matang (perfeksionis).",
+          "pillars": [
+            {
+              "pilar40": "6",
+              "questionIndex": "25"
+            },
+            {
+              "pilar40": "5",
+              "questionIndex": "4"
+            }
+          ]
         }
       ]
     },
@@ -38,19 +68,45 @@
           "id": "sub_4",
           "name": "Berpikir kreatif dan imajinatif",
           "gaya_belajar": "Generating Idea / Otak Kanan Atas",
-          "detail": "Senang berimajinasi tentang masa depan, kaya akan ide-ide baru yang out-of-the-box, dan menyukai aktivitas konseptual seperti merancang desain atau merumuskan strategi jangka panjang."
+          "detail": "Senang berimajinasi tentang masa depan, kaya akan ide-ide baru yang out-of-the-box, dan menyukai aktivitas konseptual seperti merancang desain atau merumuskan strategi jangka panjang.",
+          "pillars": [
+            {
+              "pilar40": "7",
+              "questionIndex": "8"
+            },
+            {
+              "pilar40": "8",
+              "questionIndex": "26"
+            }
+          ]
         },
         {
           "id": "sub_5",
           "name": "Berpikir positif dan melihat peluang",
           "pilar_karakter": "Husnuzhan (prasangka baik) & Nubl (cerdik/panjang akal)",
-          "detail": "Cepat mengerti situasi yang rumit dan mampu menemukan jalan keluar/peluang di balik setiap kesulitan. Mereka selalu memandang kejadian dari sudut pandang yang baik."
+          "detail": "Cepat mengerti situasi yang rumit dan mampu menemukan jalan keluar/peluang di balik setiap kesulitan. Mereka selalu memandang kejadian dari sudut pandang yang baik.",
+          "pillars": [
+            {
+              "pilar40": "9",
+              "questionIndex": "14"
+            }
+          ]
         },
         {
           "id": "sub_6",
           "name": "Menganalisis data dan berpikir logis",
           "pilar_karakter": "Dzakaa' (cerdas) & Hikmah (bijak)",
-          "detail": "Memiliki ketajaman berpikir dalam menghitung, menganalisis hubungan sebab-akibat, menguraikan masalah rumit menjadi bagian-bagian kecil, dan mencari kebenaran ilmiah berbasis fakta."
+          "detail": "Memiliki ketajaman berpikir dalam menghitung, menganalisis hubungan sebab-akibat, menguraikan masalah rumit menjadi bagian-bagian kecil, dan mencari kebenaran ilmiah berbasis fakta.",
+          "pillars": [
+            {
+              "pilar40": "10",
+              "questionIndex": "6"
+            },
+            {
+              "pilar40": "11",
+              "questionIndex": "11"
+            }
+          ]
         }
       ]
     },
@@ -64,19 +120,49 @@
           "id": "sub_7",
           "name": "Tampil sederhana dan apa adanya",
           "pilar_karakter": "Qanaa'ah (merasa cukup)",
-          "detail": "Karakter yang qanaah, merasa cukup dengan apa yang dimiliki, bersahaja, tidak materialistis, dan rela menerima apa pun kondisi yang dihadapinya."
+          "detail": "Karakter yang qanaah, merasa cukup dengan apa yang dimiliki, bersahaja, tidak materialistis, dan rela menerima apa pun kondisi yang dihadapinya.",
+          "pillars": [
+            {
+              "pilar40": "12",
+              "questionIndex": "34"
+            }
+          ]
         },
         {
           "id": "sub_8",
           "name": "Tenang dan suka merenung",
           "pilar_karakter": "Shamt (diam) & Shabr (sabar)",
-          "detail": "Cenderung pendiam, berbicara hanya ketika diperlukan atau setelah kebenaran jelas. Mereka sangat sabar dalam menahan diri menghadapi tekanan, kesulitan, atau gangguan eksternal."
+          "detail": "Cenderung pendiam, berbicara hanya ketika diperlukan atau setelah kebenaran jelas. Mereka sangat sabar dalam menahan diri menghadapi tekanan, kesulitan, atau gangguan eksternal.",
+          "pillars": [
+            {
+              "pilar40": "13",
+              "questionIndex": "15"
+            },
+            {
+              "pilar40": "14",
+              "questionIndex": "33"
+            }
+          ]
         },
         {
           "id": "sub_9",
           "name": "Rendah hati dan tidak menonjolkan diri",
           "pilar_karakter": "Tawaadhu' (rendah hati)",
-          "detail": "Tidak suka memamerkan kehebatan atau kemampuannya meskipun sebenarnya sangat berbakat. Mereka tidak gila hormat dan sangat menghargai keberadaan orang lain."
+          "detail": "Tidak suka memamerkan kehebatan atau kemampuannya meskipun sebenarnya sangat berbakat. Mereka tidak gila hormat dan sangat menghargai keberadaan orang lain.",
+          "pillars": [
+            {
+              "pilar40": "15",
+              "questionIndex": "10"
+            },
+            {
+              "pilar40": "16",
+              "questionIndex": "28"
+            },
+            {
+              "pilar40": "17",
+              "questionIndex": "37"
+            }
+          ]
         }
       ]
     },
@@ -90,19 +176,53 @@
           "id": "sub_10",
           "name": "Mengambil kendali dan memimpin",
           "pilar_karakter": "Syajaa'ah (berani) & peran Commander/Leader",
-          "detail": "Berani menghadapi orang secara langsung (four eyes), tegas dalam mengambil tanggung jawab, serta tidak ragu untuk memimpin barisan saat situasi mengalami ketidakpastian."
+          "detail": "Berani menghadapi orang secara langsung (four eyes), tegas dalam mengambil tanggung jawab, serta tidak ragu untuk memimpin barisan saat situasi mengalami ketidakpastian.",
+          "pillars": [
+            {
+              "pilar40": "18",
+              "questionIndex": "35"
+            },
+            {
+              "pilar40": "19",
+              "questionIndex": "9"
+            },
+            {
+              "pilar40": "20",
+              "questionIndex": "22"
+            }
+          ]
         },
         {
           "id": "sub_11",
           "name": "Bicara di depan umum dan memotivasi",
           "pilar_karakter": "Fashaahah (komunikatif) & peran Motivator",
-          "detail": "Memiliki kemampuan linguistik yang memukau untuk menyederhanakan hal-hal rumit sehingga mudah dipahami orang banyak, serta pandai membakar semangat kelompok."
+          "detail": "Memiliki kemampuan linguistik yang memukau untuk menyederhanakan hal-hal rumit sehingga mudah dipahami orang banyak, serta pandai membakar semangat kelompok.",
+          "pillars": [
+            {
+              "pilar40": "21",
+              "questionIndex": "24"
+            },
+            {
+              "pilar40": "22",
+              "questionIndex": "7"
+            }
+          ]
         },
         {
           "id": "sub_12",
           "name": "Mengarahkan dan mengendalikan kegiatan",
           "peran_profesi": "Supervisor / Manager / Koordinator",
-          "detail": "Sangat menikmati aktivitas mengontrol jalannya suatu program, mendelegasikan tugas secara taktis, dan memastikan semua anggota bergerak sesuai target koridor organisasi."
+          "detail": "Sangat menikmati aktivitas mengontrol jalannya suatu program, mendelegasikan tugas secara taktis, dan memastikan semua anggota bergerak sesuai target koridor organisasi.",
+          "pillars": [
+            {
+              "pilar40": "24",
+              "questionIndex": "19"
+            },
+            {
+              "pilar40": "23",
+              "questionIndex": "27"
+            }
+          ]
         }
       ]
     },
@@ -116,19 +236,57 @@
           "id": "sub_13",
           "name": "Memanfaatkan hubungan relasi",
           "pilar_karakter": "Ta'aawun (kerjasama) & peran Arranger",
-          "detail": "Cerdas dalam menempatkan orang pada posisi yang tepat, pandai mengkoordinasikan potensi kelompok, dan suka berkolaborasi demi meraih tujuan bersama secara efektif."
+          "detail": "Cerdas dalam menempatkan orang pada posisi yang tepat, pandai mengkoordinasikan potensi kelompok, dan suka berkolaborasi demi meraih tujuan bersama secara efektif.",
+          "pillars": [
+            {
+              "pilar40": "28",
+              "questionIndex": "39"
+            },
+            {
+              "pilar40": "26",
+              "questionIndex": "38"
+            },
+            {
+              "pilar40": "25",
+              "questionIndex": "36"
+            },
+            {
+              "pilar40": "27",
+              "questionIndex": "1"
+            }
+          ]
         },
         {
           "id": "sub_14",
           "name": "Membuat pertemanan baru",
           "pilar_karakter": "Ulfah (persatuan) & peran Ambassador",
-          "detail": "Sangat mudah akrab dengan orang baru, supel, memiliki jejaring sosial yang luas, dan merasa tidak betah jika ditinggal sendirian tanpa kawan."
+          "detail": "Sangat mudah akrab dengan orang baru, supel, memiliki jejaring sosial yang luas, dan merasa tidak betah jika ditinggal sendirian tanpa kawan.",
+          "pillars": [
+            {
+              "pilar40": "30",
+              "questionIndex": "5"
+            },
+            {
+              "pilar40": "29",
+              "questionIndex": "23"
+            }
+          ]
         },
         {
           "id": "sub_15",
           "name": "Merawat dan mengeratkan keakraban",
           "pilar_karakter": "Basyaasyah (berseri-seri) & Muzaah (humor/bercanda)",
-          "detail": "Wajahnya selalu ramah dan murah senyum. Senang bercanda sehat untuk mencairkan ketegangan tanpa menyinggung perasaan orang lain guna menjaga kerukunan."
+          "detail": "Wajahnya selalu ramah dan murah senyum. Senang bercanda sehat untuk mencairkan ketegangan tanpa menyinggung perasaan orang lain guna menjaga kerukunan.",
+          "pillars": [
+            {
+              "pilar40": "31",
+              "questionIndex": "30"
+            },
+            {
+              "pilar40": "32",
+              "questionIndex": "21"
+            }
+          ]
         }
       ]
     },
@@ -142,19 +300,57 @@
           "id": "sub_16",
           "name": "Memberi dorongan dan bantuan nyata",
           "pilar_karakter": "Itsaar (melayani) & Nushrah (menolong)",
-          "detail": "Senang berkorban demi kebahagiaan sesama, cepat kasihan saat melihat kesusahan, serta tanggap memberikan bantuan riil agar orang lain terbebas dari kesulitan."
+          "detail": "Senang berkorban demi kebahagiaan sesama, cepat kasihan saat melihat kesusahan, serta tanggap memberikan bantuan riil agar orang lain terbebas dari kesulitan.",
+          "pillars": [
+            {
+              "pilar40": "33",
+              "questionIndex": "29"
+            },
+            {
+              "pilar40": "34",
+              "questionIndex": "17"
+            }
+          ]
         },
         {
           "id": "sub_17",
           "name": "Menjaga amanah dan rasa aman",
           "pilar_karakter": "Amaanah (tanggung jawab) & Kitmaanus Sirr (penjaga rahasia)",
-          "detail": "Sangat dapat dipercaya, loyal, pandai menyembunyikan aib atau rahasia orang lain, serta selalu menepati komitmen/akad yang telah disepakati."
+          "detail": "Sangat dapat dipercaya, loyal, pandai menyembunyikan aib atau rahasia orang lain, serta selalu menepati komitmen/akad yang telah disepakati.",
+          "pillars": [
+            {
+              "pilar40": "35",
+              "questionIndex": "20"
+            },
+            {
+              "pilar40": "36",
+              "questionIndex": "31"
+            }
+          ]
         },
         {
           "id": "sub_18",
           "name": "Mengalah demi menjaga keharmonisan",
           "pilar_karakter": "Rifq (lemah lembut) & Hilm (santun)",
-          "detail": "Memiliki pembawaan yang sangat lembut, toleran, pandai menahan amarah, dan bersedia mengalah dari egonya sendiri demi mencegah terjadinya konflik sosial."
+          "detail": "Memiliki pembawaan yang sangat lembut, toleran, pandai menahan amarah, dan bersedia mengalah dari egonya sendiri demi mencegah terjadinya konflik sosial.",
+          "pillars": [
+            {
+              "pilar40": "38",
+              "questionIndex": "3"
+            },
+            {
+              "pilar40": "37",
+              "questionIndex": "2"
+            },
+            {
+              "pilar40": "39",
+              "questionIndex": "12"
+            },
+            {
+              "pilar40": "40",
+              "questionIndex": "32"
+            }
+          ]
         }
       ]
     }

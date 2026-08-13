@@ -1,0 +1,27 @@
+{
+  "session_id": "sess_abc123",
+  "next_action": {
+    "type": "verify_loop_active",
+    "depth": 6,
+    "loop_progress": "1/6",
+    "loop_progress_ui": "**Pekerja Keras** > Cerdas > Berperasaan > Tegas > Gaul > Lembut",
+    "current_item": "Pekerja Keras",
+    "default_scores": {
+      "Himmah (Cita-cita tinggi)": 3.8,
+      "Aziimah (Tekad kuat)": 3.5,
+      "Waqaar (Wibawa)": 3.2,
+      "Izzah (Harga diri)": 3.5,
+      "Nasyaath (Semangat)": 4.0
+    },
+    "pillars_to_verify": [
+      {"id": 13, "name": "Himmah (Cita-cita tinggi)"},
+      {"id": 16, "name": "Aziimah (Tekad kuat)"},
+      {"id": 40, "name": "Waqaar (Wibawa)"},
+      {"id": 18, "name": "Izzah (Harga diri)"},
+      {"id": 25, "name": "Nasyaath (Semangat)"}
+    ]
+  },
+  "present_result_prompt": "Berikan apresiasi singkat bahwa pilihan kedalaman verifikasi telah dicatat.",
+  "next_prompt_hint": "Lanjutkan loop verifikasi. Tampilkan 'loop_progress_ui' sebagai navigasi visual. Karena ini loop 6 (kategori), sebutkan nama-nama pilar dalam 'pillars_to_verify' dan tanyakan kepada pengguna pilar mana saja yang paling beresonansi/cocok dengan mereka. Setelah menerima jawaban, Anda (AI) harus MENGKALKULASI PREDIKSI SKOR (1-4) untuk masing-masing pilar tersebut (ada 5 pilar). Jangan terlalu menyimpang dari 'default_scores' kecuali pengguna sangat menekankannya. Panggil `GET /api/v1/flow/verify_loop?s={session_id}&depth=6&v={5_skor_dipisah_koma}`.",
+  "next_prompt_end_loop_hint": "Catatan untuk AI: Jika field 'current_item' atau 'loop_progress' menunjukkan iterasi terakhir, setelah pengguna menjawab, panggil endpoint `GET /api/v1/flow/verify_loop` dengan parameter yang sama. Endpoint tersebut secara otomatis akan memproses semua verifikasi dan mengembalikan hasil akhir (Langkah 3)."
+}

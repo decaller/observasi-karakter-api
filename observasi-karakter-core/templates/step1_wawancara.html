@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block title %}Observasi Karakter — Wawancara (Step 1){% endblock %}
+{% block meta_description %}Daftar 15 sub-kategori indikator pertumbuhan karakter untuk sesi wawancara observasi.{% endblock %}
+
+{% block content %}
+<div class="container">
+    <section class="hero" style="padding-bottom: 1.5rem;">
+        <h1>🛋️ Wawancara Observasi Karakter</h1>
+        <p>Dataset 15 Sub-Kategori Pertumbuhan Karakter yang akan dievaluasi melalui wawancara naratif.</p>
+    </section>
+
+    <div class="instruction-block">
+        <strong>📝 Instruksi untuk AI:</strong> {{ present_result_prompt }}
+    </div>
+
+    <hr class="divider">
+
+    {% for kategori_utama, sub_data in data_karakter.items() %}
+    <section class="kategori-group">
+        <h2>{{ kategori_utama }}</h2>
+
+        {# Check if sub_data is a dict with sub-category groups (like AQIDAH, IBADAH) or direct indicators #}
+        {% if sub_data.values()|first is mapping %}
+            {# Nested: has sub-groups like "A. AQIDAH (7+)" #}
+            {% for sub_group_name, indicators in sub_data.items() %}
+            <div class="card" style="margin-bottom: 1.5rem;">
+                <h3>{{ sub_group_name }}</h3>
+                {% for indikator_name, pernyataan_list in indicators.items() %}
+                <div class="sub-kategori">
+                    <h4>{{ indikator_name }}</h4>
+                    <ul>
+                        {% for pernyataan in pernyataan_list %}
+                        <li>{{ pernyataan }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endfor %}
+            </div>
+            {% endfor %}
+        {% else %}
+            {# Flat: direct indicator lists #}
+            {% for indikator_name, pernyataan_list in sub_data.items() %}
+            <div class="sub-kategori">
+                <h4>{{ indikator_name }}</h4>
+                <ul>
+                    {% for pernyataan in pernyataan_list %}
+                    <li>{{ pernyataan }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endfor %}
+        {% endif %}
+    </section>
+    {% endfor %}
+
+    <hr class="divider">
+
+    <div class="instruction-block">
+        <strong>🗣️ Panduan Langkah Selanjutnya:</strong> {{ next_prompt_hint }}
+    </div>
+
+    <div class="card" style="text-align: center;">
+        <p style="color: var(--text-secondary); margin-bottom: 0.75rem;">
+            <span class="badge badge-info">Session</span> <code style="color: var(--accent); font-family: var(--font-mono);">{{ session_id }}</code>
+        </p>
+        <p style="color: var(--text-muted); font-size: 0.85rem;">
+            Setelah wawancara selesai (5-7 putaran), AI akan memanggil endpoint Step 2 untuk menyajikan laporan hasil.
+        </p>
+    </div>
+</div>
+{% endblock %}

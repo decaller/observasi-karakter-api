@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Observasi Karakter & Bakat{% endblock %}</title>
+    <meta name="description" content="{% block meta_description %}Sistem cerdas untuk memproses observasi perilaku dan pemetaan bakat secara mendalam.{% endblock %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+    {% block head_extra %}{% endblock %}
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">
+                🌱 <span>Observasi</span> Karakter & Bakat
+            </a>
+            <nav>
+                <a href="/">Beranda</a>
+                <a href="/docs">API Docs</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            &copy; 2026 Insan Mustaqbal &mdash; Observasi Karakter & Bakat Engine
+        </div>
+    </footer>
+
+    {% block scripts %}{% endblock %}
+</body>
+</html>

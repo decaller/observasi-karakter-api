@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+
+{% block title %}Observasi Karakter & Bakat — Mulai Sekarang{% endblock %}
+{% block meta_description %}Copy instruksi ini ke ChatGPT, Claude, atau Gemini untuk memulai observasi karakter dan bakat secara interaktif.{% endblock %}
+
+{% block content %}
+<div class="container">
+    <section class="hero">
+        <h1>Observasi Karakter & Bakat</h1>
+        <p>Copy teks instruksi di bawah ini, lalu paste ke <strong>ChatGPT</strong>, <strong>Claude</strong>, atau <strong>Gemini</strong> untuk memulai sesi observasi.</p>
+    </section>
+
+    <div class="card">
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+            <h2 style="margin-bottom: 0;">📋 System Prompt</h2>
+            <span class="badge badge-info">llms.txt</span>
+        </div>
+
+        <div class="prompt-box">
+            <pre id="llms-content">{{ llms_txt }}</pre>
+        </div>
+
+        <div style="text-align: center; margin-top: 1.5rem;">
+            <button class="btn btn-primary btn-copy" id="btn-copy" onclick="copyPrompt()">
+                📋 Copy ke Clipboard
+            </button>
+        </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="card">
+        <h3>🚀 Cara Penggunaan</h3>
+        <ol style="padding-left: 1.25rem; color: var(--text-secondary); line-height: 2;">
+            <li>Klik tombol <strong>"Copy ke Clipboard"</strong> di atas</li>
+            <li>Buka <a href="https://chatgpt.com" target="_blank">ChatGPT</a>, <a href="https://claude.ai" target="_blank">Claude</a>, atau <a href="https://gemini.google.com" target="_blank">Gemini</a></li>
+            <li>Paste teks tersebut sebagai pesan pertama Anda</li>
+            <li>AI akan memandu sesi observasi secara interaktif 🌟</li>
+        </ol>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+        <div class="card">
+            <h3>🕌 Observasi Karakter</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                Evaluasi 45 indikator pertumbuhan karakter — Iman, Aqidah, Ibadah, Kemandirian, Belajar, dan Bakat. 
+                Metode wawancara cerita yang rileks.
+            </p>
+        </div>
+        <div class="card">
+            <h3>🧭 Observasi Bakat</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                Pemetaan 40 Pilar Bakat dan potensi karir masa depan.
+                Proses interaktif 4 langkah berbasis AI.
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+function copyPrompt() {
+    const content = document.getElementById('llms-content').textContent;
+    const btn = document.getElementById('btn-copy');
+    
+    navigator.clipboard.writeText(content).then(() => {
+        btn.classList.add('copied');
+        btn.innerHTML = '✅ Tersalin!';
+        
+        setTimeout(() => {
+            btn.classList.remove('copied');
+            btn.innerHTML = '📋 Copy ke Clipboard';
+        }, 2500);
+    }).catch(() => {
+        // Fallback for older browsers
+        const textarea = document.createElement('textarea');
+        textarea.value = content;
+        textarea.style.position = 'fixed';
+        textarea.style.opacity = '0';
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+        
+        btn.classList.add('copied');
+        btn.innerHTML = '✅ Tersalin!';
+        
+        setTimeout(() => {
+            btn.classList.remove('copied');
+            btn.innerHTML = '📋 Copy ke Clipboard';
+        }, 2500);
+    });
+}
+</script>
+{% endblock %}

@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block title %}Observasi Karakter — Laporan Hasil (Step 2){% endblock %}
+{% block meta_description %}Laporan hasil observasi karakter: skor per kategori, analisis kesiapan baligh, dan saran parenting.{% endblock %}
+
+{% block content %}
+<div class="container">
+    <section class="hero" style="padding-bottom: 1.5rem;">
+        <h1>📈 Laporan Hasil Observasi Karakter</h1>
+        <p>Perbandingan skor realita dengan ekspektasi umur untuk setiap kategori pertumbuhan karakter.</p>
+    </section>
+
+    <div class="card">
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+            <h2 style="margin-bottom: 0;">📊 Skor Per Kategori</h2>
+            <span class="badge badge-success">Session: {{ session_id }}</span>
+        </div>
+
+        <div class="score-grid">
+            {% for item in scores %}
+            <div class="score-card">
+                <div class="kategori-name">{{ item.kategori }}</div>
+                <div class="score-value {% if item.score >= 75 %}high{% elif item.score >= 50 %}mid{% else %}low{% endif %}">
+                    {{ item.score }}
+                </div>
+                <div class="score-bar">
+                    <div class="fill {% if item.score >= 75 %}high{% elif item.score >= 50 %}mid{% else %}low{% endif %}" 
+                         style="width: {{ item.score }}%"></div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    {% if chart_url %}
+    <div class="card">
+        <h3>📉 Grafik Perbandingan</h3>
+        <div style="text-align: center; margin-top: 1rem;">
+            <img src="{{ chart_url }}" alt="Grafik Pertumbuhan Karakter" style="max-width: 100%; border-radius: var(--radius-sm);">
+        </div>
+    </div>
+    {% endif %}
+
+    <hr class="divider">
+
+    <div class="instruction-block">
+        <strong>📋 Instruksi untuk AI:</strong> {{ present_result_prompt }}
+    </div>
+
+    <hr class="divider">
+
+    <div class="instruction-block">
+        <strong>🗣️ Panduan Langkah Selanjutnya:</strong> {{ next_prompt_hint }}
+    </div>
+
+    <div class="card" style="text-align: center;">
+        <h3>🧭 Lanjutkan ke Observasi Bakat?</h3>
+        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">
+            Setelah memetakan karakter, langkah selanjutnya adalah memetakan potensi bawaan (bakat) dan arah karir masa depan.
+        </p>
+        <a href="/api/v1/flow/obsbakat/step1" class="btn btn-primary">
+            🚀 Mulai Observasi Bakat (40 Pilar)
+        </a>
+    </div>
+</div>
+{% endblock %}

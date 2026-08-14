@@ -1,9 +1,10 @@
 fastapi
 uvicorn[standard]
 pydantic
-pydantic-settings
 python-dotenv
 prefect
+jinja2
+python-multipart
 pytest
 pytest-asyncio
 httpx

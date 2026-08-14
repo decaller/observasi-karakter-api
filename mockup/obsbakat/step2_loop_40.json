@@ -13,7 +13,7 @@
     },
     "pillars_to_verify": [
       {
-        "id": 13, 
+        "id": 13,
         "name": "Himmah (Cita-cita tinggi)",
         "pertanyaan": "Apakah Anda memiliki gairah yang sangat tinggi untuk meraih target terbaik?",
         "pilihan_jawaban": [
@@ -24,7 +24,7 @@
         ]
       },
       {
-        "id": 16, 
+        "id": 16,
         "name": "Aziimah (Tekad kuat)",
         "pertanyaan": "Apakah Anda memiliki dorongan kuat untuk segera mengeksekusi suatu pekerjaan tanpa menunda-nunda?",
         "pilihan_jawaban": [
@@ -35,7 +35,7 @@
         ]
       },
       {
-        "id": 40, 
+        "id": 40,
         "name": "Waqaar (Wibawa)",
         "pertanyaan": "Apakah Anda tenang namun tampak tangguh dan kokoh dalam mempertahankan prinsip?",
         "pilihan_jawaban": [
@@ -48,6 +48,6 @@
     ]
   },
   "present_result_prompt": "Berikan apresiasi singkat bahwa preferensi telah dicatat.",
-  "next_prompt_hint": "Lanjutkan loop verifikasi. Tampilkan 'loop_progress_ui' sebagai navigasi visual. Karena ini loop 40 (pilar), tampilkan 'pertanyaan' berserta 'pilihan_jawaban' khusus untuk masing-masing pilar di dalam 'pillars_to_verify'. Minta pengguna memberikan jawaban langsung (skor 1-4) untuk masing-masing dari ke-3 pertanyaan ini. Setelah menerima jawaban, Anda (AI) langsung memanggil `GET /api/v1/flow/verify_loop?s={session_id}&depth=40&v={3_skor_dipisah_koma}`.",
-  "next_prompt_end_loop_hint": "Catatan untuk AI: Jika field 'current_item' atau 'loop_progress' menunjukkan iterasi terakhir, setelah pengguna menjawab, panggil endpoint `GET /api/v1/flow/verify_loop` dengan parameter yang sama. Endpoint tersebut secara otomatis akan memproses semua verifikasi dan mengembalikan hasil akhir (Langkah 3)."
+  "next_prompt_hint": "Lanjutkan loop verifikasi. Tampilkan 'loop_progress_ui' sebagai navigasi visual. Karena ini loop 40 (pilar), tampilkan 'pertanyaan' berserta 'pilihan_jawaban' khusus untuk masing-masing pilar di dalam 'pillars_to_verify'. Minta pengguna memberikan jawaban langsung (skor 1-4) untuk masing-masing dari ke-3 pertanyaan ini. Setelah menerima jawaban, Anda (AI) berikan tautan Markdown berikut agar pengguna dapat mengkliknya untuk melanjutkan:\n\n[Lanjut Langkah Berikutnya](https://observasikarakter.insanmustaqbal.or.id/api/v1/flow/verify_loop?s={session_id}&depth=40&v={3_skor_dipisah_koma})",
+  "next_prompt_end_loop_hint": "Catatan untuk AI: Jika field 'current_item' atau 'loop_progress' menunjukkan iterasi terakhir, setelah pengguna menjawab, berikan tautan Markdown (https://observasikarakter.insanmustaqbal.or.id/api/v1/flow/verify_loop) kepada pengguna dengan parameter yang sama. Endpoint tersebut secara otomatis akan memproses semua verifikasi dan mengembalikan hasil akhir (Langkah 3)."
 }

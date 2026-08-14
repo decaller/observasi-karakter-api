@@ -35,8 +35,8 @@ async def obskarakter_step1(db: DBSession = Depends(get_db)):
     
     # Update the prompt hint to tell LLM to pass session_id
     data["next_prompt_hint"] = data.get("next_prompt_hint", "").replace(
-        "GET /api/v1/flow/obskarakter/step2?scores=", 
-        f"GET /api/v1/flow/obskarakter/step2?session_id={new_session_id}&scores="
+        "obskarakter/step2?scores=",
+        f"obskarakter/step2?session_id={new_session_id}&scores="
     )
     return data
 

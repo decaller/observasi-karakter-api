@@ -7,12 +7,12 @@
     "category_id": "cd",
     "current_category_to_rank": "Cerdas",
     "traits_to_rank": [
-      "💡 Berpikir kreatif dan imajinatif", 
-      "✨ Berpikir positif dan melihat peluang", 
-      "🧠 Menganalisis data dan berpikir logis"
+      "\ud83d\udca1 Berpikir kreatif dan imajinatif",
+      "\u2728 Berpikir positif dan melihat peluang",
+      "\ud83e\udde0 Menganalisis data dan berpikir logis"
     ]
   },
   "present_result_prompt": "Berikan apresiasi singkat bahwa ranking sebelumnya telah disimpan.",
-  "next_prompt_hint": "Lanjutkan loop wawancara. Lihat field 'next_action'. Tampilkan 'loop_progress_ui' sebagai navigasi visual. Minta pengguna untuk memilih dan mengurutkan 3 sifat teratas mereka KHUSUS untuk kategori 'Cerdas'. Anda bebas memperluas deskripsi atau memberi contoh pada sifat tersebut jika diperlukan. Setelah mereka menjawab, panggil `GET /api/v1/flow/rank_category?s={session_id}&c=cd&r={urutan_sifat}`.",
+  "next_prompt_hint": "Lanjutkan loop wawancara. Lihat field 'next_action'. Tampilkan 'loop_progress_ui' sebagai navigasi visual. Minta pengguna untuk memilih dan mengurutkan 3 sifat teratas mereka KHUSUS untuk kategori 'Cerdas'. Anda bebas memperluas deskripsi atau memberi contoh pada sifat tersebut jika diperlukan. Setelah mereka menjawab, berikan tautan Markdown berikut agar pengguna dapat mengkliknya untuk melanjutkan:\n\n[Lanjut Langkah Berikutnya](https://observasikarakter.insanmustaqbal.or.id/api/v1/flow/rank_category?s={session_id}&c=cd&r={urutan_sifat})",
   "next_prompt_end_loop_hint": "Catatan untuk AI: Jika field 'current_category_to_rank' adalah kategori yang ke-6 (terakhir), setelah pengguna menjawab, panggil endpoint yang sama dan bersiaplah menerima struktur Bagan Pohon (default_talents)."
 }

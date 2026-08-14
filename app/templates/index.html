@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Observasi Karakter & Bakat API</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .copy-btn {
+            transition: all 0.2s ease;
+        }
+        .copy-btn.copied {
+            background-color: #10B981; /* green-500 */
+            color: white;
+            border-color: #10B981;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+    <div class="max-w-4xl mx-auto px-4 py-12">
+        <header class="mb-12 text-center">
+            <h1 class="text-4xl font-bold text-slate-900 mb-4 tracking-tight">Observasi Karakter & Bakat</h1>
+            <p class="text-lg text-slate-600">Stateful API for LLM-driven character and talent exploration</p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Observasi Bakat Card -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 flex flex-col h-full">
+                <div class="flex items-center justify-between mb-4">
+                    <h2 class="text-2xl font-semibold text-slate-800">Observasi Bakat</h2>
+                    <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-1 rounded-full">v1.0</span>
+                </div>
+                <p class="text-slate-600 mb-6 flex-grow">Mulai simulasi observasi bakat 30 sub-kategori. Dapatkan prompt awal untuk diberikan kepada agent LLM Anda.</p>
+                
+                <div id="obsbakat-container" class="mt-auto">
+                    <button id="obsbakat-btn" onclick="generatePrompt('obsbakat')" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2.5 px-4 rounded-lg shadow-sm transition-colors mb-4">
+                        Generate Session & Prompt
+                    </button>
+                    
+                    <div id="obsbakat-result" class="hidden flex flex-col space-y-3">
+                        <label class="text-sm font-semibold text-slate-700">System Prompt:</label>
+                        <textarea id="obsbakat-prompt" readonly class="w-full bg-slate-50 border border-slate-200 rounded-lg p-3 text-sm text-slate-700 font-mono h-48 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"></textarea>
+                        
+                        <div class="flex space-x-3">
+                            <button onclick="copyToClipboard('obsbakat-prompt', this)" class="copy-btn flex-1 bg-white border border-slate-300 hover:bg-slate-50 text-slate-700 font-medium py-2 px-4 rounded-lg shadow-sm">
+                                Copy Prompt
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Observasi Karakter Card -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 flex flex-col h-full">
+                <div class="flex items-center justify-between mb-4">
+                    <h2 class="text-2xl font-semibold text-slate-800">Observasi Karakter</h2>
+                    <span class="bg-emerald-100 text-emerald-800 text-xs font-medium px-2.5 py-1 rounded-full">v1.0</span>
+                </div>
+                <p class="text-slate-600 mb-6 flex-grow">Mulai simulasi observasi karakter (15 sub-kategori). Dapatkan prompt awal untuk wawancara naratif.</p>
+                
+                <div id="obskarakter-container" class="mt-auto">
+                    <button id="obskarakter-btn" onclick="generatePrompt('obskarakter')" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-2.5 px-4 rounded-lg shadow-sm transition-colors mb-4">
+                        Generate Session & Prompt
+                    </button>
+                    
+                    <div id="obskarakter-result" class="hidden flex flex-col space-y-3">
+                        <label class="text-sm font-semibold text-slate-700">System Prompt:</label>
+                        <textarea id="obskarakter-prompt" readonly class="w-full bg-slate-50 border border-slate-200 rounded-lg p-3 text-sm text-slate-700 font-mono h-48 focus:outline-none focus:ring-2 focus:ring-emerald-500 resize-none"></textarea>
+                        
+                        <div class="flex space-x-3">
+                            <button onclick="copyToClipboard('obskarakter-prompt', this)" class="copy-btn flex-1 bg-white border border-slate-300 hover:bg-slate-50 text-slate-700 font-medium py-2 px-4 rounded-lg shadow-sm">
+                                Copy Prompt
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-12 text-center text-slate-500 text-sm">
+            &copy; 2026 Observasi Karakter & Bakat API
+            <div class="mt-2">
+                <a href="/docs" class="text-blue-600 hover:underline">View API Documentation (Swagger)</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        async function generatePrompt(type) {
+            const btn = document.getElementById(`${type}-btn`);
+            const resultDiv = document.getElementById(`${type}-result`);
+            const promptArea = document.getElementById(`${type}-prompt`);
+            
+            const originalText = btn.innerText;
+            btn.innerText = 'Loading...';
+            btn.disabled = true;
+            btn.classList.add('opacity-75');
+
+            try {
+                let endpoint = '';
+                if (type === 'obsbakat') {
+                    endpoint = '/api/v1/flow/obsbakat/step1';
+                } else if (type === 'obskarakter') {
+                    endpoint = '/api/v1/flow/obskarakter/step1_wawancara';
+                }
+
+                const response = await fetch(endpoint);
+                const data = await response.json();
+
+                if (!response.ok) {
+                    throw new Error(data.detail || 'Failed to fetch prompt');
+                }
+
+                // Construct the full prompt
+                const fullPrompt = `${data.present_result_prompt}\n\n[TUGAS DAN INSTRUKSI]\n${data.next_prompt_hint}`;
+                
+                promptArea.value = fullPrompt;
+                
+                // Hide the button and show the result
+                btn.classList.add('hidden');
+                resultDiv.classList.remove('hidden');
+
+            } catch (error) {
+                alert(`Error generating prompt: ${error.message}`);
+                btn.innerText = originalText;
+                btn.disabled = false;
+                btn.classList.remove('opacity-75');
+            }
+        }
+
+        function copyToClipboard(elementId, btnElement) {
+            const copyText = document.getElementById(elementId);
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+            navigator.clipboard.writeText(copyText.value).then(() => {
+                const originalText = btnElement.innerText;
+                btnElement.innerText = 'Copied!';
+                btnElement.classList.add('copied');
+                
+                setTimeout(() => {
+                    btnElement.innerText = originalText;
+                    btnElement.classList.remove('copied');
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy text: ', err);
+            });
+        }
+    </script>
+</body>
+</html>

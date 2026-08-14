@@ -1,4 +1,5 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
+from fastapi.templating import Jinja2Templates
 from fastapi.middleware.cors import CORSMiddleware
 from app.routers import obsbakat, obskarakter, charts
 
@@ -22,6 +23,8 @@ app.include_router(obsbakat.router)
 app.include_router(obskarakter.router)
 app.include_router(charts.router)
 
+templates = Jinja2Templates(directory="app/templates")
+
 @app.get("/")
-async def root():
-    return {"message": "Welcome to Observasi Karakter & Bakat API"}
+async def root(request: Request):
+    return templates.TemplateResponse(request=request, name="index.html")

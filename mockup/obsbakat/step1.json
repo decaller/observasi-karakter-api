@@ -10,7 +10,7 @@
       "ego": "Tinggi",
       "score": 95,
       "gaya_belajar": "Kinestetik & Eksperimen Langsung (Praktik)",
-      "gaya_belajar_arab": "Al Fuad (الفُؤَاد) - Kinestetik",
+      "gaya_belajar_arab": "Al Fuad (\u0627\u0644\u0641\u064f\u0624\u064e\u0627\u062f) - Kinestetik",
       "gaya_belajar_tempat": "Tempat belajar yang nyaman: di alam terbuka, lapangan, bengkel, atau lokasi yang memungkinkan banyak gerakan.",
       "bahasa_hati": "Pertolongan Nyata & Aksi Nyata (Acts of Service)"
     },
@@ -18,7 +18,7 @@
       "ego": "Sedang",
       "score": 67,
       "gaya_belajar": "Visual & Analitis (Membaca & Meneliti)",
-      "gaya_belajar_arab": "Al Bashar (الْبَصَرَ) - Visual",
+      "gaya_belajar_arab": "Al Bashar (\u0627\u0644\u0652\u0628\u064e\u0635\u064e\u0631\u064e) - Visual",
       "gaya_belajar_tempat": "Ruangan yang tenang, perpustakaan, atau tempat dengan banyak bahan bacaan visual.",
       "bahasa_hati": "Penghargaan atas Gagasan & Ide Kreatif"
     },
@@ -26,7 +26,7 @@
       "ego": "Rendah",
       "score": 39,
       "gaya_belajar": "Auditori & Emosional (Bercerita & Diskusi)",
-      "gaya_belajar_arab": "As Sama' (السَّمْعَ) - Auditori",
+      "gaya_belajar_arab": "As Sama' (\u0627\u0644\u0633\u0651\u064e\u0645\u0652\u0639\u064e) - Auditori",
       "gaya_belajar_tempat": "Lingkungan yang mendukung diskusi terbuka, FGD, atau mendengarkan ceramah inspiratif.",
       "bahasa_hati": "Sentuhan Perhatian & Kata Penguatan"
     }
@@ -76,12 +76,12 @@
     "category_id": "pk",
     "current_category_to_rank": "Pekerja Keras",
     "traits_to_rank": [
-      "🎯 Berambisi dan bertekad kuat",
-      "⚖️ Tegas dan berwibawa",
-      "🔥 Giat bekerja keras hingga tuntas"
+      "\ud83c\udfaf Berambisi dan bertekad kuat",
+      "\u2696\ufe0f Tegas dan berwibawa",
+      "\ud83d\udd25 Giat bekerja keras hingga tuntas"
     ]
   },
-  "present_result_prompt": "👋 Halo! Anda adalah Asisten Eksplorasi Minat yang hangat dan interaktif. Anda sedang berbicara dengan pengguna yang belum pernah dievaluasi.",
-  "next_prompt_hint": "Sapa pengguna dengan antusias (gunakan emoji ramah seperti 👋 atau ✨). Ajukan SATU atau DUA pertanyaan ringan tentang hobi, apa yang sering mereka lakukan di waktu luang, atau aktivitas apa yang membuat mereka lupa waktu. Jangan menginterogasi, biarkan mengalir seperti obrolan santai di kafe ☕.",
+  "present_result_prompt": "\ud83d\udc4b Halo! Anda adalah Asisten Eksplorasi Minat yang hangat dan interaktif. Anda sedang berbicara dengan pengguna yang belum pernah dievaluasi.",
+  "next_prompt_hint": "Sapa pengguna dengan antusias (gunakan emoji ramah seperti \ud83d\udc4b atau \u2728). Ajukan SATU atau DUA pertanyaan ringan tentang hobi, apa yang sering mereka lakukan di waktu luang, atau aktivitas apa yang membuat mereka lupa waktu. Jangan menginterogasi, biarkan mengalir seperti obrolan santai di kafe \u2615. Setelah pengguna menjawab atau menceritakan hobinya, ANDA HARUS BERHENTI BERTANYA dan Segera **PANGGIL API**: `GET https://observasikarakter.insanmustaqbal.or.id/api/v1/flow/obsbakat/step2` untuk melanjutkan ke tahap pengumpulan data personal.\n\n[PERINGATAN KERAS UNTUK AI]: JANGAN PERNAH berhalusinasi atau mengarang sendiri balasan (response) JSON dari API ini! Anda WAJIB memanggil/mengeksekusi endpoint GET ini secara nyata di latar belakang (misalnya menggunakan tool HTTP/Python internal Anda). Tunggu hingga Anda menerima respons aktual dari server API, lalu lanjutkan instruksi berdasarkan respons server tersebut.",
   "chart_url": "https://api.observasikarakter.com/v1/render/chart/sess_abc123_step1_6cat.png"
 }

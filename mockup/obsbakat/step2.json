@@ -50,7 +50,7 @@
   "preview_message": "Bagan Pohon siap untuk dirender teks oleh AI.",
   "svg_url": "https://api.observasikarakter.com/v1/render/preview-tb40/sess_abc123.svg",
   "chart_url": "https://api.observasikarakter.com/v1/render/chart/sess_abc123_step2_18traits.png",
-  "present_result_prompt": "🎉 Hebat! Anda telah memicu rasa ingin tahu pengguna.",
+  "present_result_prompt": "\ud83c\udf89 Hebat! Anda telah memicu rasa ingin tahu pengguna.",
   "next_action": {
     "type": "choose_verification_depth",
     "options": [
@@ -68,5 +68,5 @@
       }
     ]
   },
-  "next_prompt_hint": "Berikan apresiasi singkat (misalnya 'Wah, menarik sekali! 🤩'). Sebelum kita masuk ke analisis mendalam, tanyakan kelengkapan data pribadi pengguna (Nama Lengkap, Usia, dan Organisasi/Event jika ada) secara ramah 📋. JANGAN berikan kesimpulan akhir atau memanggil API sebelum data ini terkumpul."
+  "next_prompt_hint": "Berikan apresiasi singkat (misalnya 'Wah, menarik sekali! \ud83e\udd29'). Sebelum kita masuk ke analisis mendalam, tanyakan kelengkapan data pribadi pengguna (Nama Lengkap, Usia, dan Organisasi/Event jika ada) secara ramah \ud83d\udccb. JANGAN berikan kesimpulan akhir atau memanggil API sebelum data ini terkumpul. Setelah semua data diri tersebut terkumpul dari pengguna, Segera **PANGGIL API**: `GET https://observasikarakter.insanmustaqbal.or.id/api/v1/flow/obsbakat/step3`.\n\n[PERINGATAN KERAS UNTUK AI]: JANGAN PERNAH berhalusinasi atau mengarang sendiri balasan (response) JSON dari API ini! Anda WAJIB memanggil/mengeksekusi endpoint GET ini secara nyata di latar belakang (misalnya menggunakan tool HTTP/Python internal Anda). Tunggu hingga Anda menerima respons aktual dari server API, lalu lanjutkan instruksi berdasarkan respons server tersebut."
 }

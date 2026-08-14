@@ -3,3 +3,9 @@ uvicorn>=0.23.0
 pydantic>=2.0.0
 pytest>=7.4.0
 httpx>=0.24.1
+sqlalchemy
+alembic
+psycopg2-binary
+python-dotenv
+matplotlib
+cairosvg

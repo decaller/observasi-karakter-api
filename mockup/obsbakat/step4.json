@@ -128,7 +128,7 @@
     }
   ],
   "present_result_prompt": "🎓 Luar biasa! Ini adalah tahap puncak dari Observasi Bakat.\n\n1. Tampilkan peta bakat 40 pilar (Peta Bakat) dengan memanggil gambar ini: `![Peta Bakat]({chart_url})` 🗺️.",
-  "chart_url": "http://localhost:8000/api/v1/chart/obsbakat",
+  "chart_url": "http://localhost:8000/result/v1/chart/obsbakat",
   "next_action": {
     "type": "choose_mvp_profession"
   },

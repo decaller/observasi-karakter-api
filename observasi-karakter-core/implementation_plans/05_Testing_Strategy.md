@@ -10,10 +10,10 @@ Unit testing berfokus pada fungsi-fungsi isolatif (di luar pemanggilan jaringan/
 ## 2. API / Integration Testing (FastAPI TestClient)
 Pengujian API end-to-end mensimulasikan panggilan dari LLM ke *endpoint* kita menggunakan `fastapi.testclient.TestClient`.
 - **Flow Observasi Bakat**:
-  - Simulasi `GET /api/v1/flow/obsbakat/step1` hingga `step4` secara berurutan.
+  - Simulasi `GET /result/v1/flow/obsbakat/step1` hingga `step4` secara berurutan.
   - Memastikan *state* tersimpan dengan benar jika menggunakan database, atau respons *prompt* selanjutnya sudah tepat.
 - **Flow Observasi Karakter**:
-  - Simulasi pengiriman data laten dari LLM: `GET /api/v1/flow/obskarakter/step2?scores=[...]`.
+  - Simulasi pengiriman data laten dari LLM: `GET /result/v1/flow/obskarakter/step2?scores=[...]`.
   - Memastikan endpoint mengembalikan URL *Bar Chart* yang benar dan menginstruksikan transisi (cross-sell) ke *obsbakat*.
 
 ## 3. LLM Mocking

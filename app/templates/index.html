@@ -99,9 +99,9 @@
             try {
                 let endpoint = '';
                 if (type === 'obsbakat') {
-                    endpoint = '/api/v1/flow/obsbakat/step1';
+                    endpoint = '/result/v1/flow/obsbakat/step1';
                 } else if (type === 'obskarakter') {
-                    endpoint = '/api/v1/flow/obskarakter/step1_wawancara';
+                    endpoint = '/result/v1/flow/obskarakter/step1_wawancara';
                 }
 
                 const response = await fetch(endpoint);

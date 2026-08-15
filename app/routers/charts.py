@@ -6,7 +6,7 @@ from fastapi import APIRouter, Query, HTTPException, Response
 import matplotlib.pyplot as plt
 import cairosvg
 
-router = APIRouter(prefix="/api/v1/chart", tags=["Charts"])
+router = APIRouter(prefix="/result/v1/chart", tags=["Charts"])
 
 @router.get("/obskarakter", responses={200: {"content": {"image/png": {}}}})
 async def chart_obskarakter(scores: str = Query(..., description="JSON array of scores. Example: [{'kategori': 'Aqidah', 'score': 80}]")):

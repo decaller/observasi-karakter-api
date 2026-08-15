@@ -2,7 +2,7 @@
 
 Track ini dirancang untuk mengevaluasi 45 Indikator Pertumbuhan Karakter Anak (Iman, Aqidah, Ibadah, Kemandirian, Belajar, Bakat) dan menghubungkannya dengan tingkat kesiapan *Baligh*.
 
-## 1. `GET /api/v1/flow/obskarakter/step1_wawancara`
+## 1. `GET /result/v1/flow/obskarakter/step1_wawancara`
 **Purpose:** Menginisiasi wawancara observasi karakter berbasis pengelompokan 15 sub-kategori.
 
 - **Backend Action:**
@@ -13,7 +13,7 @@ Track ini dirancang untuk mengevaluasi 45 Indikator Pertumbuhan Karakter Anak (I
 
 ---
 
-## 2. `GET /api/v1/flow/obskarakter/step2`
+## 2. `GET /result/v1/flow/obskarakter/step2`
 **Purpose:** Menerima data skor dari AI, memproses, dan menyajikan laporan akhir serta menjembatani ke produk berikutnya (Cross-Selling).
 
 - **Query Parameters (Pydantic Model):**
@@ -23,4 +23,4 @@ Track ini dirancang untuk mengevaluasi 45 Indikator Pertumbuhan Karakter Anak (I
   - Menyimpan `scores` ke database relasional (PostgreSQL/MongoDB) yang ditenagai FastAPI untuk *historical tracking* pengguna.
   - Mengembalikan *prompt* yang berisi *Bar Chart URL* (misal via QuickChart.io) untuk membandingkan **Skor Realita** dengan **Ekspektasi Umur**.
   - Menginstruksikan AI untuk memberikan nasehat *Parenting* tentang apa yang harus dipacu sebelum usia Baligh.
-  - **Cross-Sell Trigger:** Menginstruksikan AI di akhir laporannya untuk menawarkan kelanjutan layanan: "Apakah Anda ingin melanjutkan ke pemetaan Observasi Bakat (40 Pilar)?", yang akan otomatis mengarahkan panggilan ke `/api/v1/flow/obsbakat/step1`.
+  - **Cross-Sell Trigger:** Menginstruksikan AI di akhir laporannya untuk menawarkan kelanjutan layanan: "Apakah Anda ingin melanjutkan ke pemetaan Observasi Bakat (40 Pilar)?", yang akan otomatis mengarahkan panggilan ke `/result/v1/flow/obsbakat/step1`.

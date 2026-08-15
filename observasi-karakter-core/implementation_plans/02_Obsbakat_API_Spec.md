@@ -8,7 +8,7 @@ Track ini dirancang untuk memandu pengguna dalam mengeksplorasi potensi dan baka
 
 ---
 
-## 1. `GET /api/v1/flow/obsbakat/step1`
+## 1. `GET /result/v1/flow/obsbakat/step1`
 **Purpose:** Menginisiasi wawancara *Talent Mapping*.
 
 - **Backend Action:** 
@@ -17,7 +17,7 @@ Track ini dirancang untuk memandu pengguna dalam mengeksplorasi potensi dan baka
 
 ---
 
-## 2. `GET /api/v1/flow/obsbakat/step2`
+## 2. `GET /result/v1/flow/obsbakat/step2`
 **Purpose:** Menangkap *Personal Data* dan transisi ke analisis mendalam.
 
 - **Backend Action:**
@@ -27,7 +27,7 @@ Track ini dirancang untuk memandu pengguna dalam mengeksplorasi potensi dan baka
 
 ---
 
-## 3. `GET /api/v1/flow/obsbakat/step3`
+## 3. `GET /result/v1/flow/obsbakat/step3`
 **Purpose:** Proses iteratif (looping) untuk *funneling* 40 Pilar Bakat.
 
 - **Backend Action:**
@@ -38,7 +38,7 @@ Track ini dirancang untuk memandu pengguna dalam mengeksplorasi potensi dan baka
 
 ---
 
-## 4. `GET /api/v1/flow/obsbakat/step4`
+## 4. `GET /result/v1/flow/obsbakat/step4`
 **Purpose:** Penyajian laporan akhir (Personal Curriculum).
 
 - **Backend Action:**

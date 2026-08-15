@@ -61,7 +61,7 @@ async def homepage(request: Request):
 
 
 @app.get(
-    "/api/v1/flow/obskarakter/step1_wawancara",
+    "/result/v1/flow/obskarakter/step1_wawancara",
     summary="Step 1 — Daftar indikator wawancara karakter (HTML)",
 )
 async def step1_wawancara(request: Request):
@@ -92,7 +92,7 @@ async def step1_wawancara(request: Request):
         "Lanjutkan wawancara dengan menanyakan kelompok sub-kategori lainnya 🗣️. "
         f"SETELAH WAWANCARA SELESAI (5-7 putaran): Secara opsional, tanyakan kelengkapan data pribadi pengguna 📋. "
         "Setelah data terkumpul, ANDA HARUS BERHENTI BERTANYA 🛑 dan "
-        f"PANGGIL URL: {APP_DOMAIN}/api/v1/flow/obskarakter/step2/[array_of_json_scores]. "
+        f"PANGGIL URL: {APP_DOMAIN}/result/v1/flow/obskarakter/step2/[array_of_json_scores]. "
         "Contoh format scores: "
         '[{"kategori":"Aqidah","score":80},{"kategori":"Ibadah","score":75},'
         '{"kategori":"Kemandirian","score":40},{"kategori":"Belajar","score":90},'
@@ -112,7 +112,7 @@ async def step1_wawancara(request: Request):
 
 
 @app.get(
-    "/api/v1/flow/obskarakter/step2/{scores:path}",
+    "/result/v1/flow/obskarakter/step2/{scores:path}",
     summary="Step 2 — Laporan hasil observasi karakter (HTML)",
 )
 async def step2_hasil(request: Request, scores: str):
@@ -176,7 +176,7 @@ async def step2_hasil(request: Request, scores: str):
         "Langkah selanjutnya yang sangat krusial adalah memetakan potensi bawaan (bakat) dan arah "
         "karirnya di masa depan 🚀. Apakah Anda ingin melanjutkan ke fase Observasi Bakat (40 Pilar) sekarang? 🤔' "
         "Jika pengguna setuju, langsung PANGGIL URL: "
-        f"{APP_DOMAIN}/api/v1/flow/obsbakat/step1 🔗. "
+        f"{APP_DOMAIN}/result/v1/flow/obsbakat/step1 🔗. "
         "[PERINGATAN KERAS UNTUK AI]: Anda WAJIB merakit URL secara utuh. "
         "JIKA GAGAL mengakses, berikan TAUTAN URL lengkap kepada pengguna."
     )

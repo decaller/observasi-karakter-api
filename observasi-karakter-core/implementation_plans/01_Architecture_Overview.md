@@ -30,6 +30,6 @@ Struktur data dirancang highly-relational (walaupun saat ini berformat JSON Mock
 ## Routing & Global Prompting (`llms.txt`)
 Frontend hanya perlu mengumpankan file `llms.txt` kepada AI sebagai instruksi utama (System Prompt).
 Di dalam file tersebut, terdapat *routing logic* sederhana:
-- Jika konteksnya **Observasi Bakat**, AI diinstruksikan untuk memanggil `/api/v1/flow/obsbakat/step1`.
-- Jika konteksnya **Observasi Karakter**, AI diinstruksikan untuk memanggil `/api/v1/flow/obskarakter/step1_wawancara`.
+- Jika konteksnya **Observasi Bakat**, AI diinstruksikan untuk memanggil `/result/v1/flow/obsbakat/step1`.
+- Jika konteksnya **Observasi Karakter**, AI diinstruksikan untuk memanggil `/result/v1/flow/obskarakter/step1_wawancara`.
 Frontend dapat menyuntikkan variabel (seperti `{{TARGET_NAMA}}` atau `{{OBSERVASI_TIPE}}`) secara dinamis ke dalam file ini sebelum dikirim ke LLM.

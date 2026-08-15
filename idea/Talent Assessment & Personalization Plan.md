@@ -63,7 +63,7 @@ Combine an interactive Micro-Frontend & REST API (for structured data collection
 
 ### 3. Data Schemas
 
-#### A. API Request Schema (POST `/api/v1/assessments`)
+#### A. API Request Schema (POST `/result/v1/assessments`)
 This schema collects raw inputs from the Web UI.
 
 ```json
@@ -120,7 +120,7 @@ This schema collects raw inputs from the Web UI.
 }
 ```
 
-#### B. REST API Output Payload (GET `/api/v1/results/{id}`)
+#### B. REST API Output Payload (GET `/result/v1/results/{id}`)
 This JSON payload is fetched by the Web AI when the user provides their result link.
 
 ```json
@@ -189,7 +189,7 @@ You are an expert Talent Analytics Specialist & Personal Curriculum Coach.
 
 DIRECTIONS:
 1. Fetch and parse the talent assessment data from this URL:
-   https://your-domain.com/api/v1/results/assess_987654321
+   https://your-domain.com/result/v1/results/assess_987654321
 
 2. Using the fetched JSON, generate the "Laporan Lengkap" covering:
    - Analysis of Personality (Introvert/Ego) and top talent scores.
@@ -229,7 +229,7 @@ Please fetch the URL data and present Step 1 (Laporan Lengkap & Profession Selec
 
 #### Step 3: Deployment
 - **Frontend & API**: Deploy on Vercel, Netlify, or Cloudflare Workers (free tier friendly).
-- **CORS Settings**: Ensure `GET /api/v1/results/{id}` permits open GET access so web chatbots (ChatGPT/Gemini/Claude) can fetch the JSON spec seamlessly.
+- **CORS Settings**: Ensure `GET /result/v1/results/{id}` permits open GET access so web chatbots (ChatGPT/Gemini/Claude) can fetch the JSON spec seamlessly.
 
 ### Summary of Architecture Benefits
 - **Zero Technical Setup for End Users**: No extensions, CLI tools, or MCP setups. Users fill out a web form, copy a link, and talk to ChatGPT/Gemini.

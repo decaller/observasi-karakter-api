@@ -3,7 +3,7 @@ from pathlib import Path
 from fastapi import APIRouter
 from app.models.schemas import StepResponse
 
-router = APIRouter(prefix="/api/v1/flow/obsbakat", tags=["Obsbakat"])
+router = APIRouter(prefix="/result/v1/flow/obsbakat", tags=["Obsbakat"])
 
 MOCKUP_DIR = Path("mockup/obsbakat")
 

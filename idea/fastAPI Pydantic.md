@@ -8,7 +8,7 @@ When a non-technical user submits their intake form via your Web UI, data travel
 
 1. HTTP Transport Wire (Raw Strings / JSON Payload)
    ```http
-   POST /api/v1/assessments
+   POST /result/v1/assessments
    Headers: Content-Type: application/json
    Body: {"personality_type": "Introvert", "ego_level": "Sedang", ...}
    ```
@@ -243,7 +243,7 @@ app.add_middleware(
 DB_STORE: Dict[str, AssessmentResultPayload] = {}
 
 @app.post(
-    "/api/v1/assessments",
+    "/result/v1/assessments",
     response_model=Dict[str, str],
     status_code=status.HTTP_201_CREATED,
     summary="Submit raw user assessment intake",
@@ -256,7 +256,7 @@ async def submit_assessment(payload: AssessmentSubmission):
     result = calculate_scores(payload)
     DB_STORE[result.assessment_id] = result
 
-    result_url = f"https://your-domain.com/api/v1/results/{result.assessment_id}"
+    result_url = f"https://your-domain.com/result/v1/results/{result.assessment_id}"
     
     return {
         "assessment_id": result.assessment_id,
@@ -268,7 +268,7 @@ async def submit_assessment(payload: AssessmentSubmission):
     }
 
 @app.get(
-    "/api/v1/results/{assessment_id}",
+    "/result/v1/results/{assessment_id}",
     response_model=AssessmentResultPayload,
     status_code=status.HTTP_200_OK,
     summary="Fetch calculated assessment result payload for Web AI",

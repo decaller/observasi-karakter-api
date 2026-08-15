@@ -9,7 +9,7 @@ from app.models.schemas import StepResponse, SubKategoriScore
 from app.models.domain import Session, Score
 from app.database import get_db
 
-router = APIRouter(prefix="/api/v1/flow/obskarakter", tags=["ObsKarakter"])
+router = APIRouter(prefix="/result/v1/flow/obskarakter", tags=["ObsKarakter"])
 
 MOCKUP_DIR = Path("mockup/obskarakter")
 

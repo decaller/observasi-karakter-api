@@ -204,6 +204,10 @@ async def step2_hasil(request: Request, scores: str):
     "/result/v1/flow/obsbakat/step1",
     summary="Step 1 — Pemetaan Awal Bakat (HTML)",
 )
+@app.get(
+    "/result/v1/flow/obsbakat/step1/p/{p}/ego/{ego}",
+    summary="Step 1 — Pemetaan Awal Bakat dengan Parameter Path (HTML)",
+)
 async def obsbakat_step1(request: Request, p: str = "50", ego: str = "t,s,r"):
     session_id = f"bkt_{uuid.uuid4().hex[:8]}"
 
@@ -284,7 +288,7 @@ async def obsbakat_step3(request: Request):
         "Gali lebih dalam! 🕵️‍♂️ Ajukan pertanyaan lanjutan yang lebih tajam berdasarkan jawaban mereka "
         "sebelumnya untuk membedakan antara sekadar hobi atau potensi sejati. Gunakan teknik funneling (mengerucut) 🎯. "
         "Setelah Anda selesai melakukan funneling dan minat pengguna sudah cukup mengerucut, Segera panggil tautan berikut: "
-        f"{APP_DOMAIN}/result/v1/flow/obsbakat/step4?data=analisis_selesai "
+        f"{APP_DOMAIN}/result/v1/flow/obsbakat/step4/analisis_selesai "
         "untuk memberikan rekomendasi final."
     )
 
@@ -300,6 +304,10 @@ async def obsbakat_step3(request: Request):
 @app.get(
     "/result/v1/flow/obsbakat/step4",
     summary="Step 4 — Hasil Akhir Bakat (HTML)",
+)
+@app.get(
+    "/result/v1/flow/obsbakat/step4/{data:path}",
+    summary="Step 4 — Hasil Akhir Bakat dengan Parameter Path (HTML)",
 )
 async def obsbakat_step4(request: Request, data: str = ""):
     session_id = f"bkt_{uuid.uuid4().hex[:8]}"

@@ -8,6 +8,7 @@ from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
+from fastapi.responses import PlainTextResponse
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -58,6 +59,11 @@ async def homepage(request: Request):
     return templates.TemplateResponse(request, "home.html", {
         "llms_txt": LLMS_TXT,
     })
+
+
+@app.get("/robots.txt", response_class=PlainTextResponse, summary="Robots.txt untuk mengizinkan AI crawler")
+async def robots_txt():
+    return "User-agent: *\nAllow: /\n"
 
 
 @app.get(

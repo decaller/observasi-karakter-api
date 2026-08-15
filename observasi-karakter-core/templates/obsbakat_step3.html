@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block title %}Observasi Bakat — Analisis 40 Pilar (Step 3){% endblock %}
+{% block meta_description %}Tahap pemetaan mendalam 40 Pilar Bakat menggunakan dataset JSON.{% endblock %}
+
+{% block content %}
+<div class="container">
+    <section class="hero" style="padding-bottom: 1.5rem;">
+        <h1>🔍 Observasi Bakat (40 Pilar) - Step 3</h1>
+        <p>Proses funneling dan pendalaman bakat.</p>
+    </section>
+
+    <div class="instruction-block">
+        <strong>📝 Instruksi Utama untuk AI:</strong> {{ present_result_prompt }}
+    </div>
+
+    <hr class="divider">
+
+    <div class="card" style="margin-bottom: 1.5rem;">
+        <h3>Dataset Pendukung (Untuk Analisis AI)</h3>
+        <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.5rem;">
+            Gunakan data di bawah ini untuk mengidentifikasi potensi bakat pengguna. Anda tidak perlu membacakannya mentah-mentah kepada pengguna, cukup gunakan sebagai referensi.
+        </p>
+        
+        <details>
+            <summary style="cursor: pointer; font-weight: 600; color: var(--accent);">Lihat Data 40 Pilar Bakat</summary>
+            <pre style="background: #111827; color: #a5b4fc; padding: 1rem; border-radius: 6px; overflow-x: auto; font-size: 0.8rem; margin-top: 0.5rem;">{{ data3 | tojson(indent=2) }}</pre>
+        </details>
+        
+        <details style="margin-top: 1rem;">
+            <summary style="cursor: pointer; font-weight: 600; color: var(--accent);">Lihat Data Profesi</summary>
+            <pre style="background: #111827; color: #a5b4fc; padding: 1rem; border-radius: 6px; overflow-x: auto; font-size: 0.8rem; margin-top: 0.5rem;">{{ data_profesi | tojson(indent=2) }}</pre>
+        </details>
+    </div>
+
+    <hr class="divider">
+
+    <div class="instruction-block" style="border-left-color: var(--accent);">
+        <strong>🗣️ Panduan Langkah Selanjutnya:</strong> {{ next_prompt_hint }}
+    </div>
+
+    <div class="card" style="text-align: center;">
+        <p style="color: var(--text-secondary); margin-bottom: 0.75rem;">
+            <span class="badge badge-info">Session</span> <code style="color: var(--accent); font-family: var(--font-mono);">{{ session_id }}</code>
+        </p>
+        <p style="color: var(--text-muted); font-size: 0.85rem;">
+            Lakukan wawancara interaktif secara mendalam (iteratif). Jika sudah mengerucut, panggil endpoint Step 4.
+        </p>
+    </div>
+</div>
+{% endblock %}

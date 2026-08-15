@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}Observasi Bakat — Hasil Akhir (Step 4){% endblock %}
+{% block meta_description %}Laporan hasil pemetaan bakat dan rekomendasi aktivitas (Personal Curriculum).{% endblock %}
+
+{% block content %}
+<div class="container">
+    <section class="hero" style="padding-bottom: 1.5rem;">
+        <h1>🏆 Laporan Observasi Bakat (40 Pilar)</h1>
+        <p>Curriculum Personal dan Rekomendasi Profesi Masa Depan.</p>
+    </section>
+
+    <div class="instruction-block">
+        <strong>📝 Instruksi Utama untuk AI:</strong> {{ present_result_prompt }}
+    </div>
+
+    <hr class="divider">
+
+    <div class="card" style="margin-bottom: 1.5rem;">
+        <h3>Kesimpulan Potensi</h3>
+        <p>Gunakan data di bawah ini untuk menyusun narasi presentasi hasil bakat.</p>
+        <pre style="background: #111827; color: #a5b4fc; padding: 1rem; border-radius: 6px; overflow-x: auto; font-size: 0.8rem; margin-top: 0.5rem;">{{ result_data | tojson(indent=2) }}</pre>
+    </div>
+
+    <hr class="divider">
+
+    <div class="instruction-block" style="border-left-color: var(--accent);">
+        <strong>🗣️ Panduan Penutup:</strong> {{ next_prompt_hint }}
+    </div>
+
+    <div class="card" style="text-align: center;">
+        <p style="color: var(--text-secondary); margin-bottom: 0.75rem;">
+            <span class="badge badge-info">Session</span> <code style="color: var(--accent); font-family: var(--font-mono);">{{ session_id }}</code>
+        </p>
+        <p style="color: var(--text-muted); font-size: 0.85rem;">
+            Observasi Bakat telah selesai.
+        </p>
+    </div>
+</div>
+{% endblock %}

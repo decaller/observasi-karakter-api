@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}Observasi Bakat — Data Personal (Step 2){% endblock %}
+{% block meta_description %}Pengumpulan data personal sebelum analisa bakat.{% endblock %}
+
+{% block content %}
+<div class="container">
+    <section class="hero" style="padding-bottom: 1.5rem;">
+        <h1>📋 Observasi Bakat (40 Pilar) - Step 2</h1>
+        <p>Lengkapi profil pengguna sebelum masuk ke inti pemetaan.</p>
+    </section>
+
+    <div class="instruction-block">
+        <strong>📝 Instruksi Utama untuk AI:</strong> {{ present_result_prompt }}
+    </div>
+
+    <hr class="divider">
+
+    <div class="instruction-block" style="border-left-color: var(--accent);">
+        <strong>🗣️ Panduan Langkah Selanjutnya:</strong> {{ next_prompt_hint }}
+    </div>
+
+    <div class="card" style="text-align: center;">
+        <p style="color: var(--text-secondary); margin-bottom: 0.75rem;">
+            <span class="badge badge-info">Session</span> <code style="color: var(--accent); font-family: var(--font-mono);">{{ session_id }}</code>
+        </p>
+        <p style="color: var(--text-muted); font-size: 0.85rem;">
+            AI wajib mengumpulkan Nama, Usia, dan Organisasi sebelum beralih ke Step 3.
+        </p>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,3630 @@
+{
+  "Trainer": {
+    "related_pillars": [
+      "4",
+      "30"
+    ],
+    "related_jurusans": [
+      "Teknik Sipil",
+      "Teknik Listrik",
+      "Teknik Mesin",
+      "Manajemen",
+      "Ilmu Keguruan",
+      "Ilmu Komunikasi",
+      "PGTK (Pendidikan Guru TK)",
+      "Keperawatan",
+      "Psikologi",
+      "Kepariwisataan",
+      "Pelayanan Publik"
+    ]
+  },
+  "Pendamping pelatihan": {
+    "related_pillars": [
+      "4"
+    ],
+    "related_jurusans": [
+      "Teknik Sipil",
+      "Teknik Listrik",
+      "Teknik Mesin",
+      "Manajemen"
+    ]
+  },
+  "Peningkatan SDM": {
+    "related_pillars": [
+      "4"
+    ],
+    "related_jurusans": [
+      "Teknik Sipil",
+      "Teknik Listrik",
+      "Teknik Mesin",
+      "Manajemen"
+    ]
+  },
+  "Konsultan": {
+    "related_pillars": [
+      "4",
+      "31",
+      "21",
+      "7",
+      "38",
+      "8"
+    ],
+    "related_jurusans": [
+      "Teknik Sipil",
+      "Teknik Listrik",
+      "Teknik Mesin",
+      "Manajemen",
+      "Syari\u2019ah",
+      "Keguruan",
+      "Psikologi Islam",
+      "Manajemen Bisnis",
+      "Ilmu Agama",
+      "Ilmu Komunikasi",
+      "Ilmu Manajemen",
+      "Ilmu Hukum",
+      "Psikologi",
+      "Bimbingan Konseling",
+      "Ilmu Aqidah",
+      "Ilmu Ushuluddin",
+      "Ilmu Jiwa",
+      "Teknik Penerbangan",
+      "Teknik Konstruksi Bangunan",
+      "Keselamatan Lalu Lintas",
+      "Akuntansi",
+      "Manajemen Keuangan",
+      "dan jurusan lain yang terkait dengan kehati-hatian",
+      "keamanan",
+      "dan ketelitian",
+      "Ilmu Fiqih",
+      "Ekonomi Syariah",
+      "Sosiologi",
+      "Hubungan Internasional",
+      "atau jurusan lain yang banyak menumbuhkan kemampuan untuk menemukan solusi"
+    ]
+  },
+  "Team penanganan masalah lembaga/perusahaan": {
+    "related_pillars": [
+      "4"
+    ],
+    "related_jurusans": [
+      "Teknik Sipil",
+      "Teknik Listrik",
+      "Teknik Mesin",
+      "Manajemen"
+    ]
+  },
+  "Penyelenggara Lembaga pendidikan": {
+    "related_pillars": [
+      "6"
+    ],
+    "related_jurusans": [
+      "Teknik Sipil",
+      "Teknik Permesinan",
+      "Teknik Instalasi dan Tenaga Listrik",
+      "Teknik perkayuan",
+      "Teknik Otomotif",
+      "Keperawatan",
+      "Kebidanan",
+      "Marketing",
+      "dan jurusan lain yang banyak menumbuhkan sifat kerja keras"
+    ]
+  },
+  "Pemborong Proyek": {
+    "related_pillars": [
+      "6"
+    ],
+    "related_jurusans": [
+      "Teknik Sipil",
+      "Teknik Permesinan",
+      "Teknik Instalasi dan Tenaga Listrik",
+      "Teknik perkayuan",
+      "Teknik Otomotif",
+      "Keperawatan",
+      "Kebidanan",
+      "Marketing",
+      "dan jurusan lain yang banyak menumbuhkan sifat kerja keras"
+    ]
+  },
+  "Tenaga Penjual/Sales": {
+    "related_pillars": [
+      "6"
+    ],
+    "related_jurusans": [
+      "Teknik Sipil",
+      "Teknik Permesinan",
+      "Teknik Instalasi dan Tenaga Listrik",
+      "Teknik perkayuan",
+      "Teknik Otomotif",
+      "Keperawatan",
+      "Kebidanan",
+      "Marketing",
+      "dan jurusan lain yang banyak menumbuhkan sifat kerja keras"
+    ]
+  },
+  "Teknisi Proyek": {
+    "related_pillars": [
+      "6"
+    ],
+    "related_jurusans": [
+      "Teknik Sipil",
+      "Teknik Permesinan",
+      "Teknik Instalasi dan Tenaga Listrik",
+      "Teknik perkayuan",
+      "Teknik Otomotif",
+      "Keperawatan",
+      "Kebidanan",
+      "Marketing",
+      "dan jurusan lain yang banyak menumbuhkan sifat kerja keras"
+    ]
+  },
+  "Teknisi Lapangan": {
+    "related_pillars": [
+      "6"
+    ],
+    "related_jurusans": [
+      "Teknik Sipil",
+      "Teknik Permesinan",
+      "Teknik Instalasi dan Tenaga Listrik",
+      "Teknik perkayuan",
+      "Teknik Otomotif",
+      "Keperawatan",
+      "Kebidanan",
+      "Marketing",
+      "dan jurusan lain yang banyak menumbuhkan sifat kerja keras"
+    ]
+  },
+  "Pekerja Lapangan": {
+    "related_pillars": [
+      "6"
+    ],
+    "related_jurusans": [
+      "Teknik Sipil",
+      "Teknik Permesinan",
+      "Teknik Instalasi dan Tenaga Listrik",
+      "Teknik perkayuan",
+      "Teknik Otomotif",
+      "Keperawatan",
+      "Kebidanan",
+      "Marketing",
+      "dan jurusan lain yang banyak menumbuhkan sifat kerja keras"
+    ]
+  },
+  "Relawan": {
+    "related_pillars": [
+      "6",
+      "24",
+      "16",
+      "17",
+      "23",
+      "34",
+      "40"
+    ],
+    "related_jurusans": [
+      "Teknik Sipil",
+      "Teknik Permesinan",
+      "Teknik Instalasi dan Tenaga Listrik",
+      "Teknik perkayuan",
+      "Teknik Otomotif",
+      "Keperawatan",
+      "Kebidanan",
+      "Marketing",
+      "dan jurusan lain yang banyak menumbuhkan sifat kerja keras",
+      "Pendidikan Agama Islam",
+      "Ilmu Fiqih",
+      "Manajemen",
+      "Sosiologi",
+      "Bimbingan Konseling",
+      "Manajemen Bisnis",
+      "Ilmu Ekonomi",
+      "Ilmu Sosial",
+      "Ilmu Manajemen Sumber Daya Alam",
+      "Akuntansi",
+      "atau jurusan lain yang terkait dengan perhitungan nilai ekonomis",
+      "Dakwah",
+      "Psikologi",
+      "Sastra",
+      "Ilmu Komunikasi",
+      "Keguruan",
+      "Ilmu Kejiwaan",
+      "PAI",
+      "Syari\u2019ah",
+      "Ilmu Hukum",
+      "Akademi Kepolisian",
+      "Akademi Militer",
+      "Tadriibud Du\u2019aat",
+      "Tarbiyah",
+      "Penyuluh Masyarakat",
+      "Kesehatan Masyarakat",
+      "Kedokteran",
+      "Kepalangmerahan",
+      "Kepariwisataan"
+    ]
+  },
+  "Petugas SAR": {
+    "related_pillars": [
+      "6"
+    ],
+    "related_jurusans": [
+      "Teknik Sipil",
+      "Teknik Permesinan",
+      "Teknik Instalasi dan Tenaga Listrik",
+      "Teknik perkayuan",
+      "Teknik Otomotif",
+      "Keperawatan",
+      "Kebidanan",
+      "Marketing",
+      "dan jurusan lain yang banyak menumbuhkan sifat kerja keras"
+    ]
+  },
+  "Pemadam Kebakaran": {
+    "related_pillars": [
+      "6"
+    ],
+    "related_jurusans": [
+      "Teknik Sipil",
+      "Teknik Permesinan",
+      "Teknik Instalasi dan Tenaga Listrik",
+      "Teknik perkayuan",
+      "Teknik Otomotif",
+      "Keperawatan",
+      "Kebidanan",
+      "Marketing",
+      "dan jurusan lain yang banyak menumbuhkan sifat kerja keras"
+    ]
+  },
+  "Pengelola Keuangan Umat": {
+    "related_pillars": [
+      "13"
+    ],
+    "related_jurusans": [
+      "Syariah",
+      "Hukum Islam",
+      "Manajemen Keuangan",
+      "Akuntansi",
+      "Administrasi"
+    ]
+  },
+  "Bendahara": {
+    "related_pillars": [
+      "13",
+      "37"
+    ],
+    "related_jurusans": [
+      "Syariah",
+      "Hukum Islam",
+      "Manajemen Keuangan",
+      "Akuntansi",
+      "Administrasi",
+      "Keguruan/tarbiyah",
+      "akuntansi",
+      "bisnis dan manajemen",
+      "administrasi"
+    ]
+  },
+  "Team Sarana Prasarana": {
+    "related_pillars": [
+      "13"
+    ],
+    "related_jurusans": [
+      "Syariah",
+      "Hukum Islam",
+      "Manajemen Keuangan",
+      "Akuntansi",
+      "Administrasi"
+    ]
+  },
+  "Team Belanja": {
+    "related_pillars": [
+      "13"
+    ],
+    "related_jurusans": [
+      "Syariah",
+      "Hukum Islam",
+      "Manajemen Keuangan",
+      "Akuntansi",
+      "Administrasi"
+    ]
+  },
+  "Pemimpin": {
+    "related_pillars": [
+      "13",
+      "21",
+      "1",
+      "17"
+    ],
+    "related_jurusans": [
+      "Syariah",
+      "Hukum Islam",
+      "Manajemen Keuangan",
+      "Akuntansi",
+      "Administrasi",
+      "Ilmu Agama",
+      "Ilmu Komunikasi",
+      "Ilmu Manajemen",
+      "Ilmu Hukum",
+      "Psikologi",
+      "Bimbingan Konseling",
+      "Ekonomi Syariah",
+      "Manajemen",
+      "Marketing",
+      "Manajemen Lingkungan",
+      "Dakwah",
+      "Sastra",
+      "Sosiologi",
+      "Keguruan",
+      "Ilmu Kejiwaan"
+    ]
+  },
+  "Akuntan": {
+    "related_pillars": [
+      "13"
+    ],
+    "related_jurusans": [
+      "Syariah",
+      "Hukum Islam",
+      "Manajemen Keuangan",
+      "Akuntansi",
+      "Administrasi"
+    ]
+  },
+  "Ahli Hikmah": {
+    "related_pillars": [
+      "15"
+    ],
+    "related_jurusans": [
+      "Ilmu Jiwa",
+      "Sastra",
+      "Arsitektur",
+      "Tata Busana",
+      "Seni",
+      "Desain Komunikasi Visual",
+      "Animasi",
+      "Fotografi"
+    ]
+  },
+  "Sastrawan": {
+    "related_pillars": [
+      "15"
+    ],
+    "related_jurusans": [
+      "Ilmu Jiwa",
+      "Sastra",
+      "Arsitektur",
+      "Tata Busana",
+      "Seni",
+      "Desain Komunikasi Visual",
+      "Animasi",
+      "Fotografi"
+    ]
+  },
+  "Penulis": {
+    "related_pillars": [
+      "15",
+      "14",
+      "22"
+    ],
+    "related_jurusans": [
+      "Ilmu Jiwa",
+      "Sastra",
+      "Arsitektur",
+      "Tata Busana",
+      "Seni",
+      "Desain Komunikasi Visual",
+      "Animasi",
+      "Fotografi",
+      "Teknik Kimia",
+      "Teknik Informatika (IT)",
+      "Administrasi Perkantoran",
+      "Pendidikan Agama",
+      "Konseling Keluarga",
+      "Keguruan",
+      "Ilmu Komunikasi",
+      "Hubungan Internasional",
+      "Marketing",
+      "Manajemen",
+      "Manajemen Bisnis"
+    ]
+  },
+  "Designer Fashion": {
+    "related_pillars": [
+      "15"
+    ],
+    "related_jurusans": [
+      "Ilmu Jiwa",
+      "Sastra",
+      "Arsitektur",
+      "Tata Busana",
+      "Seni",
+      "Desain Komunikasi Visual",
+      "Animasi",
+      "Fotografi"
+    ]
+  },
+  "Designer Interior": {
+    "related_pillars": [
+      "15"
+    ],
+    "related_jurusans": [
+      "Ilmu Jiwa",
+      "Sastra",
+      "Arsitektur",
+      "Tata Busana",
+      "Seni",
+      "Desain Komunikasi Visual",
+      "Animasi",
+      "Fotografi"
+    ]
+  },
+  "Arsitek": {
+    "related_pillars": [
+      "15"
+    ],
+    "related_jurusans": [
+      "Ilmu Jiwa",
+      "Sastra",
+      "Arsitektur",
+      "Tata Busana",
+      "Seni",
+      "Desain Komunikasi Visual",
+      "Animasi",
+      "Fotografi"
+    ]
+  },
+  "Kaligrafer": {
+    "related_pillars": [
+      "15"
+    ],
+    "related_jurusans": [
+      "Ilmu Jiwa",
+      "Sastra",
+      "Arsitektur",
+      "Tata Busana",
+      "Seni",
+      "Desain Komunikasi Visual",
+      "Animasi",
+      "Fotografi"
+    ]
+  },
+  "Tentara": {
+    "related_pillars": [
+      "18"
+    ],
+    "related_jurusans": [
+      "Ilmu Hukum Islam",
+      "Syariah",
+      "Akademi Militer",
+      "Akademi Kepolisian",
+      "Manajemen",
+      "Manajemen Bisnis"
+    ]
+  },
+  "TNI": {
+    "related_pillars": [
+      "18"
+    ],
+    "related_jurusans": [
+      "Ilmu Hukum Islam",
+      "Syariah",
+      "Akademi Militer",
+      "Akademi Kepolisian",
+      "Manajemen",
+      "Manajemen Bisnis"
+    ]
+  },
+  "Komandan": {
+    "related_pillars": [
+      "18"
+    ],
+    "related_jurusans": [
+      "Ilmu Hukum Islam",
+      "Syariah",
+      "Akademi Militer",
+      "Akademi Kepolisian",
+      "Manajemen",
+      "Manajemen Bisnis"
+    ]
+  },
+  "Pengusaha": {
+    "related_pillars": [
+      "18"
+    ],
+    "related_jurusans": [
+      "Ilmu Hukum Islam",
+      "Syariah",
+      "Akademi Militer",
+      "Akademi Kepolisian",
+      "Manajemen",
+      "Manajemen Bisnis"
+    ]
+  },
+  "Petugas Keamanan": {
+    "related_pillars": [
+      "18"
+    ],
+    "related_jurusans": [
+      "Ilmu Hukum Islam",
+      "Syariah",
+      "Akademi Militer",
+      "Akademi Kepolisian",
+      "Manajemen",
+      "Manajemen Bisnis"
+    ]
+  },
+  "Sales": {
+    "related_pillars": [
+      "18",
+      "5",
+      "33",
+      "20",
+      "22",
+      "39"
+    ],
+    "related_jurusans": [
+      "Ilmu Hukum Islam",
+      "Syariah",
+      "Akademi Militer",
+      "Akademi Kepolisian",
+      "Manajemen",
+      "Manajemen Bisnis",
+      "Manajemen dan Bisnis",
+      "Teknologi Terapan",
+      "Marketing",
+      "Kewirausahaan",
+      "Pekerjaan Umum",
+      "PAI",
+      "Keguruan",
+      "Tarbiyah",
+      "Ilmu Sosial",
+      "Psikologi",
+      "atau jurusan lain yang terkait dengan penguatan empati atau perasaan",
+      "Olahraga dan Kesehatan",
+      "Sekolah Pelatih",
+      "Pendidikan Agama",
+      "Konseling Keluarga",
+      "Ilmu Komunikasi",
+      "Hubungan Internasional",
+      "Keperawatan",
+      "Kepariwisataan"
+    ]
+  },
+  "Negosiator": {
+    "related_pillars": [
+      "18"
+    ],
+    "related_jurusans": [
+      "Ilmu Hukum Islam",
+      "Syariah",
+      "Akademi Militer",
+      "Akademi Kepolisian",
+      "Manajemen",
+      "Manajemen Bisnis"
+    ]
+  },
+  "Wartawan": {
+    "related_pillars": [
+      "18"
+    ],
+    "related_jurusans": [
+      "Ilmu Hukum Islam",
+      "Syariah",
+      "Akademi Militer",
+      "Akademi Kepolisian",
+      "Manajemen",
+      "Manajemen Bisnis"
+    ]
+  },
+  "Pengacara": {
+    "related_pillars": [
+      "18",
+      "35",
+      "22",
+      "23"
+    ],
+    "related_jurusans": [
+      "Ilmu Hukum Islam",
+      "Syariah",
+      "Akademi Militer",
+      "Akademi Kepolisian",
+      "Manajemen",
+      "Manajemen Bisnis",
+      "Hukum Islam",
+      "Sekolah Tinggi Pertahanan Nasional",
+      "Politeknik Keuangan Negara",
+      "Administrasi",
+      "Akuntansi",
+      "Pendidikan Agama",
+      "Konseling Keluarga",
+      "Keguruan",
+      "Ilmu Komunikasi",
+      "Hubungan Internasional",
+      "Marketing",
+      "PAI",
+      "Syari\u2019ah",
+      "Ilmu Hukum",
+      "Ilmu Sosial"
+    ]
+  },
+  "HRD": {
+    "related_pillars": [
+      "18",
+      "33"
+    ],
+    "related_jurusans": [
+      "Ilmu Hukum Islam",
+      "Syariah",
+      "Akademi Militer",
+      "Akademi Kepolisian",
+      "Manajemen",
+      "Manajemen Bisnis",
+      "PAI",
+      "Keguruan",
+      "Tarbiyah",
+      "Ilmu Sosial",
+      "Psikologi",
+      "atau jurusan lain yang terkait dengan penguatan empati atau perasaan"
+    ]
+  },
+  "Pembelian": {
+    "related_pillars": [
+      "18"
+    ],
+    "related_jurusans": [
+      "Ilmu Hukum Islam",
+      "Syariah",
+      "Akademi Militer",
+      "Akademi Kepolisian",
+      "Manajemen",
+      "Manajemen Bisnis"
+    ]
+  },
+  "Guru": {
+    "related_pillars": [
+      "30",
+      "31",
+      "9",
+      "21",
+      "3",
+      "2",
+      "25"
+    ],
+    "related_jurusans": [
+      "Ilmu Keguruan",
+      "Ilmu Komunikasi",
+      "PGTK (Pendidikan Guru TK)",
+      "Keperawatan",
+      "Psikologi",
+      "Kepariwisataan",
+      "Pelayanan Publik",
+      "Syari\u2019ah",
+      "Keguruan",
+      "Psikologi Islam",
+      "Manajemen",
+      "Manajemen Bisnis",
+      "Hukum Islam",
+      "Ilmu Agama",
+      "Ilmu Manajemen",
+      "Ilmu Hukum",
+      "Bimbingan Konseling",
+      "Ilmu Aqidah",
+      "Syariah",
+      "Fiqih",
+      "Tadriibud Du\u2019aat",
+      "Hubungan Internasional",
+      "Hadits",
+      "Ilmu Sains dan Teknologi",
+      "Dakwah",
+      "Ilmu Ekonomi"
+    ]
+  },
+  "Konselor": {
+    "related_pillars": [
+      "30",
+      "35",
+      "21",
+      "24",
+      "33",
+      "17",
+      "34",
+      "8",
+      "11",
+      "32"
+    ],
+    "related_jurusans": [
+      "Ilmu Keguruan",
+      "Ilmu Komunikasi",
+      "PGTK (Pendidikan Guru TK)",
+      "Keperawatan",
+      "Psikologi",
+      "Kepariwisataan",
+      "Pelayanan Publik",
+      "Hukum Islam",
+      "Syariah",
+      "Sekolah Tinggi Pertahanan Nasional",
+      "Politeknik Keuangan Negara",
+      "Akademi Kepolisian",
+      "Akademi Militer",
+      "Administrasi",
+      "Akuntansi",
+      "Ilmu Agama",
+      "Ilmu Manajemen",
+      "Ilmu Hukum",
+      "Bimbingan Konseling",
+      "Pendidikan Agama Islam",
+      "Ilmu Fiqih",
+      "Manajemen",
+      "Sosiologi",
+      "Manajemen Bisnis",
+      "PAI",
+      "Keguruan",
+      "Tarbiyah",
+      "Ilmu Sosial",
+      "atau jurusan lain yang terkait dengan penguatan empati atau perasaan",
+      "Dakwah",
+      "Sastra",
+      "Ilmu Kejiwaan",
+      "Tadriibud Du\u2019aat",
+      "Penyuluh Masyarakat",
+      "Kesehatan Masyarakat",
+      "Kebidanan",
+      "Kedokteran",
+      "Kepalangmerahan",
+      "Ekonomi Syariah",
+      "Hubungan Internasional",
+      "atau jurusan lain yang banyak menumbuhkan kemampuan untuk menemukan solusi",
+      "Ilmu Aqidah",
+      "Ilmu Jiwa",
+      "Ilmu Adab",
+      "Pendidikan Guru TK (PGTK)",
+      "Pendidikan Terapist",
+      "Peternakan"
+    ]
+  },
+  "Presenter": {
+    "related_pillars": [
+      "30",
+      "22"
+    ],
+    "related_jurusans": [
+      "Ilmu Keguruan",
+      "Ilmu Komunikasi",
+      "PGTK (Pendidikan Guru TK)",
+      "Keperawatan",
+      "Psikologi",
+      "Kepariwisataan",
+      "Pelayanan Publik",
+      "Pendidikan Agama",
+      "Konseling Keluarga",
+      "Keguruan",
+      "Hubungan Internasional",
+      "Marketing",
+      "Manajemen",
+      "Manajemen Bisnis"
+    ]
+  },
+  "Motivator": {
+    "related_pillars": [
+      "30",
+      "29",
+      "20",
+      "22"
+    ],
+    "related_jurusans": [
+      "Ilmu Keguruan",
+      "Ilmu Komunikasi",
+      "PGTK (Pendidikan Guru TK)",
+      "Keperawatan",
+      "Psikologi",
+      "Kepariwisataan",
+      "Pelayanan Publik",
+      "Marketing",
+      "Keguruan",
+      "Manajemen",
+      "Manajemen Bisnis",
+      "Olahraga dan Kesehatan",
+      "Sekolah Pelatih",
+      "Pendidikan Agama",
+      "Konseling Keluarga",
+      "Hubungan Internasional"
+    ]
+  },
+  "Pemandu Kegiatan Anak": {
+    "related_pillars": [
+      "30"
+    ],
+    "related_jurusans": [
+      "Ilmu Keguruan",
+      "Ilmu Komunikasi",
+      "PGTK (Pendidikan Guru TK)",
+      "Keperawatan",
+      "Psikologi",
+      "Kepariwisataan",
+      "Pelayanan Publik"
+    ]
+  },
+  "Pelayan Publik": {
+    "related_pillars": [
+      "30"
+    ],
+    "related_jurusans": [
+      "Ilmu Keguruan",
+      "Ilmu Komunikasi",
+      "PGTK (Pendidikan Guru TK)",
+      "Keperawatan",
+      "Psikologi",
+      "Kepariwisataan",
+      "Pelayanan Publik"
+    ]
+  },
+  "Tour Leader (Pemandu Wisata)": {
+    "related_pillars": [
+      "30"
+    ],
+    "related_jurusans": [
+      "Ilmu Keguruan",
+      "Ilmu Komunikasi",
+      "PGTK (Pendidikan Guru TK)",
+      "Keperawatan",
+      "Psikologi",
+      "Kepariwisataan",
+      "Pelayanan Publik"
+    ]
+  },
+  "Pendidik": {
+    "related_pillars": [
+      "31",
+      "9"
+    ],
+    "related_jurusans": [
+      "Syari\u2019ah",
+      "Keguruan",
+      "Psikologi Islam",
+      "Manajemen",
+      "Manajemen Bisnis",
+      "Hukum Islam",
+      "Ilmu Komunikasi"
+    ]
+  },
+  "Penasehat": {
+    "related_pillars": [
+      "31",
+      "21",
+      "7",
+      "38",
+      "17",
+      "25"
+    ],
+    "related_jurusans": [
+      "Syari\u2019ah",
+      "Keguruan",
+      "Psikologi Islam",
+      "Manajemen",
+      "Manajemen Bisnis",
+      "Ilmu Agama",
+      "Ilmu Komunikasi",
+      "Ilmu Manajemen",
+      "Ilmu Hukum",
+      "Psikologi",
+      "Bimbingan Konseling",
+      "Ilmu Aqidah",
+      "Ilmu Ushuluddin",
+      "Ilmu Jiwa",
+      "Teknik Penerbangan",
+      "Teknik Mesin",
+      "Teknik Konstruksi Bangunan",
+      "Keselamatan Lalu Lintas",
+      "Teknik Listrik",
+      "Akuntansi",
+      "Manajemen Keuangan",
+      "dan jurusan lain yang terkait dengan kehati-hatian",
+      "keamanan",
+      "dan ketelitian",
+      "Dakwah",
+      "Sastra",
+      "Sosiologi",
+      "Ilmu Kejiwaan",
+      "Ilmu Ekonomi"
+    ]
+  },
+  "Manajer": {
+    "related_pillars": [
+      "31",
+      "21",
+      "28",
+      "7",
+      "39",
+      "2",
+      "8",
+      "25"
+    ],
+    "related_jurusans": [
+      "Syari\u2019ah",
+      "Keguruan",
+      "Psikologi Islam",
+      "Manajemen",
+      "Manajemen Bisnis",
+      "Ilmu Agama",
+      "Ilmu Komunikasi",
+      "Ilmu Manajemen",
+      "Ilmu Hukum",
+      "Psikologi",
+      "Bimbingan Konseling",
+      "Ilmu Aqidah",
+      "Akuntansi",
+      "Administrasi",
+      "Sosiologi",
+      "Ilmu Ushuluddin",
+      "Ilmu Jiwa",
+      "Keperawatan",
+      "Kepariwisataan",
+      "Marketing",
+      "Tadriibud Du\u2019aat",
+      "Hadits",
+      "Fiqih",
+      "Syariah",
+      "Ilmu Sains dan Teknologi",
+      "Ilmu Fiqih",
+      "Ekonomi Syariah",
+      "Hubungan Internasional",
+      "atau jurusan lain yang banyak menumbuhkan kemampuan untuk menemukan solusi",
+      "Dakwah",
+      "Ilmu Ekonomi"
+    ]
+  },
+  "Supervisor": {
+    "related_pillars": [
+      "31",
+      "19",
+      "21",
+      "39"
+    ],
+    "related_jurusans": [
+      "Syari\u2019ah",
+      "Keguruan",
+      "Psikologi Islam",
+      "Manajemen",
+      "Manajemen Bisnis",
+      "Administrasi",
+      "manajemen",
+      "manajemen bisnis",
+      "Sekolah Tinggi Pemerintahan Dalam Negeri",
+      "Akademi Militer",
+      "Akademi Kepolisian",
+      "Ilmu Agama",
+      "Ilmu Komunikasi",
+      "Ilmu Manajemen",
+      "Ilmu Hukum",
+      "Psikologi",
+      "Bimbingan Konseling",
+      "Keperawatan",
+      "Kepariwisataan",
+      "Marketing"
+    ]
+  },
+  "Pengawas": {
+    "related_pillars": [
+      "31",
+      "19",
+      "21",
+      "38"
+    ],
+    "related_jurusans": [
+      "Syari\u2019ah",
+      "Keguruan",
+      "Psikologi Islam",
+      "Manajemen",
+      "Manajemen Bisnis",
+      "Administrasi",
+      "manajemen",
+      "manajemen bisnis",
+      "Sekolah Tinggi Pemerintahan Dalam Negeri",
+      "Akademi Militer",
+      "Akademi Kepolisian",
+      "Ilmu Agama",
+      "Ilmu Komunikasi",
+      "Ilmu Manajemen",
+      "Ilmu Hukum",
+      "Psikologi",
+      "Bimbingan Konseling",
+      "Teknik Penerbangan",
+      "Teknik Mesin",
+      "Teknik Konstruksi Bangunan",
+      "Keselamatan Lalu Lintas",
+      "Teknik Listrik",
+      "Akuntansi",
+      "Manajemen Keuangan",
+      "dan jurusan lain yang terkait dengan kehati-hatian",
+      "keamanan",
+      "dan ketelitian"
+    ]
+  },
+  "Marketing": {
+    "related_pillars": [
+      "31",
+      "26",
+      "22"
+    ],
+    "related_jurusans": [
+      "Syari\u2019ah",
+      "Keguruan",
+      "Psikologi Islam",
+      "Manajemen",
+      "Manajemen Bisnis",
+      "Dakwah",
+      "Manajemen Pendidikan",
+      "Sosiologi",
+      "Pendidikan Agama",
+      "Konseling Keluarga",
+      "Ilmu Komunikasi",
+      "Hubungan Internasional",
+      "Marketing"
+    ]
+  },
+  "Customer Service": {
+    "related_pillars": [
+      "31"
+    ],
+    "related_jurusans": [
+      "Syari\u2019ah",
+      "Keguruan",
+      "Psikologi Islam",
+      "Manajemen",
+      "Manajemen Bisnis"
+    ]
+  },
+  "Leader": {
+    "related_pillars": [
+      "31",
+      "21",
+      "24",
+      "3",
+      "8"
+    ],
+    "related_jurusans": [
+      "Syari\u2019ah",
+      "Keguruan",
+      "Psikologi Islam",
+      "Manajemen",
+      "Manajemen Bisnis",
+      "Ilmu Agama",
+      "Ilmu Komunikasi",
+      "Ilmu Manajemen",
+      "Ilmu Hukum",
+      "Psikologi",
+      "Bimbingan Konseling",
+      "Pendidikan Agama Islam",
+      "Ilmu Fiqih",
+      "Keperawatan",
+      "Sosiologi",
+      "Ilmu Aqidah",
+      "Syariah",
+      "Fiqih",
+      "Tadriibud Du\u2019aat",
+      "Hubungan Internasional",
+      "Ekonomi Syariah",
+      "atau jurusan lain yang banyak menumbuhkan kemampuan untuk menemukan solusi"
+    ]
+  },
+  "Hakim": {
+    "related_pillars": [
+      "35",
+      "9",
+      "12",
+      "23",
+      "27"
+    ],
+    "related_jurusans": [
+      "Hukum Islam",
+      "Syariah",
+      "Sekolah Tinggi Pertahanan Nasional",
+      "Politeknik Keuangan Negara",
+      "Akademi Kepolisian",
+      "Akademi Militer",
+      "Administrasi",
+      "Akuntansi",
+      "Keguruan",
+      "Manajemen",
+      "Ilmu Komunikasi",
+      "Manajemen Bisnis",
+      "Administrasi Keuangan",
+      "Ilmu Hukum",
+      "PAI",
+      "Syari\u2019ah",
+      "Ilmu Sosial",
+      "Konseling keluarga",
+      "Hukum Publik",
+      "Hukum Perdata",
+      "Hukum Internasioanal",
+      "Hukum Pidana",
+      "atau jurusan lainnya yang terkait dengan keadilan"
+    ]
+  },
+  "Intelijen": {
+    "related_pillars": [
+      "35"
+    ],
+    "related_jurusans": [
+      "Hukum Islam",
+      "Syariah",
+      "Sekolah Tinggi Pertahanan Nasional",
+      "Politeknik Keuangan Negara",
+      "Akademi Kepolisian",
+      "Akademi Militer",
+      "Administrasi",
+      "Akuntansi"
+    ]
+  },
+  "Administrator": {
+    "related_pillars": [
+      "35"
+    ],
+    "related_jurusans": [
+      "Hukum Islam",
+      "Syariah",
+      "Sekolah Tinggi Pertahanan Nasional",
+      "Politeknik Keuangan Negara",
+      "Akademi Kepolisian",
+      "Akademi Militer",
+      "Administrasi",
+      "Akuntansi"
+    ]
+  },
+  "Pengelola Dokumen Negara": {
+    "related_pillars": [
+      "35"
+    ],
+    "related_jurusans": [
+      "Hukum Islam",
+      "Syariah",
+      "Sekolah Tinggi Pertahanan Nasional",
+      "Politeknik Keuangan Negara",
+      "Akademi Kepolisian",
+      "Akademi Militer",
+      "Administrasi",
+      "Akuntansi"
+    ]
+  },
+  "Psikolog": {
+    "related_pillars": [
+      "35",
+      "33",
+      "11",
+      "32"
+    ],
+    "related_jurusans": [
+      "Hukum Islam",
+      "Syariah",
+      "Sekolah Tinggi Pertahanan Nasional",
+      "Politeknik Keuangan Negara",
+      "Akademi Kepolisian",
+      "Akademi Militer",
+      "Administrasi",
+      "Akuntansi",
+      "PAI",
+      "Keguruan",
+      "Tarbiyah",
+      "Ilmu Sosial",
+      "Manajemen",
+      "Manajemen Bisnis",
+      "Psikologi",
+      "atau jurusan lain yang terkait dengan penguatan empati atau perasaan",
+      "Ilmu Aqidah",
+      "Ilmu Jiwa",
+      "Ilmu Adab",
+      "Sastra",
+      "Pendidikan Guru TK (PGTK)",
+      "Pendidikan Terapist",
+      "Keperawatan",
+      "Peternakan"
+    ]
+  },
+  "Kepolisian": {
+    "related_pillars": [
+      "35"
+    ],
+    "related_jurusans": [
+      "Hukum Islam",
+      "Syariah",
+      "Sekolah Tinggi Pertahanan Nasional",
+      "Politeknik Keuangan Negara",
+      "Akademi Kepolisian",
+      "Akademi Militer",
+      "Administrasi",
+      "Akuntansi"
+    ]
+  },
+  "Militer": {
+    "related_pillars": [
+      "35"
+    ],
+    "related_jurusans": [
+      "Hukum Islam",
+      "Syariah",
+      "Sekolah Tinggi Pertahanan Nasional",
+      "Politeknik Keuangan Negara",
+      "Akademi Kepolisian",
+      "Akademi Militer",
+      "Administrasi",
+      "Akuntansi"
+    ]
+  },
+  "Keuangan Negara": {
+    "related_pillars": [
+      "35"
+    ],
+    "related_jurusans": [
+      "Hukum Islam",
+      "Syariah",
+      "Sekolah Tinggi Pertahanan Nasional",
+      "Politeknik Keuangan Negara",
+      "Akademi Kepolisian",
+      "Akademi Militer",
+      "Administrasi",
+      "Akuntansi"
+    ]
+  },
+  "Perintis atau pelopor": {
+    "related_pillars": [
+      "5"
+    ],
+    "related_jurusans": [
+      "Manajemen dan Bisnis",
+      "Teknologi Terapan",
+      "Marketing",
+      "Kewirausahaan",
+      "Pekerjaan Umum"
+    ]
+  },
+  "Team penggerak": {
+    "related_pillars": [
+      "5"
+    ],
+    "related_jurusans": [
+      "Manajemen dan Bisnis",
+      "Teknologi Terapan",
+      "Marketing",
+      "Kewirausahaan",
+      "Pekerjaan Umum"
+    ]
+  },
+  "Entrepreneur": {
+    "related_pillars": [
+      "5",
+      "24",
+      "1",
+      "7"
+    ],
+    "related_jurusans": [
+      "Manajemen dan Bisnis",
+      "Teknologi Terapan",
+      "Marketing",
+      "Kewirausahaan",
+      "Pekerjaan Umum",
+      "Pendidikan Agama Islam",
+      "Ilmu Fiqih",
+      "Manajemen",
+      "Keperawatan",
+      "Sosiologi",
+      "Bimbingan Konseling",
+      "Manajemen Bisnis",
+      "Ekonomi Syariah",
+      "Manajemen Lingkungan",
+      "Ilmu Aqidah",
+      "Ilmu Ushuluddin",
+      "Ilmu Jiwa"
+    ]
+  },
+  "Pengelola usaha-usaha baru": {
+    "related_pillars": [
+      "5"
+    ],
+    "related_jurusans": [
+      "Manajemen dan Bisnis",
+      "Teknologi Terapan",
+      "Marketing",
+      "Kewirausahaan",
+      "Pekerjaan Umum"
+    ]
+  },
+  "atau usaha yang memerlukan perubahan besar": {
+    "related_pillars": [
+      "5"
+    ],
+    "related_jurusans": [
+      "Manajemen dan Bisnis",
+      "Teknologi Terapan",
+      "Marketing",
+      "Kewirausahaan",
+      "Pekerjaan Umum"
+    ]
+  },
+  "Pengajar": {
+    "related_pillars": [
+      "9",
+      "3"
+    ],
+    "related_jurusans": [
+      "Hukum Islam",
+      "Keguruan",
+      "Manajemen",
+      "Ilmu Komunikasi",
+      "Manajemen Bisnis",
+      "Ilmu Aqidah",
+      "Syariah",
+      "Fiqih",
+      "Tadriibud Du\u2019aat",
+      "Hubungan Internasional"
+    ]
+  },
+  "Juru Damai": {
+    "related_pillars": [
+      "9",
+      "25"
+    ],
+    "related_jurusans": [
+      "Hukum Islam",
+      "Keguruan",
+      "Manajemen",
+      "Ilmu Komunikasi",
+      "Manajemen Bisnis",
+      "Dakwah",
+      "Ilmu Ekonomi"
+    ]
+  },
+  "Mediator": {
+    "related_pillars": [
+      "9",
+      "27"
+    ],
+    "related_jurusans": [
+      "Hukum Islam",
+      "Keguruan",
+      "Manajemen",
+      "Ilmu Komunikasi",
+      "Manajemen Bisnis",
+      "Syariah",
+      "Konseling keluarga",
+      "Hukum Publik",
+      "Hukum Perdata",
+      "Hukum Internasioanal",
+      "Ilmu Hukum",
+      "Hukum Pidana",
+      "atau jurusan lainnya yang terkait dengan keadilan"
+    ]
+  },
+  "Relator": {
+    "related_pillars": [
+      "9",
+      "28"
+    ],
+    "related_jurusans": [
+      "Hukum Islam",
+      "Keguruan",
+      "Manajemen",
+      "Ilmu Komunikasi",
+      "Manajemen Bisnis",
+      "Ilmu Aqidah",
+      "Akuntansi",
+      "Administrasi",
+      "Sosiologi",
+      "Ilmu Hukum"
+    ]
+  },
+  "Pelayanan Publik": {
+    "related_pillars": [
+      "9"
+    ],
+    "related_jurusans": [
+      "Hukum Islam",
+      "Keguruan",
+      "Manajemen",
+      "Ilmu Komunikasi",
+      "Manajemen Bisnis"
+    ]
+  },
+  "Pengelola Dana Umat (Donasi)": {
+    "related_pillars": [
+      "12"
+    ],
+    "related_jurusans": [
+      "Administrasi Keuangan",
+      "Hukum Islam",
+      "Ilmu Hukum",
+      "Manajemen"
+    ]
+  },
+  "Kurir/Duta": {
+    "related_pillars": [
+      "12"
+    ],
+    "related_jurusans": [
+      "Administrasi Keuangan",
+      "Hukum Islam",
+      "Ilmu Hukum",
+      "Manajemen"
+    ]
+  },
+  "Bidang Keuangan": {
+    "related_pillars": [
+      "12"
+    ],
+    "related_jurusans": [
+      "Administrasi Keuangan",
+      "Hukum Islam",
+      "Ilmu Hukum",
+      "Manajemen"
+    ]
+  },
+  "Pengelola Baitul Mal": {
+    "related_pillars": [
+      "12"
+    ],
+    "related_jurusans": [
+      "Administrasi Keuangan",
+      "Hukum Islam",
+      "Ilmu Hukum",
+      "Manajemen"
+    ]
+  },
+  "Team Belanja (Pengadaan Sarana Prasarana)": {
+    "related_pillars": [
+      "12"
+    ],
+    "related_jurusans": [
+      "Administrasi Keuangan",
+      "Hukum Islam",
+      "Ilmu Hukum",
+      "Manajemen"
+    ]
+  },
+  "Jaksa": {
+    "related_pillars": [
+      "12"
+    ],
+    "related_jurusans": [
+      "Administrasi Keuangan",
+      "Hukum Islam",
+      "Ilmu Hukum",
+      "Manajemen"
+    ]
+  },
+  "Penegak Peraturan": {
+    "related_pillars": [
+      "19"
+    ],
+    "related_jurusans": [
+      "Administrasi",
+      "manajemen",
+      "manajemen bisnis",
+      "Sekolah Tinggi Pemerintahan Dalam Negeri",
+      "Akademi Militer",
+      "Akademi Kepolisian"
+    ]
+  },
+  "Penegak Disiplin": {
+    "related_pillars": [
+      "19"
+    ],
+    "related_jurusans": [
+      "Administrasi",
+      "manajemen",
+      "manajemen bisnis",
+      "Sekolah Tinggi Pemerintahan Dalam Negeri",
+      "Akademi Militer",
+      "Akademi Kepolisian"
+    ]
+  },
+  "Mandor": {
+    "related_pillars": [
+      "19"
+    ],
+    "related_jurusans": [
+      "Administrasi",
+      "manajemen",
+      "manajemen bisnis",
+      "Sekolah Tinggi Pemerintahan Dalam Negeri",
+      "Akademi Militer",
+      "Akademi Kepolisian"
+    ]
+  },
+  "Evaluator": {
+    "related_pillars": [
+      "19",
+      "21"
+    ],
+    "related_jurusans": [
+      "Administrasi",
+      "manajemen",
+      "manajemen bisnis",
+      "Sekolah Tinggi Pemerintahan Dalam Negeri",
+      "Akademi Militer",
+      "Akademi Kepolisian",
+      "Ilmu Agama",
+      "Ilmu Komunikasi",
+      "Ilmu Manajemen",
+      "Ilmu Hukum",
+      "Psikologi",
+      "Bimbingan Konseling"
+    ]
+  },
+  "Auditor": {
+    "related_pillars": [
+      "19"
+    ],
+    "related_jurusans": [
+      "Administrasi",
+      "manajemen",
+      "manajemen bisnis",
+      "Sekolah Tinggi Pemerintahan Dalam Negeri",
+      "Akademi Militer",
+      "Akademi Kepolisian"
+    ]
+  },
+  "Manajer.": {
+    "related_pillars": [
+      "19"
+    ],
+    "related_jurusans": [
+      "Administrasi",
+      "manajemen",
+      "manajemen bisnis",
+      "Sekolah Tinggi Pemerintahan Dalam Negeri",
+      "Akademi Militer",
+      "Akademi Kepolisian"
+    ]
+  },
+  "Da\u2019i": {
+    "related_pillars": [
+      "21",
+      "3",
+      "26",
+      "22",
+      "40"
+    ],
+    "related_jurusans": [
+      "Ilmu Agama",
+      "Ilmu Komunikasi",
+      "Ilmu Manajemen",
+      "Ilmu Hukum",
+      "Psikologi",
+      "Bimbingan Konseling",
+      "Ilmu Aqidah",
+      "Syariah",
+      "Fiqih",
+      "Tadriibud Du\u2019aat",
+      "Keguruan",
+      "Hubungan Internasional",
+      "Manajemen",
+      "Dakwah",
+      "Manajemen Pendidikan",
+      "Manajemen Bisnis",
+      "Sosiologi",
+      "Pendidikan Agama",
+      "Konseling Keluarga",
+      "Marketing",
+      "Syari\u2019ah",
+      "Keperawatan",
+      "Kebidanan",
+      "Ilmu Sosial",
+      "Kepariwisataan"
+    ]
+  },
+  "Da\u2019iyah": {
+    "related_pillars": [
+      "21",
+      "3"
+    ],
+    "related_jurusans": [
+      "Ilmu Agama",
+      "Ilmu Komunikasi",
+      "Ilmu Manajemen",
+      "Ilmu Hukum",
+      "Psikologi",
+      "Bimbingan Konseling",
+      "Ilmu Aqidah",
+      "Syariah",
+      "Fiqih",
+      "Tadriibud Du\u2019aat",
+      "Keguruan",
+      "Hubungan Internasional",
+      "Manajemen"
+    ]
+  },
+  "Pelatih": {
+    "related_pillars": [
+      "21"
+    ],
+    "related_jurusans": [
+      "Ilmu Agama",
+      "Ilmu Komunikasi",
+      "Ilmu Manajemen",
+      "Ilmu Hukum",
+      "Psikologi",
+      "Bimbingan Konseling"
+    ]
+  },
+  "Pelayanan Pelanggan (Customer Service)": {
+    "related_pillars": [
+      "21",
+      "39"
+    ],
+    "related_jurusans": [
+      "Ilmu Agama",
+      "Ilmu Komunikasi",
+      "Ilmu Manajemen",
+      "Ilmu Hukum",
+      "Psikologi",
+      "Bimbingan Konseling",
+      "Keperawatan",
+      "Keguruan",
+      "Kepariwisataan",
+      "Marketing",
+      "Manajemen"
+    ]
+  },
+  "Petugas Sosial": {
+    "related_pillars": [
+      "24"
+    ],
+    "related_jurusans": [
+      "Pendidikan Agama Islam",
+      "Ilmu Fiqih",
+      "Manajemen",
+      "Keperawatan",
+      "Sosiologi",
+      "Bimbingan Konseling",
+      "Manajemen Bisnis"
+    ]
+  },
+  "Perawat": {
+    "related_pillars": [
+      "24",
+      "33",
+      "34",
+      "40",
+      "32"
+    ],
+    "related_jurusans": [
+      "Pendidikan Agama Islam",
+      "Ilmu Fiqih",
+      "Manajemen",
+      "Keperawatan",
+      "Sosiologi",
+      "Bimbingan Konseling",
+      "Manajemen Bisnis",
+      "PAI",
+      "Keguruan",
+      "Tarbiyah",
+      "Ilmu Sosial",
+      "Psikologi",
+      "atau jurusan lain yang terkait dengan penguatan empati atau perasaan",
+      "Tadriibud Du\u2019aat",
+      "Penyuluh Masyarakat",
+      "Kesehatan Masyarakat",
+      "Kebidanan",
+      "Kedokteran",
+      "Kepalangmerahan",
+      "Syari\u2019ah",
+      "Kepariwisataan",
+      "Pendidikan Guru TK (PGTK)",
+      "Pendidikan Terapist",
+      "Peternakan"
+    ]
+  },
+  "Pengelola LAZIZ": {
+    "related_pillars": [
+      "24"
+    ],
+    "related_jurusans": [
+      "Pendidikan Agama Islam",
+      "Ilmu Fiqih",
+      "Manajemen",
+      "Keperawatan",
+      "Sosiologi",
+      "Bimbingan Konseling",
+      "Manajemen Bisnis"
+    ]
+  },
+  "Pengelola Baitul Maal": {
+    "related_pillars": [
+      "24",
+      "37"
+    ],
+    "related_jurusans": [
+      "Pendidikan Agama Islam",
+      "Ilmu Fiqih",
+      "Manajemen",
+      "Keperawatan",
+      "Sosiologi",
+      "Bimbingan Konseling",
+      "Manajemen Bisnis",
+      "Keguruan/tarbiyah",
+      "akuntansi",
+      "bisnis dan manajemen",
+      "administrasi"
+    ]
+  },
+  "Panitia Bulan Amal": {
+    "related_pillars": [
+      "24"
+    ],
+    "related_jurusans": [
+      "Pendidikan Agama Islam",
+      "Ilmu Fiqih",
+      "Manajemen",
+      "Keperawatan",
+      "Sosiologi",
+      "Bimbingan Konseling",
+      "Manajemen Bisnis"
+    ]
+  },
+  "manajer": {
+    "related_pillars": [
+      "24"
+    ],
+    "related_jurusans": [
+      "Pendidikan Agama Islam",
+      "Ilmu Fiqih",
+      "Manajemen",
+      "Keperawatan",
+      "Sosiologi",
+      "Bimbingan Konseling",
+      "Manajemen Bisnis"
+    ]
+  },
+  "Pengajar Aqidah": {
+    "related_pillars": [
+      "28"
+    ],
+    "related_jurusans": [
+      "Ilmu Aqidah",
+      "Akuntansi",
+      "Administrasi",
+      "Manajemen",
+      "Sosiologi",
+      "Ilmu Hukum"
+    ]
+  },
+  "Pelayanan Masyarakat": {
+    "related_pillars": [
+      "28"
+    ],
+    "related_jurusans": [
+      "Ilmu Aqidah",
+      "Akuntansi",
+      "Administrasi",
+      "Manajemen",
+      "Sosiologi",
+      "Ilmu Hukum"
+    ]
+  },
+  "Pelayanan Pelanggan": {
+    "related_pillars": [
+      "28",
+      "34",
+      "40"
+    ],
+    "related_jurusans": [
+      "Ilmu Aqidah",
+      "Akuntansi",
+      "Administrasi",
+      "Manajemen",
+      "Sosiologi",
+      "Ilmu Hukum",
+      "Tadriibud Du\u2019aat",
+      "Tarbiyah",
+      "Penyuluh Masyarakat",
+      "Kesehatan Masyarakat",
+      "Keperawatan",
+      "Kebidanan",
+      "Kedokteran",
+      "Kepalangmerahan",
+      "Syari\u2019ah",
+      "Ilmu Sosial",
+      "Kepariwisataan"
+    ]
+  },
+  "Birokrat": {
+    "related_pillars": [
+      "28"
+    ],
+    "related_jurusans": [
+      "Ilmu Aqidah",
+      "Akuntansi",
+      "Administrasi",
+      "Manajemen",
+      "Sosiologi",
+      "Ilmu Hukum"
+    ]
+  },
+  "Account Sales": {
+    "related_pillars": [
+      "28",
+      "37"
+    ],
+    "related_jurusans": [
+      "Ilmu Aqidah",
+      "Akuntansi",
+      "Administrasi",
+      "Manajemen",
+      "Sosiologi",
+      "Ilmu Hukum",
+      "Keguruan/tarbiyah",
+      "akuntansi",
+      "bisnis dan manajemen",
+      "administrasi"
+    ]
+  },
+  "Keuangan": {
+    "related_pillars": [
+      "28"
+    ],
+    "related_jurusans": [
+      "Ilmu Aqidah",
+      "Akuntansi",
+      "Administrasi",
+      "Manajemen",
+      "Sosiologi",
+      "Ilmu Hukum"
+    ]
+  },
+  "Quality Control": {
+    "related_pillars": [
+      "28"
+    ],
+    "related_jurusans": [
+      "Ilmu Aqidah",
+      "Akuntansi",
+      "Administrasi",
+      "Manajemen",
+      "Sosiologi",
+      "Ilmu Hukum"
+    ]
+  },
+  "Keamanan": {
+    "related_pillars": [
+      "28",
+      "37"
+    ],
+    "related_jurusans": [
+      "Ilmu Aqidah",
+      "Akuntansi",
+      "Administrasi",
+      "Manajemen",
+      "Sosiologi",
+      "Ilmu Hukum",
+      "Keguruan/tarbiyah",
+      "akuntansi",
+      "bisnis dan manajemen",
+      "administrasi"
+    ]
+  },
+  "Pembinaan Keluarga Sejahtera": {
+    "related_pillars": [
+      "33"
+    ],
+    "related_jurusans": [
+      "PAI",
+      "Keguruan",
+      "Tarbiyah",
+      "Ilmu Sosial",
+      "Manajemen",
+      "Manajemen Bisnis",
+      "Psikologi",
+      "atau jurusan lain yang terkait dengan penguatan empati atau perasaan"
+    ]
+  },
+  "Guru PAUD-TK": {
+    "related_pillars": [
+      "33"
+    ],
+    "related_jurusans": [
+      "PAI",
+      "Keguruan",
+      "Tarbiyah",
+      "Ilmu Sosial",
+      "Manajemen",
+      "Manajemen Bisnis",
+      "Psikologi",
+      "atau jurusan lain yang terkait dengan penguatan empati atau perasaan"
+    ]
+  },
+  "Operator Telepon": {
+    "related_pillars": [
+      "33"
+    ],
+    "related_jurusans": [
+      "PAI",
+      "Keguruan",
+      "Tarbiyah",
+      "Ilmu Sosial",
+      "Manajemen",
+      "Manajemen Bisnis",
+      "Psikologi",
+      "atau jurusan lain yang terkait dengan penguatan empati atau perasaan"
+    ]
+  },
+  "Psikiater": {
+    "related_pillars": [
+      "33"
+    ],
+    "related_jurusans": [
+      "PAI",
+      "Keguruan",
+      "Tarbiyah",
+      "Ilmu Sosial",
+      "Manajemen",
+      "Manajemen Bisnis",
+      "Psikologi",
+      "atau jurusan lain yang terkait dengan penguatan empati atau perasaan"
+    ]
+  },
+  "Dispatcher": {
+    "related_pillars": [
+      "33"
+    ],
+    "related_jurusans": [
+      "PAI",
+      "Keguruan",
+      "Tarbiyah",
+      "Ilmu Sosial",
+      "Manajemen",
+      "Manajemen Bisnis",
+      "Psikologi",
+      "atau jurusan lain yang terkait dengan penguatan empati atau perasaan"
+    ]
+  },
+  "Layanan Pelanggan": {
+    "related_pillars": [
+      "33",
+      "22"
+    ],
+    "related_jurusans": [
+      "PAI",
+      "Keguruan",
+      "Tarbiyah",
+      "Ilmu Sosial",
+      "Manajemen",
+      "Manajemen Bisnis",
+      "Psikologi",
+      "atau jurusan lain yang terkait dengan penguatan empati atau perasaan",
+      "Pendidikan Agama",
+      "Konseling Keluarga",
+      "Ilmu Komunikasi",
+      "Hubungan Internasional",
+      "Marketing"
+    ]
+  },
+  "Team Perumus Visi Misi": {
+    "related_pillars": [
+      "1"
+    ],
+    "related_jurusans": [
+      "Ekonomi Syariah",
+      "Manajemen",
+      "Marketing",
+      "Manajemen Lingkungan"
+    ]
+  },
+  "Team Litbang Pendidikan atau lembaga lainnya": {
+    "related_pillars": [
+      "1"
+    ],
+    "related_jurusans": [
+      "Ekonomi Syariah",
+      "Manajemen",
+      "Marketing",
+      "Manajemen Lingkungan"
+    ]
+  },
+  "Perencana Jangka Panjang": {
+    "related_pillars": [
+      "1"
+    ],
+    "related_jurusans": [
+      "Ekonomi Syariah",
+      "Manajemen",
+      "Marketing",
+      "Manajemen Lingkungan"
+    ]
+  },
+  "Visioner": {
+    "related_pillars": [
+      "1"
+    ],
+    "related_jurusans": [
+      "Ekonomi Syariah",
+      "Manajemen",
+      "Marketing",
+      "Manajemen Lingkungan"
+    ]
+  },
+  "Pengembang produk baru": {
+    "related_pillars": [
+      "1"
+    ],
+    "related_jurusans": [
+      "Ekonomi Syariah",
+      "Manajemen",
+      "Marketing",
+      "Manajemen Lingkungan"
+    ]
+  },
+  "Pengembang Perusahaan": {
+    "related_pillars": [
+      "1"
+    ],
+    "related_jurusans": [
+      "Ekonomi Syariah",
+      "Manajemen",
+      "Marketing",
+      "Manajemen Lingkungan"
+    ]
+  },
+  "Utusan": {
+    "related_pillars": [
+      "3"
+    ],
+    "related_jurusans": [
+      "Ilmu Aqidah",
+      "Syariah",
+      "Fiqih",
+      "Tadriibud Du\u2019aat",
+      "Keguruan",
+      "Hubungan Internasional",
+      "Manajemen"
+    ]
+  },
+  "Duta Besar": {
+    "related_pillars": [
+      "3"
+    ],
+    "related_jurusans": [
+      "Ilmu Aqidah",
+      "Syariah",
+      "Fiqih",
+      "Tadriibud Du\u2019aat",
+      "Keguruan",
+      "Hubungan Internasional",
+      "Manajemen"
+    ]
+  },
+  "Pembawa Misi": {
+    "related_pillars": [
+      "3"
+    ],
+    "related_jurusans": [
+      "Ilmu Aqidah",
+      "Syariah",
+      "Fiqih",
+      "Tadriibud Du\u2019aat",
+      "Keguruan",
+      "Hubungan Internasional",
+      "Manajemen"
+    ]
+  },
+  "Perumus Visi Misi": {
+    "related_pillars": [
+      "7"
+    ],
+    "related_jurusans": [
+      "Ilmu Aqidah",
+      "Ilmu Ushuluddin",
+      "Ilmu Jiwa",
+      "Manajemen"
+    ]
+  },
+  "Event Organizer (EO)": {
+    "related_pillars": [
+      "7"
+    ],
+    "related_jurusans": [
+      "Ilmu Aqidah",
+      "Ilmu Ushuluddin",
+      "Ilmu Jiwa",
+      "Manajemen"
+    ]
+  },
+  "Tour Leader": {
+    "related_pillars": [
+      "7"
+    ],
+    "related_jurusans": [
+      "Ilmu Aqidah",
+      "Ilmu Ushuluddin",
+      "Ilmu Jiwa",
+      "Manajemen"
+    ]
+  },
+  "Pelayan Umat": {
+    "related_pillars": [
+      "14"
+    ],
+    "related_jurusans": [
+      "Teknik Kimia",
+      "Teknik Informatika (IT)",
+      "Administrasi Perkantoran"
+    ]
+  },
+  "Ajudan": {
+    "related_pillars": [
+      "14",
+      "36"
+    ],
+    "related_jurusans": [
+      "Teknik Kimia",
+      "Teknik Informatika (IT)",
+      "Administrasi Perkantoran",
+      "Akademi Kepolisian",
+      "Akademi Militer",
+      "Ilmu Kenotariatan",
+      "Administrasi"
+    ]
+  },
+  "Pelaksana Lapangan": {
+    "related_pillars": [
+      "14"
+    ],
+    "related_jurusans": [
+      "Teknik Kimia",
+      "Teknik Informatika (IT)",
+      "Administrasi Perkantoran"
+    ]
+  },
+  "Peneliti": {
+    "related_pillars": [
+      "14"
+    ],
+    "related_jurusans": [
+      "Teknik Kimia",
+      "Teknik Informatika (IT)",
+      "Administrasi Perkantoran"
+    ]
+  },
+  "Analis": {
+    "related_pillars": [
+      "14",
+      "10"
+    ],
+    "related_jurusans": [
+      "Teknik Kimia",
+      "Teknik Informatika (IT)",
+      "Administrasi Perkantoran",
+      "Jurusan Ilmu Hadits",
+      "Ilmu Al Qur\u2019an",
+      "Fiqih",
+      "atau ilmu Agama lainnya",
+      "Teknik kimia",
+      "Fisika",
+      "Matematika",
+      "Teknik Komputer",
+      "IT Programmer",
+      "Akuntansi"
+    ]
+  },
+  "Team Perencana Anggaran Belanja Lembaga": {
+    "related_pillars": [
+      "16"
+    ],
+    "related_jurusans": [
+      "Ilmu Ekonomi",
+      "Manajemen Bisnis",
+      "Ilmu Sosial",
+      "Ilmu Manajemen Sumber Daya Alam",
+      "Akuntansi",
+      "atau jurusan lain yang terkait dengan perhitungan nilai ekonomis"
+    ]
+  },
+  "Team Penghemat Anggaran Perusahaan": {
+    "related_pillars": [
+      "16"
+    ],
+    "related_jurusans": [
+      "Ilmu Ekonomi",
+      "Manajemen Bisnis",
+      "Ilmu Sosial",
+      "Ilmu Manajemen Sumber Daya Alam",
+      "Akuntansi",
+      "atau jurusan lain yang terkait dengan perhitungan nilai ekonomis"
+    ]
+  },
+  "Petugas Lapangan": {
+    "related_pillars": [
+      "16"
+    ],
+    "related_jurusans": [
+      "Ilmu Ekonomi",
+      "Manajemen Bisnis",
+      "Ilmu Sosial",
+      "Ilmu Manajemen Sumber Daya Alam",
+      "Akuntansi",
+      "atau jurusan lain yang terkait dengan perhitungan nilai ekonomis"
+    ]
+  },
+  "Explorer": {
+    "related_pillars": [
+      "16"
+    ],
+    "related_jurusans": [
+      "Ilmu Ekonomi",
+      "Manajemen Bisnis",
+      "Ilmu Sosial",
+      "Ilmu Manajemen Sumber Daya Alam",
+      "Akuntansi",
+      "atau jurusan lain yang terkait dengan perhitungan nilai ekonomis"
+    ]
+  },
+  "Pengelola lembaga sosial": {
+    "related_pillars": [
+      "26"
+    ],
+    "related_jurusans": [
+      "Dakwah",
+      "Manajemen Pendidikan",
+      "Manajemen Bisnis",
+      "Sosiologi"
+    ]
+  },
+  "Motivator kelompok": {
+    "related_pillars": [
+      "26"
+    ],
+    "related_jurusans": [
+      "Dakwah",
+      "Manajemen Pendidikan",
+      "Manajemen Bisnis",
+      "Sosiologi"
+    ]
+  },
+  "Wakil suara minoritas": {
+    "related_pillars": [
+      "26"
+    ],
+    "related_jurusans": [
+      "Dakwah",
+      "Manajemen Pendidikan",
+      "Manajemen Bisnis",
+      "Sosiologi"
+    ]
+  },
+  "Pemimpin kelompok dengan latar budaya beragam": {
+    "related_pillars": [
+      "26"
+    ],
+    "related_jurusans": [
+      "Dakwah",
+      "Manajemen Pendidikan",
+      "Manajemen Bisnis",
+      "Sosiologi"
+    ]
+  },
+  "Mentor bagi mereka yang baru bergabung di dalam organisasi": {
+    "related_pillars": [
+      "26"
+    ],
+    "related_jurusans": [
+      "Dakwah",
+      "Manajemen Pendidikan",
+      "Manajemen Bisnis",
+      "Sosiologi"
+    ]
+  },
+  "MC": {
+    "related_pillars": [
+      "29",
+      "22"
+    ],
+    "related_jurusans": [
+      "Ilmu Komunikasi",
+      "Marketing",
+      "Keguruan",
+      "Pendidikan Agama",
+      "Konseling Keluarga",
+      "Hubungan Internasional",
+      "Manajemen",
+      "Manajemen Bisnis"
+    ]
+  },
+  "Pranata cara (Jawa)": {
+    "related_pillars": [
+      "29"
+    ],
+    "related_jurusans": [
+      "Ilmu Komunikasi",
+      "Marketing",
+      "Keguruan"
+    ]
+  },
+  "Penerima Tamu": {
+    "related_pillars": [
+      "29"
+    ],
+    "related_jurusans": [
+      "Ilmu Komunikasi",
+      "Marketing",
+      "Keguruan"
+    ]
+  },
+  "Comentator": {
+    "related_pillars": [
+      "29"
+    ],
+    "related_jurusans": [
+      "Ilmu Komunikasi",
+      "Marketing",
+      "Keguruan"
+    ]
+  },
+  "Mufti": {
+    "related_pillars": [
+      "38",
+      "11"
+    ],
+    "related_jurusans": [
+      "Teknik Penerbangan",
+      "Teknik Mesin",
+      "Teknik Konstruksi Bangunan",
+      "Keselamatan Lalu Lintas",
+      "Teknik Listrik",
+      "Akuntansi",
+      "Manajemen Keuangan",
+      "dan jurusan lain yang terkait dengan kehati-hatian",
+      "keamanan",
+      "dan ketelitian",
+      "Ilmu Aqidah",
+      "Ilmu Jiwa",
+      "Ilmu Adab",
+      "Sastra",
+      "Syariah",
+      "Psikologi",
+      "Manajemen"
+    ]
+  },
+  "Perumus peraturan": {
+    "related_pillars": [
+      "38"
+    ],
+    "related_jurusans": [
+      "Teknik Penerbangan",
+      "Teknik Mesin",
+      "Teknik Konstruksi Bangunan",
+      "Keselamatan Lalu Lintas",
+      "Teknik Listrik",
+      "Akuntansi",
+      "Manajemen Keuangan",
+      "dan jurusan lain yang terkait dengan kehati-hatian",
+      "keamanan",
+      "dan ketelitian"
+    ]
+  },
+  "Perancang Sistem Keamanan": {
+    "related_pillars": [
+      "38"
+    ],
+    "related_jurusans": [
+      "Teknik Penerbangan",
+      "Teknik Mesin",
+      "Teknik Konstruksi Bangunan",
+      "Keselamatan Lalu Lintas",
+      "Teknik Listrik",
+      "Akuntansi",
+      "Manajemen Keuangan",
+      "dan jurusan lain yang terkait dengan kehati-hatian",
+      "keamanan",
+      "dan ketelitian"
+    ]
+  },
+  "Pilot": {
+    "related_pillars": [
+      "38"
+    ],
+    "related_jurusans": [
+      "Teknik Penerbangan",
+      "Teknik Mesin",
+      "Teknik Konstruksi Bangunan",
+      "Keselamatan Lalu Lintas",
+      "Teknik Listrik",
+      "Akuntansi",
+      "Manajemen Keuangan",
+      "dan jurusan lain yang terkait dengan kehati-hatian",
+      "keamanan",
+      "dan ketelitian"
+    ]
+  },
+  "Urusan Legal": {
+    "related_pillars": [
+      "38"
+    ],
+    "related_jurusans": [
+      "Teknik Penerbangan",
+      "Teknik Mesin",
+      "Teknik Konstruksi Bangunan",
+      "Keselamatan Lalu Lintas",
+      "Teknik Listrik",
+      "Akuntansi",
+      "Manajemen Keuangan",
+      "dan jurusan lain yang terkait dengan kehati-hatian",
+      "keamanan",
+      "dan ketelitian"
+    ]
+  },
+  "Membuat Kontrak Bisnis yang baik atau memastikan kesesuaian dengan peraturan atau standar atau kode atau juga peran yang terkait dengan masalah keuangan dan atau keamanan": {
+    "related_pillars": [
+      "38"
+    ],
+    "related_jurusans": [
+      "Teknik Penerbangan",
+      "Teknik Mesin",
+      "Teknik Konstruksi Bangunan",
+      "Keselamatan Lalu Lintas",
+      "Teknik Listrik",
+      "Akuntansi",
+      "Manajemen Keuangan",
+      "dan jurusan lain yang terkait dengan kehati-hatian",
+      "keamanan",
+      "dan ketelitian"
+    ]
+  },
+  "Guru TK": {
+    "related_pillars": [
+      "17"
+    ],
+    "related_jurusans": [
+      "Dakwah",
+      "Psikologi",
+      "Sastra",
+      "Sosiologi",
+      "Ilmu Komunikasi",
+      "Keguruan",
+      "Ilmu Kejiwaan"
+    ]
+  },
+  "Pengasuh Panti Asuhan": {
+    "related_pillars": [
+      "17"
+    ],
+    "related_jurusans": [
+      "Dakwah",
+      "Psikologi",
+      "Sastra",
+      "Sosiologi",
+      "Ilmu Komunikasi",
+      "Keguruan",
+      "Ilmu Kejiwaan"
+    ]
+  },
+  "public serving": {
+    "related_pillars": [
+      "17"
+    ],
+    "related_jurusans": [
+      "Dakwah",
+      "Psikologi",
+      "Sastra",
+      "Sosiologi",
+      "Ilmu Komunikasi",
+      "Keguruan",
+      "Ilmu Kejiwaan"
+    ]
+  },
+  "Bidang Periklanan": {
+    "related_pillars": [
+      "20"
+    ],
+    "related_jurusans": [
+      "Manajemen",
+      "Manajemen Bisnis",
+      "Olahraga dan Kesehatan",
+      "Sekolah Pelatih"
+    ]
+  },
+  "Competition Organizer": {
+    "related_pillars": [
+      "20"
+    ],
+    "related_jurusans": [
+      "Manajemen",
+      "Manajemen Bisnis",
+      "Olahraga dan Kesehatan",
+      "Sekolah Pelatih"
+    ]
+  },
+  "Team Litbang Perusahaan": {
+    "related_pillars": [
+      "20"
+    ],
+    "related_jurusans": [
+      "Manajemen",
+      "Manajemen Bisnis",
+      "Olahraga dan Kesehatan",
+      "Sekolah Pelatih"
+    ]
+  },
+  "Konsultan atau pengelola perusahaan dalam menghadapi persaingan": {
+    "related_pillars": [
+      "20"
+    ],
+    "related_jurusans": [
+      "Manajemen",
+      "Manajemen Bisnis",
+      "Olahraga dan Kesehatan",
+      "Sekolah Pelatih"
+    ]
+  },
+  "Pelatih Olahraga": {
+    "related_pillars": [
+      "20"
+    ],
+    "related_jurusans": [
+      "Manajemen",
+      "Manajemen Bisnis",
+      "Olahraga dan Kesehatan",
+      "Sekolah Pelatih"
+    ]
+  },
+  "Guru Tajwid Qira\u2019ah": {
+    "related_pillars": [
+      "22"
+    ],
+    "related_jurusans": [
+      "Pendidikan Agama",
+      "Konseling Keluarga",
+      "Keguruan",
+      "Ilmu Komunikasi",
+      "Hubungan Internasional",
+      "Marketing",
+      "Manajemen",
+      "Manajemen Bisnis"
+    ]
+  },
+  "Qari\u2019": {
+    "related_pillars": [
+      "22"
+    ],
+    "related_jurusans": [
+      "Pendidikan Agama",
+      "Konseling Keluarga",
+      "Keguruan",
+      "Ilmu Komunikasi",
+      "Hubungan Internasional",
+      "Marketing",
+      "Manajemen",
+      "Manajemen Bisnis"
+    ]
+  },
+  "Guru (pengajar)": {
+    "related_pillars": [
+      "22",
+      "39"
+    ],
+    "related_jurusans": [
+      "Pendidikan Agama",
+      "Konseling Keluarga",
+      "Keguruan",
+      "Ilmu Komunikasi",
+      "Hubungan Internasional",
+      "Marketing",
+      "Manajemen",
+      "Manajemen Bisnis",
+      "Keperawatan",
+      "Kepariwisataan"
+    ]
+  },
+  "Dosen": {
+    "related_pillars": [
+      "22"
+    ],
+    "related_jurusans": [
+      "Pendidikan Agama",
+      "Konseling Keluarga",
+      "Keguruan",
+      "Ilmu Komunikasi",
+      "Hubungan Internasional",
+      "Marketing",
+      "Manajemen",
+      "Manajemen Bisnis"
+    ]
+  },
+  "Penyuluh Masyarakat": {
+    "related_pillars": [
+      "22"
+    ],
+    "related_jurusans": [
+      "Pendidikan Agama",
+      "Konseling Keluarga",
+      "Keguruan",
+      "Ilmu Komunikasi",
+      "Hubungan Internasional",
+      "Marketing",
+      "Manajemen",
+      "Manajemen Bisnis"
+    ]
+  },
+  "Public Relation": {
+    "related_pillars": [
+      "22"
+    ],
+    "related_jurusans": [
+      "Pendidikan Agama",
+      "Konseling Keluarga",
+      "Keguruan",
+      "Ilmu Komunikasi",
+      "Hubungan Internasional",
+      "Marketing",
+      "Manajemen",
+      "Manajemen Bisnis"
+    ]
+  },
+  "Duta": {
+    "related_pillars": [
+      "22"
+    ],
+    "related_jurusans": [
+      "Pendidikan Agama",
+      "Konseling Keluarga",
+      "Keguruan",
+      "Ilmu Komunikasi",
+      "Hubungan Internasional",
+      "Marketing",
+      "Manajemen",
+      "Manajemen Bisnis"
+    ]
+  },
+  "Humas": {
+    "related_pillars": [
+      "22"
+    ],
+    "related_jurusans": [
+      "Pendidikan Agama",
+      "Konseling Keluarga",
+      "Keguruan",
+      "Ilmu Komunikasi",
+      "Hubungan Internasional",
+      "Marketing",
+      "Manajemen",
+      "Manajemen Bisnis"
+    ]
+  },
+  "Juru Bicara": {
+    "related_pillars": [
+      "22"
+    ],
+    "related_jurusans": [
+      "Pendidikan Agama",
+      "Konseling Keluarga",
+      "Keguruan",
+      "Ilmu Komunikasi",
+      "Hubungan Internasional",
+      "Marketing",
+      "Manajemen",
+      "Manajemen Bisnis"
+    ]
+  },
+  "Polisi": {
+    "related_pillars": [
+      "23"
+    ],
+    "related_jurusans": [
+      "PAI",
+      "Syari\u2019ah",
+      "Ilmu Hukum",
+      "Ilmu Sosial",
+      "Akademi Kepolisian",
+      "Akademi Militer"
+    ]
+  },
+  "Penegak Hukum": {
+    "related_pillars": [
+      "23"
+    ],
+    "related_jurusans": [
+      "PAI",
+      "Syari\u2019ah",
+      "Ilmu Hukum",
+      "Ilmu Sosial",
+      "Akademi Kepolisian",
+      "Akademi Militer"
+    ]
+  },
+  "Lembaga Bantuan Hukum (LBH)": {
+    "related_pillars": [
+      "23"
+    ],
+    "related_jurusans": [
+      "PAI",
+      "Syari\u2019ah",
+      "Ilmu Hukum",
+      "Ilmu Sosial",
+      "Akademi Kepolisian",
+      "Akademi Militer"
+    ]
+  },
+  "atau profesi lain yang terkait dengan bantuan terhadap orang yang terzhalimi": {
+    "related_pillars": [
+      "23"
+    ],
+    "related_jurusans": [
+      "PAI",
+      "Syari\u2019ah",
+      "Ilmu Hukum",
+      "Ilmu Sosial",
+      "Akademi Kepolisian",
+      "Akademi Militer"
+    ]
+  },
+  "Da\u2019i/da\u2019iyah": {
+    "related_pillars": [
+      "34"
+    ],
+    "related_jurusans": [
+      "Tadriibud Du\u2019aat",
+      "Tarbiyah",
+      "Penyuluh Masyarakat",
+      "Kesehatan Masyarakat",
+      "Keperawatan",
+      "Kebidanan",
+      "Kedokteran",
+      "Kepalangmerahan"
+    ]
+  },
+  "Pengelola lembaga sosial seperti panti asuhan": {
+    "related_pillars": [
+      "34"
+    ],
+    "related_jurusans": [
+      "Tadriibud Du\u2019aat",
+      "Tarbiyah",
+      "Penyuluh Masyarakat",
+      "Kesehatan Masyarakat",
+      "Keperawatan",
+      "Kebidanan",
+      "Kedokteran",
+      "Kepalangmerahan"
+    ]
+  },
+  "Laziz": {
+    "related_pillars": [
+      "34"
+    ],
+    "related_jurusans": [
+      "Tadriibud Du\u2019aat",
+      "Tarbiyah",
+      "Penyuluh Masyarakat",
+      "Kesehatan Masyarakat",
+      "Keperawatan",
+      "Kebidanan",
+      "Kedokteran",
+      "Kepalangmerahan"
+    ]
+  },
+  "Baitul Maal": {
+    "related_pillars": [
+      "34"
+    ],
+    "related_jurusans": [
+      "Tadriibud Du\u2019aat",
+      "Tarbiyah",
+      "Penyuluh Masyarakat",
+      "Kesehatan Masyarakat",
+      "Keperawatan",
+      "Kebidanan",
+      "Kedokteran",
+      "Kepalangmerahan"
+    ]
+  },
+  "Maintenance": {
+    "related_pillars": [
+      "34",
+      "40"
+    ],
+    "related_jurusans": [
+      "Tadriibud Du\u2019aat",
+      "Tarbiyah",
+      "Penyuluh Masyarakat",
+      "Kesehatan Masyarakat",
+      "Keperawatan",
+      "Kebidanan",
+      "Kedokteran",
+      "Kepalangmerahan",
+      "Syari\u2019ah",
+      "Ilmu Sosial",
+      "Kepariwisataan",
+      "Manajemen"
+    ]
+  },
+  "Pekerja Sosial": {
+    "related_pillars": [
+      "34",
+      "40"
+    ],
+    "related_jurusans": [
+      "Tadriibud Du\u2019aat",
+      "Tarbiyah",
+      "Penyuluh Masyarakat",
+      "Kesehatan Masyarakat",
+      "Keperawatan",
+      "Kebidanan",
+      "Kedokteran",
+      "Kepalangmerahan",
+      "Syari\u2019ah",
+      "Ilmu Sosial",
+      "Kepariwisataan",
+      "Manajemen"
+    ]
+  },
+  "Team Palang Merah": {
+    "related_pillars": [
+      "34"
+    ],
+    "related_jurusans": [
+      "Tadriibud Du\u2019aat",
+      "Tarbiyah",
+      "Penyuluh Masyarakat",
+      "Kesehatan Masyarakat",
+      "Keperawatan",
+      "Kebidanan",
+      "Kedokteran",
+      "Kepalangmerahan"
+    ]
+  },
+  "Pengelola Lembaga Pendidikan": {
+    "related_pillars": [
+      "37"
+    ],
+    "related_jurusans": [
+      "Keguruan/tarbiyah",
+      "akuntansi",
+      "bisnis dan manajemen",
+      "administrasi"
+    ]
+  },
+  "Pengasuh Anak Yatim": {
+    "related_pillars": [
+      "37"
+    ],
+    "related_jurusans": [
+      "Keguruan/tarbiyah",
+      "akuntansi",
+      "bisnis dan manajemen",
+      "administrasi"
+    ]
+  },
+  "Pedagang": {
+    "related_pillars": [
+      "37"
+    ],
+    "related_jurusans": [
+      "Keguruan/tarbiyah",
+      "akuntansi",
+      "bisnis dan manajemen",
+      "administrasi"
+    ]
+  },
+  "Pengelola Dana Umat": {
+    "related_pillars": [
+      "37"
+    ],
+    "related_jurusans": [
+      "Keguruan/tarbiyah",
+      "akuntansi",
+      "bisnis dan manajemen",
+      "administrasi"
+    ]
+  },
+  "Manajer Umum": {
+    "related_pillars": [
+      "37"
+    ],
+    "related_jurusans": [
+      "Keguruan/tarbiyah",
+      "akuntansi",
+      "bisnis dan manajemen",
+      "administrasi"
+    ]
+  },
+  "Manajer Keuangan": {
+    "related_pillars": [
+      "37"
+    ],
+    "related_jurusans": [
+      "Keguruan/tarbiyah",
+      "akuntansi",
+      "bisnis dan manajemen",
+      "administrasi"
+    ]
+  },
+  "Quality Controller": {
+    "related_pillars": [
+      "37"
+    ],
+    "related_jurusans": [
+      "Keguruan/tarbiyah",
+      "akuntansi",
+      "bisnis dan manajemen",
+      "administrasi"
+    ]
+  },
+  "dan peran lainnya  yang terkait dengan sifat amanah atau tanggung jawab": {
+    "related_pillars": [
+      "37"
+    ],
+    "related_jurusans": [
+      "Keguruan/tarbiyah",
+      "akuntansi",
+      "bisnis dan manajemen",
+      "administrasi"
+    ]
+  },
+  "Pelayanan Masyarakat Umum": {
+    "related_pillars": [
+      "39"
+    ],
+    "related_jurusans": [
+      "Keperawatan",
+      "Ilmu Komunikasi",
+      "Keguruan",
+      "Kepariwisataan",
+      "Marketing",
+      "Manajemen"
+    ]
+  },
+  "Rahabilitasi Kenakalan Remaja": {
+    "related_pillars": [
+      "39"
+    ],
+    "related_jurusans": [
+      "Keperawatan",
+      "Ilmu Komunikasi",
+      "Keguruan",
+      "Kepariwisataan",
+      "Marketing",
+      "Manajemen"
+    ]
+  },
+  "Perawat Rumah Sakit": {
+    "related_pillars": [
+      "39"
+    ],
+    "related_jurusans": [
+      "Keperawatan",
+      "Ilmu Komunikasi",
+      "Keguruan",
+      "Kepariwisataan",
+      "Marketing",
+      "Manajemen"
+    ]
+  },
+  "Khadimul Ummah": {
+    "related_pillars": [
+      "40"
+    ],
+    "related_jurusans": [
+      "Syari\u2019ah",
+      "Keperawatan",
+      "Kebidanan",
+      "Ilmu Sosial",
+      "Kepariwisataan",
+      "Manajemen"
+    ]
+  },
+  "Public Serving": {
+    "related_pillars": [
+      "40"
+    ],
+    "related_jurusans": [
+      "Syari\u2019ah",
+      "Keperawatan",
+      "Kebidanan",
+      "Ilmu Sosial",
+      "Kepariwisataan",
+      "Manajemen"
+    ]
+  },
+  "Pengemban Misi": {
+    "related_pillars": [
+      "40"
+    ],
+    "related_jurusans": [
+      "Syari\u2019ah",
+      "Keperawatan",
+      "Kebidanan",
+      "Ilmu Sosial",
+      "Kepariwisataan",
+      "Manajemen"
+    ]
+  },
+  "Team Penjamin Mutu Pendidikan": {
+    "related_pillars": [
+      "2"
+    ],
+    "related_jurusans": [
+      "Tadriibud Du\u2019aat",
+      "Hadits",
+      "Fiqih",
+      "Syariah",
+      "Manajemen",
+      "Manajemen Bisnis",
+      "Ilmu Sains dan Teknologi"
+    ]
+  },
+  "Quality Controller (QC)": {
+    "related_pillars": [
+      "2"
+    ],
+    "related_jurusans": [
+      "Tadriibud Du\u2019aat",
+      "Hadits",
+      "Fiqih",
+      "Syariah",
+      "Manajemen",
+      "Manajemen Bisnis",
+      "Ilmu Sains dan Teknologi"
+    ]
+  },
+  "Peran untuk membantu orang hebat menjadi sukses seperti Pelatih": {
+    "related_pillars": [
+      "2"
+    ],
+    "related_jurusans": [
+      "Tadriibud Du\u2019aat",
+      "Hadits",
+      "Fiqih",
+      "Syariah",
+      "Manajemen",
+      "Manajemen Bisnis",
+      "Ilmu Sains dan Teknologi"
+    ]
+  },
+  "Mentor": {
+    "related_pillars": [
+      "2"
+    ],
+    "related_jurusans": [
+      "Tadriibud Du\u2019aat",
+      "Hadits",
+      "Fiqih",
+      "Syariah",
+      "Manajemen",
+      "Manajemen Bisnis",
+      "Ilmu Sains dan Teknologi"
+    ]
+  },
+  "Transformational leader": {
+    "related_pillars": [
+      "2"
+    ],
+    "related_jurusans": [
+      "Tadriibud Du\u2019aat",
+      "Hadits",
+      "Fiqih",
+      "Syariah",
+      "Manajemen",
+      "Manajemen Bisnis",
+      "Ilmu Sains dan Teknologi"
+    ]
+  },
+  "Team Penanganan Masalah": {
+    "related_pillars": [
+      "8"
+    ],
+    "related_jurusans": [
+      "Ilmu Fiqih",
+      "Ekonomi Syariah",
+      "Manajemen",
+      "Sosiologi",
+      "Hubungan Internasional",
+      "atau jurusan lain yang banyak menumbuhkan kemampuan untuk menemukan solusi"
+    ]
+  },
+  "Perencana Strategi": {
+    "related_pillars": [
+      "8"
+    ],
+    "related_jurusans": [
+      "Ilmu Fiqih",
+      "Ekonomi Syariah",
+      "Manajemen",
+      "Sosiologi",
+      "Hubungan Internasional",
+      "atau jurusan lain yang banyak menumbuhkan kemampuan untuk menemukan solusi"
+    ]
+  },
+  "Team Pencari Solusi Bagi Perusahaan/Lembaga Yang Bermasalah": {
+    "related_pillars": [
+      "8"
+    ],
+    "related_jurusans": [
+      "Ilmu Fiqih",
+      "Ekonomi Syariah",
+      "Manajemen",
+      "Sosiologi",
+      "Hubungan Internasional",
+      "atau jurusan lain yang banyak menumbuhkan kemampuan untuk menemukan solusi"
+    ]
+  },
+  "Ahli ilmu (Agama atau umum: Fisika": {
+    "related_pillars": [
+      "10"
+    ],
+    "related_jurusans": [
+      "Jurusan Ilmu Hadits",
+      "Ilmu Al Qur\u2019an",
+      "Fiqih",
+      "atau ilmu Agama lainnya",
+      "Teknik kimia",
+      "Fisika",
+      "Matematika",
+      "Teknik Komputer",
+      "IT Programmer",
+      "Akuntansi"
+    ]
+  },
+  "kimia": {
+    "related_pillars": [
+      "10"
+    ],
+    "related_jurusans": [
+      "Jurusan Ilmu Hadits",
+      "Ilmu Al Qur\u2019an",
+      "Fiqih",
+      "atau ilmu Agama lainnya",
+      "Teknik kimia",
+      "Fisika",
+      "Matematika",
+      "Teknik Komputer",
+      "IT Programmer",
+      "Akuntansi"
+    ]
+  },
+  "dll)": {
+    "related_pillars": [
+      "10"
+    ],
+    "related_jurusans": [
+      "Jurusan Ilmu Hadits",
+      "Ilmu Al Qur\u2019an",
+      "Fiqih",
+      "atau ilmu Agama lainnya",
+      "Teknik kimia",
+      "Fisika",
+      "Matematika",
+      "Teknik Komputer",
+      "IT Programmer",
+      "Akuntansi"
+    ]
+  },
+  "Periset (teknologi": {
+    "related_pillars": [
+      "10"
+    ],
+    "related_jurusans": [
+      "Jurusan Ilmu Hadits",
+      "Ilmu Al Qur\u2019an",
+      "Fiqih",
+      "atau ilmu Agama lainnya",
+      "Teknik kimia",
+      "Fisika",
+      "Matematika",
+      "Teknik Komputer",
+      "IT Programmer",
+      "Akuntansi"
+    ]
+  },
+  "pemasaran": {
+    "related_pillars": [
+      "10"
+    ],
+    "related_jurusans": [
+      "Jurusan Ilmu Hadits",
+      "Ilmu Al Qur\u2019an",
+      "Fiqih",
+      "atau ilmu Agama lainnya",
+      "Teknik kimia",
+      "Fisika",
+      "Matematika",
+      "Teknik Komputer",
+      "IT Programmer",
+      "Akuntansi"
+    ]
+  },
+  "keuangan": {
+    "related_pillars": [
+      "10"
+    ],
+    "related_jurusans": [
+      "Jurusan Ilmu Hadits",
+      "Ilmu Al Qur\u2019an",
+      "Fiqih",
+      "atau ilmu Agama lainnya",
+      "Teknik kimia",
+      "Fisika",
+      "Matematika",
+      "Teknik Komputer",
+      "IT Programmer",
+      "Akuntansi"
+    ]
+  },
+  "atau kesehatan)": {
+    "related_pillars": [
+      "10"
+    ],
+    "related_jurusans": [
+      "Jurusan Ilmu Hadits",
+      "Ilmu Al Qur\u2019an",
+      "Fiqih",
+      "atau ilmu Agama lainnya",
+      "Teknik kimia",
+      "Fisika",
+      "Matematika",
+      "Teknik Komputer",
+      "IT Programmer",
+      "Akuntansi"
+    ]
+  },
+  "Manajemen Database": {
+    "related_pillars": [
+      "10"
+    ],
+    "related_jurusans": [
+      "Jurusan Ilmu Hadits",
+      "Ilmu Al Qur\u2019an",
+      "Fiqih",
+      "atau ilmu Agama lainnya",
+      "Teknik kimia",
+      "Fisika",
+      "Matematika",
+      "Teknik Komputer",
+      "IT Programmer",
+      "Akuntansi"
+    ]
+  },
+  "Editor": {
+    "related_pillars": [
+      "10"
+    ],
+    "related_jurusans": [
+      "Jurusan Ilmu Hadits",
+      "Ilmu Al Qur\u2019an",
+      "Fiqih",
+      "atau ilmu Agama lainnya",
+      "Teknik kimia",
+      "Fisika",
+      "Matematika",
+      "Teknik Komputer",
+      "IT Programmer",
+      "Akuntansi"
+    ]
+  },
+  "Manajemen Risiko": {
+    "related_pillars": [
+      "10"
+    ],
+    "related_jurusans": [
+      "Jurusan Ilmu Hadits",
+      "Ilmu Al Qur\u2019an",
+      "Fiqih",
+      "atau ilmu Agama lainnya",
+      "Teknik kimia",
+      "Fisika",
+      "Matematika",
+      "Teknik Komputer",
+      "IT Programmer",
+      "Akuntansi"
+    ]
+  },
+  "Accounting": {
+    "related_pillars": [
+      "10"
+    ],
+    "related_jurusans": [
+      "Jurusan Ilmu Hadits",
+      "Ilmu Al Qur\u2019an",
+      "Fiqih",
+      "atau ilmu Agama lainnya",
+      "Teknik kimia",
+      "Fisika",
+      "Matematika",
+      "Teknik Komputer",
+      "IT Programmer",
+      "Akuntansi"
+    ]
+  },
+  "Programmer": {
+    "related_pillars": [
+      "10"
+    ],
+    "related_jurusans": [
+      "Jurusan Ilmu Hadits",
+      "Ilmu Al Qur\u2019an",
+      "Fiqih",
+      "atau ilmu Agama lainnya",
+      "Teknik kimia",
+      "Fisika",
+      "Matematika",
+      "Teknik Komputer",
+      "IT Programmer",
+      "Akuntansi"
+    ]
+  },
+  "Kosultan": {
+    "related_pillars": [
+      "11"
+    ],
+    "related_jurusans": [
+      "Ilmu Aqidah",
+      "Ilmu Jiwa",
+      "Ilmu Adab",
+      "Sastra",
+      "Syariah",
+      "Psikologi",
+      "Manajemen"
+    ]
+  },
+  "Da\u2019i/yah": {
+    "related_pillars": [
+      "11"
+    ],
+    "related_jurusans": [
+      "Ilmu Aqidah",
+      "Ilmu Jiwa",
+      "Ilmu Adab",
+      "Sastra",
+      "Syariah",
+      "Psikologi",
+      "Manajemen"
+    ]
+  },
+  "Petugas Pembinaan Keluarga": {
+    "related_pillars": [
+      "11"
+    ],
+    "related_jurusans": [
+      "Ilmu Aqidah",
+      "Ilmu Jiwa",
+      "Ilmu Adab",
+      "Sastra",
+      "Syariah",
+      "Psikologi",
+      "Manajemen"
+    ]
+  },
+  "Leader dalam membangun team yang berbeda kelompok": {
+    "related_pillars": [
+      "11"
+    ],
+    "related_jurusans": [
+      "Ilmu Aqidah",
+      "Ilmu Jiwa",
+      "Ilmu Adab",
+      "Sastra",
+      "Syariah",
+      "Psikologi",
+      "Manajemen"
+    ]
+  },
+  "atau membantu orang agar merasa berguna": {
+    "related_pillars": [
+      "11"
+    ],
+    "related_jurusans": [
+      "Ilmu Aqidah",
+      "Ilmu Jiwa",
+      "Ilmu Adab",
+      "Sastra",
+      "Syariah",
+      "Psikologi",
+      "Manajemen"
+    ]
+  },
+  "Penggerak dakwah": {
+    "related_pillars": [
+      "25"
+    ],
+    "related_jurusans": [
+      "Dakwah",
+      "Manajemen",
+      "Ilmu Komunikasi",
+      "Ilmu Ekonomi",
+      "Keguruan"
+    ]
+  },
+  "Pembangun jaringan antara orang-orang dengan cara pandang yang berbeda": {
+    "related_pillars": [
+      "25"
+    ],
+    "related_jurusans": [
+      "Dakwah",
+      "Manajemen",
+      "Ilmu Komunikasi",
+      "Ilmu Ekonomi",
+      "Keguruan"
+    ]
+  },
+  "Wirausahawan": {
+    "related_pillars": [
+      "25"
+    ],
+    "related_jurusans": [
+      "Dakwah",
+      "Manajemen",
+      "Ilmu Komunikasi",
+      "Ilmu Ekonomi",
+      "Keguruan"
+    ]
+  },
+  "Petugas pembinaan keluarga": {
+    "related_pillars": [
+      "27"
+    ],
+    "related_jurusans": [
+      "Hukum Islam",
+      "Syariah",
+      "Konseling keluarga",
+      "Hukum Publik",
+      "Hukum Perdata",
+      "Hukum Internasioanal",
+      "Ilmu Hukum",
+      "Hukum Pidana",
+      "atau jurusan lainnya yang terkait dengan keadilan"
+    ]
+  },
+  "Konselor masalah keluarga": {
+    "related_pillars": [
+      "27"
+    ],
+    "related_jurusans": [
+      "Hukum Islam",
+      "Syariah",
+      "Konseling keluarga",
+      "Hukum Publik",
+      "Hukum Perdata",
+      "Hukum Internasioanal",
+      "Ilmu Hukum",
+      "Hukum Pidana",
+      "atau jurusan lainnya yang terkait dengan keadilan"
+    ]
+  },
+  "Petugas kontrol terhadap kesesuaian atas standar seperti kepatuhan kepada aturan": {
+    "related_pillars": [
+      "27"
+    ],
+    "related_jurusans": [
+      "Hukum Islam",
+      "Syariah",
+      "Konseling keluarga",
+      "Hukum Publik",
+      "Hukum Perdata",
+      "Hukum Internasioanal",
+      "Ilmu Hukum",
+      "Hukum Pidana",
+      "atau jurusan lainnya yang terkait dengan keadilan"
+    ]
+  },
+  "Quantity Surveyor": {
+    "related_pillars": [
+      "27"
+    ],
+    "related_jurusans": [
+      "Hukum Islam",
+      "Syariah",
+      "Konseling keluarga",
+      "Hukum Publik",
+      "Hukum Perdata",
+      "Hukum Internasioanal",
+      "Ilmu Hukum",
+      "Hukum Pidana",
+      "atau jurusan lainnya yang terkait dengan keadilan"
+    ]
+  },
+  "Petugas Commisioning atau peran yang bisa memiliki kekuatan untuk menyamakan aturan main dan peran lainnya  yang terkait dengan sifat adil": {
+    "related_pillars": [
+      "27"
+    ],
+    "related_jurusans": [
+      "Hukum Islam",
+      "Syariah",
+      "Konseling keluarga",
+      "Hukum Publik",
+      "Hukum Perdata",
+      "Hukum Internasioanal",
+      "Ilmu Hukum",
+      "Hukum Pidana",
+      "atau jurusan lainnya yang terkait dengan keadilan"
+    ]
+  },
+  "Guru Privat": {
+    "related_pillars": [
+      "32"
+    ],
+    "related_jurusans": [
+      "Tarbiyah",
+      "Pendidikan Guru TK (PGTK)",
+      "Keguruan",
+      "Pendidikan Terapist",
+      "Keperawatan",
+      "Peternakan"
+    ]
+  },
+  "Terapist": {
+    "related_pillars": [
+      "32"
+    ],
+    "related_jurusans": [
+      "Tarbiyah",
+      "Pendidikan Guru TK (PGTK)",
+      "Keguruan",
+      "Pendidikan Terapist",
+      "Keperawatan",
+      "Peternakan"
+    ]
+  },
+  "Guru PAUD": {
+    "related_pillars": [
+      "32"
+    ],
+    "related_jurusans": [
+      "Tarbiyah",
+      "Pendidikan Guru TK (PGTK)",
+      "Keguruan",
+      "Pendidikan Terapist",
+      "Keperawatan",
+      "Peternakan"
+    ]
+  },
+  "Peternak Hewan Rumahan": {
+    "related_pillars": [
+      "32"
+    ],
+    "related_jurusans": [
+      "Tarbiyah",
+      "Pendidikan Guru TK (PGTK)",
+      "Keguruan",
+      "Pendidikan Terapist",
+      "Keperawatan",
+      "Peternakan"
+    ]
+  },
+  "Asisten Pribadi": {
+    "related_pillars": [
+      "36"
+    ],
+    "related_jurusans": [
+      "Akademi Kepolisian",
+      "Akademi Militer",
+      "Ilmu Kenotariatan",
+      "Administrasi"
+    ]
+  },
+  "Sekretaris": {
+    "related_pillars": [
+      "36"
+    ],
+    "related_jurusans": [
+      "Akademi Kepolisian",
+      "Akademi Militer",
+      "Ilmu Kenotariatan",
+      "Administrasi"
+    ]
+  },
+  "Agen Rahasia": {
+    "related_pillars": [
+      "36"
+    ],
+    "related_jurusans": [
+      "Akademi Kepolisian",
+      "Akademi Militer",
+      "Ilmu Kenotariatan",
+      "Administrasi"
+    ]
+  },
+  "Notaris": {
+    "related_pillars": [
+      "36"
+    ],
+    "related_jurusans": [
+      "Akademi Kepolisian",
+      "Akademi Militer",
+      "Ilmu Kenotariatan",
+      "Administrasi"
+    ]
+  }
+}

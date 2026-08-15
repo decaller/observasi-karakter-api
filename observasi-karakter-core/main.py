@@ -194,3 +194,137 @@ async def step2_hasil(request: Request, scores: str):
         "present_result_prompt": present_result_prompt,
         "next_prompt_hint": next_prompt_hint,
     })
+
+
+# ═════════════════════════════════════════════════════════════════════════
+#  OBSERVASI BAKAT (OBSBAKAT) ROUTES
+# ═════════════════════════════════════════════════════════════════════════
+
+@app.get(
+    "/result/v1/flow/obsbakat/step1",
+    summary="Step 1 — Pemetaan Awal Bakat (HTML)",
+)
+async def obsbakat_step1(request: Request, p: str = "50", ego: str = "t,s,r"):
+    session_id = f"bkt_{uuid.uuid4().hex[:8]}"
+
+    present_result_prompt = (
+        "👋 Halo! Anda adalah Asisten Eksplorasi Minat yang hangat dan interaktif. "
+        "Anda sedang berbicara dengan pengguna yang belum pernah dievaluasi."
+    )
+
+    next_prompt_hint = (
+        "Sapa pengguna dengan antusias (gunakan emoji ramah seperti 👋 atau ✨). "
+        "Ajukan SATU atau DUA pertanyaan ringan tentang hobi, apa yang sering mereka lakukan di waktu luang, "
+        "atau aktivitas apa yang membuat mereka lupa waktu. Jangan menginterogasi, biarkan mengalir seperti obrolan santai di kafe ☕. "
+        "Setelah pengguna menjawab atau menceritakan hobinya, ANDA HARUS BERHENTI BERTANYA dan "
+        f"segera panggil tautan berikut: {APP_DOMAIN}/result/v1/flow/obsbakat/step2 "
+        "untuk melanjutkan ke tahap pengumpulan data personal."
+    )
+
+    return templates.TemplateResponse(request, "obsbakat_step1.html", {
+        "session_id": session_id,
+        "p": p,
+        "ego": ego,
+        "present_result_prompt": present_result_prompt,
+        "next_prompt_hint": next_prompt_hint,
+    })
+
+
+@app.get(
+    "/result/v1/flow/obsbakat/step2",
+    summary="Step 2 — Data Personal Bakat (HTML)",
+)
+async def obsbakat_step2(request: Request):
+    session_id = f"bkt_{uuid.uuid4().hex[:8]}"
+
+    present_result_prompt = (
+        "🎉 Hebat! Anda telah memicu rasa ingin tahu pengguna."
+    )
+
+    next_prompt_hint = (
+        "Berikan apresiasi singkat (misalnya 'Wah, menarik sekali! 🤩'). Sebelum kita masuk ke analisis mendalam, "
+        "tanyakan kelengkapan data pribadi pengguna (Nama Lengkap, Usia, dan Organisasi/Event jika ada) secara ramah 📋. "
+        "JANGAN berikan kesimpulan akhir atau memanggil API sebelum data ini terkumpul. "
+        "Setelah semua data diri tersebut terkumpul dari pengguna, Segera panggil tautan berikut: "
+        f"{APP_DOMAIN}/result/v1/flow/obsbakat/step3"
+    )
+
+    return templates.TemplateResponse(request, "obsbakat_step2.html", {
+        "session_id": session_id,
+        "present_result_prompt": present_result_prompt,
+        "next_prompt_hint": next_prompt_hint,
+    })
+
+
+@app.get(
+    "/result/v1/flow/obsbakat/step3",
+    summary="Step 3 — Analisis 40 Pilar Bakat (HTML)",
+)
+async def obsbakat_step3(request: Request):
+    session_id = f"bkt_{uuid.uuid4().hex[:8]}"
+
+    # Load data3.json and data_profesi.json
+    try:
+        with open(DATA_DIR / "data3.json", "r", encoding="utf-8") as f:
+            data3 = json.load(f)
+    except FileNotFoundError:
+        data3 = {"error": "data3.json not found"}
+
+    try:
+        with open(DATA_DIR / "data_profesi.json", "r", encoding="utf-8") as f:
+            data_profesi = json.load(f)
+    except FileNotFoundError:
+        data_profesi = {"error": "data_profesi.json not found"}
+
+    present_result_prompt = (
+        "📊 Keren! Anda kini memiliki data awal dan data pribadi pengguna."
+    )
+
+    next_prompt_hint = (
+        "Gali lebih dalam! 🕵️‍♂️ Ajukan pertanyaan lanjutan yang lebih tajam berdasarkan jawaban mereka "
+        "sebelumnya untuk membedakan antara sekadar hobi atau potensi sejati. Gunakan teknik funneling (mengerucut) 🎯. "
+        "Setelah Anda selesai melakukan funneling dan minat pengguna sudah cukup mengerucut, Segera panggil tautan berikut: "
+        f"{APP_DOMAIN}/result/v1/flow/obsbakat/step4?data=analisis_selesai "
+        "untuk memberikan rekomendasi final."
+    )
+
+    return templates.TemplateResponse(request, "obsbakat_step3.html", {
+        "session_id": session_id,
+        "data3": data3,
+        "data_profesi": data_profesi,
+        "present_result_prompt": present_result_prompt,
+        "next_prompt_hint": next_prompt_hint,
+    })
+
+
+@app.get(
+    "/result/v1/flow/obsbakat/step4",
+    summary="Step 4 — Hasil Akhir Bakat (HTML)",
+)
+async def obsbakat_step4(request: Request, data: str = ""):
+    session_id = f"bkt_{uuid.uuid4().hex[:8]}"
+
+    # Try to decode if there's any data passed in URL
+    parsed_data = {"status": "Analisis selesai"}
+    if data:
+        try:
+            parsed_data = json.loads(unquote(data))
+        except:
+            parsed_data = {"raw_data": data}
+
+    present_result_prompt = (
+        "🏆 Luar biasa! Wawancara telah selesai. Sekarang Anda harus mempresentasikan kesimpulan "
+        "bakat pengguna berdasarkan kerangka 40 pilar dan data profesi."
+    )
+
+    next_prompt_hint = (
+        "Sajikan Curriculum Personal yang mencakup kekuatan utama, kelemahan, dan rekomendasi aktivitas "
+        "(MVP - Minimum Viable Product) secara bertingkat. Berikan dorongan semangat sebagai penutup!"
+    )
+
+    return templates.TemplateResponse(request, "obsbakat_step4.html", {
+        "session_id": session_id,
+        "result_data": parsed_data,
+        "present_result_prompt": present_result_prompt,
+        "next_prompt_hint": next_prompt_hint,
+    })

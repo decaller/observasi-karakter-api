@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}Observasi Bakat — Pemetaan Awal (Step 1){% endblock %}
+{% block meta_description %}Tahap awal inisiasi Talent Mapping untuk mengumpulkan data hobi dan ketertarikan awal.{% endblock %}
+
+{% block content %}
+<div class="container">
+    <section class="hero" style="padding-bottom: 1.5rem;">
+        <h1>🧭 Observasi Bakat (40 Pilar) - Step 1</h1>
+        <p>Tahap pemetaan awal bakat dan minat bawaan.</p>
+    </section>
+
+    <div class="instruction-block">
+        <strong>📝 Instruksi Utama untuk AI:</strong> {{ present_result_prompt }}
+    </div>
+
+    <hr class="divider">
+    
+    <div class="card" style="margin-bottom: 1.5rem;">
+        <h3>Data Prasyarat</h3>
+        <ul>
+            <li><strong>Energi Sosial (Introvert/Ekstrovert):</strong> {{ p }}%</li>
+            <li><strong>Urutan Ego:</strong> {{ ego }}</li>
+        </ul>
+    </div>
+
+    <hr class="divider">
+
+    <div class="instruction-block" style="border-left-color: var(--accent);">
+        <strong>🗣️ Panduan Langkah Selanjutnya:</strong> {{ next_prompt_hint }}
+    </div>
+
+    <div class="card" style="text-align: center;">
+        <p style="color: var(--text-secondary); margin-bottom: 0.75rem;">
+            <span class="badge badge-info">Session</span> <code style="color: var(--accent); font-family: var(--font-mono);">{{ session_id }}</code>
+        </p>
+        <p style="color: var(--text-muted); font-size: 0.85rem;">
+            Setelah pertanyaan hobi terjawab, AI akan memanggil endpoint Step 2 untuk melengkapi data personal.
+        </p>
+    </div>
+</div>
+{% endblock %}

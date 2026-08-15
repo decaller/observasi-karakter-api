@@ -21,8 +21,7 @@ services:
     depends_on:
       - db
     volumes:
-      - ./app:/app/app
-      - ./mockup:/app/mockup
+      - ./observasi-karakter-core:/app
       
 volumes:
   postgres_data:
